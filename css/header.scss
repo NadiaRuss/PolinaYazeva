@@ -1,13 +1,18 @@
-.nav{
-    display: flex;
-&__list{
+.header__container{
+  display: flex;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
+  &__list {
     display: flex;
     gap: 40px;
+  }
 }
-}
-.header__social{
-    display: flex;
-    // &__link{
+.header__social {
+  display: flex;
+  gap: 12px;
+  // &__link{
 
-    // }
+  // }
 }

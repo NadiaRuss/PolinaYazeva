@@ -7,8 +7,8 @@ body {
 
 body {
   overflow-x: hidden;
-  margin: 0rem;
-  font-size: 1rem;
+  margin: rem(0px);
+  font-size: rem(16px);
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -63,20 +63,8 @@ fieldset {
 
 .container {
   position: relative;
-  max-width: 87.5rem;
+  max-width: rem(1400px);
   width: 100%;
   margin: 0 auto; }
 
-.header__container {
-  display: flex;
-  justify-content: space-between; }
-
-.nav {
-  display: flex; }
-  .nav__list {
-    display: flex;
-    gap: 40px; }
-
-.header__social {
-  display: flex;
-  gap: 12px; }
+/*# sourceMappingURL=base.css.map */
