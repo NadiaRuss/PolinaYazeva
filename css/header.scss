@@ -1,18 +1,22 @@
-.header__container{
+.header__container {
   display: flex;
   justify-content: space-between;
+  padding: 23px 63px;
 }
 .nav {
   display: flex;
   &__list {
     display: flex;
     gap: 40px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
   }
 }
 .header__social {
   display: flex;
   gap: 12px;
-  // &__link{
-
-  // }
+  &__link {
+    color: #401818;
+  }
 }
