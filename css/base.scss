@@ -14,6 +14,7 @@ body {
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FFF6F6;
 }
 
 ul,
@@ -35,6 +36,7 @@ ul > li {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
 }
 
 button {
@@ -68,7 +70,7 @@ fieldset {
 .wrapper {
   position: relative;
   width: 100%;
-  background: #ffffff; //основной цвет фона
+  // background: #ffffff; //основной цвет фона
   overflow-x: hidden;
 }
 
@@ -77,4 +79,21 @@ fieldset {
   max-width: rem(1400px); //ширина контейнера
   width: 100%;
   margin: 0 auto;
+}
+img{
+  object-fit: cover;
+}
+h1{
+  font-family: "Cactus";
+  font-size: 128px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #8D6C56;
+  letter-spacing: -0.03em;
+}
+h2{
+    font-family: "Cactus";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
 }
