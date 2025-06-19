@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Inter';
   src: url("../fonts/Inter/Inter-VariableFont_opsz,wght.ttf") format("woff2");
@@ -76,9 +77,6 @@ fieldset {
   width: 100%;
   margin: 0 auto; }
 
-img {
-  object-fit: cover; }
-
 h1 {
   font-family: "Cactus";
   font-size: 128px;
@@ -96,7 +94,8 @@ h2 {
 .header__container {
   display: flex;
   justify-content: space-between;
-  padding: 23px 63px; }
+  padding: 23px 63px;
+  align-items: center; }
 
 .nav {
   display: flex; }
@@ -106,6 +105,22 @@ h2 {
     font-family: "Inter";
     font-weight: 400;
     font-size: 16px; }
+
+.header__adress {
+  font-family: "Inter";
+  display: flex;
+  align-items: flex-start;
+  gap: 14px; }
+  .header__adress__icon {
+    width: 20px; }
+  .header__adress__wr__textBold {
+    font-weight: 500;
+    font-size: 16px;
+    color: #401818; }
+  .header__adress__wr__textThin {
+    font-weight: 400;
+    font-size: 14px;
+    color: #7d7b7b; }
 
 .header__social {
   display: flex;
@@ -119,13 +134,14 @@ h2 {
   height: 580px;
   padding-top: 82px;
   padding-left: 164px;
-  background-size: cover; }
+  background-size: cover;
+  background-position: right center; }
 .start__h2 {
   color: #de8067; }
 .start__description {
   padding: 37px 0;
   max-width: 348px;
-  color: #7D7B7B;
+  color: #7d7b7b;
   font-size: 16px;
   font-weight: 400;
   line-height: 140%; }
@@ -137,4 +153,46 @@ h2 {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: 'Inter'; }
+  font-family: "Inter"; }
+
+.history__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 305px);
+  /* Фиксированная ширина */
+  grid-auto-rows: 148px;
+  /* Фиксированная высота */
+  gap: 15px;
+  /* Расстояние между элементами */
+  justify-content: center;
+  /* Центрирование сетки */
+  padding: 0;
+  list-style: none; }
+
+.history__list__item {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  /* Опционально: граница для визуализации */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fff;
+  /* Фон элементов */
+  border-radius: 8px;
+  /* Закругленные углы */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Тень для элементов */ }
+
+.history__list__item img {
+  max-width: 24px;
+  /* Размер иконок */
+  margin-bottom: 10px; }
+
+.history__list__item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.3; }

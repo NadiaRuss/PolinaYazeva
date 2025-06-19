@@ -1,0 +1,39 @@
+.history__container{
+
+}
+.history__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 305px); /* Фиксированная ширина */
+  grid-auto-rows: 148px; /* Фиксированная высота */
+  gap: 15px; /* Расстояние между элементами */
+  justify-content: center; /* Центрирование сетки */
+  padding: 0;
+  list-style: none;
+}
+
+.history__list__item {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd; /* Опционально: граница для визуализации */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fff; /* Фон элементов */
+  border-radius: 8px; /* Закругленные углы */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Тень для элементов */
+}
+
+.history__list__item img {
+  max-width: 24px; /* Размер иконок */
+  margin-bottom: 10px;
+}
+
+.history__list__item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.3;
+}
