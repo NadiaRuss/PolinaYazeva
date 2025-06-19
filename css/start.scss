@@ -12,6 +12,7 @@
     color: #de8067;
   }
   &__description {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     padding: 37px 0;
     max-width: 348px;
     color: #7d7b7b;
@@ -28,5 +29,18 @@
     font-weight: 600;
     text-transform: uppercase;
     font-family: "Inter";
+  }
+  &__dec {
+    position: absolute;
+    right: 37%;
+    top: 420px;
+    font-size: 14px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #7d7b7b;
+    display: flex;
+    flex-direction: column;
+    &__img {
+      min-width: 154px;
+    }
   }
 }
