@@ -73,6 +73,7 @@ fieldset {
 
 .container {
   position: relative;
+  max-width: 80rem;
   width: 100%;
   margin: 0 auto;
   padding-left: 2%;
@@ -179,7 +180,7 @@ h4 {
     min-width: 154px; }
 
 .history__container {
-  margin: 131px auto;
+  margin: 131px auto 71px;
   max-width: 1400px; }
 
 .history__list {
@@ -239,6 +240,55 @@ h4 {
   right: -15px;
   bottom: -80px; }
 
+.runningLine__container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  max-width: 100%;
+  margin: 40px 0 168px;
+  background-color: #fff; }
+
+.runningLine__container:hover .marquee-track {
+  animation-play-state: paused; }
+
+.marquee-track {
+  display: inline-flex;
+  animation: marquee 30s linear infinite; }
+
+.marquee-item {
+  flex: 0 0 auto;
+  margin: 0 20px;
+  transition: transform 0.3s ease; }
+
+.marquee-item img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(30%);
+  transition: all 0.3s ease; }
+
+.marquee-item:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1); }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-50%); } }
+/* Для бесконечного эффекта */
+.marquee-track::after {
+  content: "";
+  display: inline-block;
+  width: 100%; }
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .marquee-item {
+    margin: 0 10px; }
+
+  .marquee-item img {
+    height: 60px; } }
 .hero__header {
   border-bottom: 1px solid #f5ded8;
   display: flex;
