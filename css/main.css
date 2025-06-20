@@ -94,7 +94,8 @@ h2 {
   font-family: "Cactus";
   font-weight: 400;
   font-size: 36px;
-  line-height: 120%; }
+  line-height: 120%;
+  color: #401818; }
 
 h3 {
   font-family: "Cactus";
@@ -435,7 +436,8 @@ h4 {
   color: #401818;
   gap: 20px;
   padding-bottom: 30px;
-  margin-bottom: 46px; }
+  margin-bottom: 46px;
+  margin-top: 60px; }
   .care__header__left {
     width: 40%; }
   .care__header__right {
@@ -450,7 +452,8 @@ h4 {
 .care__btns {
   margin: 0 auto 40px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  gap: 10px; }
 
 .care__list {
   display: grid;
@@ -469,7 +472,8 @@ h4 {
       height: 315px;
       object-fit: cover; }
     .care__list__el__text {
-      padding: 26px 24px; }
+      padding: 26px 24px;
+      margin: auto; }
       .care__list__el__text__h {
         color: #e08269;
         margin-bottom: 13px; }
@@ -478,7 +482,9 @@ h4 {
         line-height: 140%;
         font-size: 16px;
         letter-spacing: -0.03em;
-        color: #7d7b7b; }
+        color: #7d7b7b;
+        hyphens: auto;
+        overflow-wrap: break-word; }
 
 .price__header {
   border-bottom: 1px solid #f5ded8;
