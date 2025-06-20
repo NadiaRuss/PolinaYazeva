@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 23px 63px;
+  align-items: center;
 }
 .nav {
   display: flex;
@@ -11,6 +12,27 @@
     font-family: "Inter";
     font-weight: 400;
     font-size: 16px;
+  }
+}
+.header__adress {
+  font-family: "Inter";
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  &__icon {
+    width: 20px;
+  }
+  &__wr {
+    &__textBold {
+      font-weight: 500;
+      font-size: 16px;
+      color: #401818;
+    }
+    &__textThin {
+      font-weight: 400;
+      font-size: 14px;
+      color: #7d7b7b;
+    }
   }
 }
 .header__social {

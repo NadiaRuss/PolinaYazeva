@@ -8,83 +8,506 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <main class="wrapper">
-      <header class="header">
-        <div class="container header__container">
-          <!-- <div class="header__logo logo">
+    <header class="header">
+      <div class="container header__container">
+        <!-- <div class="header__logo logo">
                     <img class="logo__pic" src="" alt="логотип">
                 </div> -->
-          <nav class="header__nav nav">
-            <ul class="nav__list">
-              <li class="nav__list__item">
-                <a href="#" class="nav__list__item__link">Обо мне</a>
-              </li>
-              <li class="nav__list__item">
-                <a href="#" class="nav__list__item__link">Услуги и цены</a>
-              </li>
-              <li class="nav__list__item">
-                <a href="#" class="nav__list__item__link">Отзывы</a>
-              </li>
-              <li class="nav__list__item">
-                <a href="#" class="nav__list__item__link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__social">
-            <a class="header__social__link" href="#"
-              ><img
-                class="header__social__link__img"
-                src="./img/svg/telegram.svg"
-                alt="telegram icon"
-            /></a>
-            <a class="header__social__link" href="#"
-              ><img
-                class="header__social__link__img"
-                src="./img/svg/whatsapp.svg"
-                alt="whatsapp icon"
-            /></a>
-            <a class="header__social__link" href="#"
-              ><img
-                class="header__social__link__img"
-                src="./img/svg/vk.svg"
-                alt="vk icon"
-            /></a>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__list__item">
+              <a href="#" class="nav__list__item__link">Обо мне</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#" class="nav__list__item__link">Услуги и цены</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#" class="nav__list__item__link">Отзывы</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#" class="nav__list__item__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__adress">
+          <img
+            class="header__adress__icon"
+            src="./img/svg/location.svg"
+            alt="иконка локации"
+          />
+          <div class="header__adress__wr">
+            <p class="header__adress__wr__textBold">
+              Пр-т 60 лет образования СССР, д 60,
+            </p>
+            <span class="header__adress__wr__textThin"
+              >вход со стороны дороги, левое крыльцо</span
+            >
           </div>
         </div>
-      </header>
+        <div class="header__social">
+          <a class="header__social__link" href="#"
+            ><img
+              class="header__social__link__img"
+              src="./img/svg/telegram.svg"
+              alt="telegram icon"
+          /></a>
+          <a class="header__social__link" href="#"
+            ><img
+              class="header__social__link__img"
+              src="./img/svg/whatsapp.svg"
+              alt="whatsapp icon"
+          /></a>
+          <a class="header__social__link" href="#"
+            ><img
+              class="header__social__link__img"
+              src="./img/svg/vk.svg"
+              alt="vk icon"
+          /></a>
+        </div>
+      </div>
+    </header>
+    <main class="wrapper">
       <section class="start">
         <div class="container start__container">
           <h2 class="start__h2">Косметолог- эстетист</h2>
           <h1 class="start__h1">Полина Язева</h1>
-          <p class="start__description">Индивидуальные программы по уходу за лицом и телом с учетом ваших потребностей </p>
-          <button class="start__button">Записаться</button>
-          <!-- <span class="start__text">Забота о вас и вашем лице</span> -->
+          <p class="start__description">
+            Индивидуальные программы по уходу за лицом и телом с учетом ваших
+            потребностей
+          </p>
+          <button class="broun__btn">Записаться</button>
+          <div class="start__dec">
+            <span class="start__dec__text">Забота о вас и<br />вашем лице</span>
+            <img
+              class="start__dec__img"
+              src="./img/svg/startArrow.svg"
+              alt="arrow"
+            />
+          </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="container footer__container">
-          <!-- <div class="footer__logo logo">
-            <img class="logo__pic" src="" alt="логотип" />
-          </div> -->
-          <nav class="footer__nav nav">
-            <ul class="nav__list">
-              <li class="hnav__list__item">
-                <a href="#" class="nav__list__item__link">Главная</a>
-              </li>
-              <li class="nav__list__item">
-                <a href="#" class="nav__list__item__link">Секция 2</a>
-              </li>
-              <li class="nav__list__item">
-                <a href="#" class="nav__list__item__link">Секция 3</a>
-              </li>
-              <li class="nav__list__item">
-                <a href="#" class="nav__list__item__link">Секция 4</a>
-              </li>
-            </ul>
-          </nav>
+      <section class="history">
+        <div class="container history__container">
+          <ul class="history__list">
+            <li class="history__list__item">
+              <img
+                class="history__list__item__img"
+                src="./img/svg/edit1.svg"
+                alt=""
+              />
+              <p class="history__list__item__p">
+                Профессиональная переподготовка
+              </p>
+            </li>
+            <li class="history__list__item noBG">
+              <img class="ellipsePink" src="./img/svg/ellipsePink.svg" alt="" />
+              <p class="history__list__item__bigP">
+                2022<span class="history__list__item__bigP__span">г.</span>
+              </p>
+            </li>
+            <li class="history__list__item">
+              <img
+                class="history__list__item__img"
+                src="./img/svg/user2.svg"
+                alt=""
+              />
+              <p class="history__list__item__p">
+                Преподаватель по<br />эстетической косметологии
+              </p>
+            </li>
+            <li class="history__list__item">
+              <img
+                class="history__list__item__img"
+                src="./img/svg/globe3.svg"
+                alt=""
+              />
+              <p class="history__list__item__p">
+                Участник международной конференции бьюти-<br />мастеров в Египте
+              </p>
+            </li>
+            <li class="history__list__item">
+              <img
+                class="history__list__item__img"
+                src="./img/svg/thumbs-up4.svg"
+                alt=""
+              />
+              <p class="history__list__item__p">Бьюти-партнер<br />“Аравия”</p>
+            </li>
+            <li class="history__list__item">
+              <img
+                class="history__list__item__img"
+                src="./img/svg/award5.svg"
+                alt=""
+              />
+              <p class="history__list__item__p">
+                Победитель конкурса<br />“Код красоты”
+              </p>
+            </li>
+            <li class="history__list__item noBG">
+              <img
+                class="ellipseYellow"
+                src="./img/svg/ellipseYellow.svg"
+                alt=""
+              />
+              <p class="history__list__item__bigP">
+                2025<span class="history__list__item__bigP__span">г.</span>
+              </p>
+            </li>
+            <li class="history__list__item">
+              <img
+                class="history__list__item__img"
+                src="./img/svg/thumbs-up4.svg"
+                alt=""
+              />
+              <p class="history__list__item__p">
+                косметолог-консультант “ген жизни”
+              </p>
+            </li>
+          </ul>
         </div>
-      </footer>
+      </section>
+      <section class="runningLine">
+        <div class="container runningLine__container">
+          <div class="marquee-track">
+            <!-- Первый набор картинок -->
+            <div class="marquee-item">
+              <img src="./img/runningLine1.png" alt="Логотип 1" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine2.png" alt="Логотип 2" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine3.png" alt="Логотип 3" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine4.png" alt="Логотип 4" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine5.png" alt="Логотип 5" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine6.png" alt="Логотип 5" />
+            </div>
+            <!-- Дублируем для бесконечного эффекта -->
+            <div class="marquee-item">
+              <img src="./img/runningLine1.png" alt="Логотип 1" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine2.png" alt="Логотип 2" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine3.png" alt="Логотип 3" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine4.png" alt="Логотип 4" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine5.png" alt="Логотип 5" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine6.png" alt="Логотип 5" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__header">
+            <div class="hero__header__left">
+              <h2>КТО Я И КАК МОГУ<br />ВАМ ПОМОЧЬ</h2>
+            </div>
+
+            <div class="hero__header__right">
+              <!-- <p class="hero__header__right__p"> -->
+              <span class="hooks">[ </span>
+              <p>Обо мне</p>
+              <span class="hooks"> ]</span>
+              <!-- </p> -->
+            </div>
+          </div>
+          <div class="hero__info">
+            <div class="hero__info__text">
+              <h4 class="hero__info__text__name">Язева Полина Дмитриевна</h4>
+              <span class="hero__info__text__des"
+                >1989г. -1995г КГМИ врач-педиатр</span
+              >
+              <p class="hero__info__text__greeting">
+                Приветствую! С 2022 г. работаю в сфере эстетической
+                косметологии. Моя работа - помогать людям заботиться о своей
+                коже правильно и максимально эффективно.
+                <br /><br /><br />
+                Внимание к мелочам при диагностики состояния кожи, помогают мне
+                в каждом случае подобрать индивидуальный курс процедур.
+                <br /><br /><br />
+                Обладаю уникальным опытом работы и сочетаю различные методики
+                эстетической медицины, традиционные и инновационные, отдавая
+                предпочтение только безопасным и наиболее эффективным
+                процедурам. <br /><br />
+                <float>
+                  <img
+                    class="floatImg"
+                    src="./img/heroTravel.png"
+                    alt="woman in travel"
+                  />
+                </float>
+                <br /><br />
+                Активно посещаю форумы, конференции, в том числе и
+                международные. Являюсь квалифицированным специалистом,
+                работающем на косметике ARAVIA, ESTEL GENEVIE. <br /><br />
+                Каждый может иметь красивую кожу, и я готова помочь вам с этим.
+              </p>
+            </div>
+            <div class="hero__info__img">
+              <img src="./img/hero.png" alt="hero foto" />
+            </div>
+            <p class="hero__info__eng">POLINA YAZEVA</p>
+          </div>
+        </div>
+      </section>
+      <section class="help">
+        <div class="container help__container">
+          <div class="help__behind">
+            <div class="help__text">
+              <p class="help__text__p">
+                Помогу Вам забыть о недостатках кожи и фигуры, ведь здесь
+                профессиональные и безопасные процедуры косметологии
+              </p>
+              <div class="help__text__buttons">
+                <button class="help__text__buttons__btn">
+                  Индивидуальный подход
+                </button>
+                <button class="help__text__buttons__btn">Качество</button>
+                <button class="help__text__buttons__btn">Доступные цены</button>
+                <button class="help__text__buttons__btn">
+                  Профессионализм
+                </button>
+              </div>
+            </div>
+            <div class="help__img">
+              <img src="./img/helpImg.png" alt="beautiful woman" />
+              <img
+                class="help__img__ellips"
+                src="./img/svg/ellipsePink.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="help__ahead">
+            <div class="help__ahead__left">
+              <p class="help__ahead__left__p">
+                Консультация по диагностике кожи и домашнему уходу, подбору
+                косметики БЕСПЛАТНО!
+              </p>
+              <img
+                class="help__ahead__left__img"
+                src="./img/helpFlower.png"
+                alt="pink flower"
+              />
+            </div>
+            <div class="help__ahead__right">
+              <p class="help__ahead__right__p">
+                Найдите меня на карте проверенных косметологов, и получите
+                скидку 10% на первое посещение
+              </p>
+              <button class="broun__btn">Получить скидку</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="care">
+        <div class="container care__container">
+          <div class="care__header">
+            <div class="care__header__left">
+              <h2>ЗАБОТА О КРАСОТЕ И ЗДОРОВЬЕ</h2>
+            </div>
+
+            <div class="care__header__right">
+              <span class="hooks">[ </span>
+              <p>Комплексное преображение</p>
+              <span class="hooks"> ]</span>
+            </div>
+          </div>
+          <div class="care__btns">
+            <button class="care__btns__btn light__btn">Лицо</button>
+            <button class="care__btns__btn light__btn">Коррекция фигуры</button>
+            <button class="care__btns__btn light__btn">Депиляция</button>
+          </div>
+
+          <ul class="care__list">
+            <li class="care__list__el">
+              <img class="care__list__el__img" src="./img/care1.png" alt="" />
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">Чистка лица</h3>
+                <p class="care__list__el__text__p">
+                  Этапы: очищение, подготовка кожи, чистка(ультразвук, вакуум,
+                  механическая), массаж по Жаке, дарсонвализация,,
+                  тонизирование, интенсивный уход( сыворотка,
+                  маска),тонизирование, завершающий уход ( крем по типу кожи,
+                  SPF-защита)
+                </p>
+              </div>
+            </li>
+            <li class="care__list__el">
+              <img class="care__list__el__img" src="./img/care2.png" alt="" />
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">Пилинг</h3>
+                <p class="care__list__el__text__p">
+                  Пилинг выбирается по типу и состоянию кожи. Этапы: очищение,
+                  нанесение пилинга,тонизирование, интенсивный уход (сыворотка,
+                  маска), завершающий уход (крем по типу кожи, SPF-защита)
+                </p>
+              </div>
+            </li>
+            <li class="care__list__el">
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">
+                  Безиньекционная карбокситерапия
+                </h3>
+                <p class="care__list__el__text__p">
+                  Уникальная методика, основанная на насыщении клеток кожи
+                  кислородом, благодаря дозированному введению углекислого газа.
+                  Во время процедуры происходит усиление микроциркуляции,
+                  улучшается трофика тканей, укрепляется кожный иммунитет.
+                </p>
+              </div>
+              <img class="care__list__el__img" src="./img/care3.png" alt="" />
+            </li>
+            <li class="care__list__el">
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">
+                  Антивозрастная программа
+                </h3>
+                <p class="care__list__el__text__p">
+                  Это комплекс процедур, созданных для максимально
+                  продолжительного сохранения молодости и красоты лица шеи и
+                  декольте
+                </p>
+              </div>
+              <img src="./img/care4.png" alt="" />
+            </li>
+            <li class="care__list__el">
+              <img class="care__list__el__img" src="./img/care5.png" alt="" />
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">Коррекция акне</h3>
+                <p class="care__list__el__text__p">
+                  Предполагает использование различных косметологических
+                  процедур для улучшения состояния кожи и уменьшения воспаления.
+                  Выбор методов лечения определяется типом акне, степенью
+                  тяжести и индивидуальными особенностями кожи.
+                </p>
+              </div>
+            </li>
+            <li class="care__list__el">
+              <img class="care__list__el__img" src="./img/care6.png" alt="" />
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">Маска</h3>
+                <p class="care__list__el__text__p">
+                  Нанесение маски этапы: очищение кожи, нанесение маски с учетом
+                  типа кожи ,тонизирование, интенсивный уход (сыворотка,крем),
+                  тонизирование, завершающий уход (крем по типу кожи,
+                  SPF-защита)
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="price">
+        <div class="container price__container">
+          <div class="price__header">
+            <div class="price__header__left">
+              <h2>УСЛУГИ И ПРАЙС</h2>
+            </div>
+
+            <div class="price__header__right">
+              <span class="hooks">[ </span>
+              <p>Стоимость</p>
+              <span class="hooks"> ]</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="result">
+        <div class="container result__container">
+          <div class="result__header">
+            <div class="result__header__left">
+              <h2>БОЛЕЕ 500 КЛИЕНТОВ УВИДЕЛИ РЕЗУЛЬТАТ</h2>
+            </div>
+
+            <div class="result__header__right">
+              <span class="hooks">[ </span>
+              <p>Эффективность</p>
+              <span class="hooks"> ]</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="review">
+        <div class="container review__container">
+          <div class="review__header">
+            <div class="review__header__left">
+              <h2>ЧТО ГОВОРЯТ О МОЕЙ РАБОТЕ</h2>
+            </div>
+
+            <div class="review__header__right">
+              <span class="hooks">[ </span>
+              <p>Отзывы</p>
+              <span class="hooks"> ]</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="qualification">
+        <div class="container qualification__container">
+          <div class="qualification__header">
+            <div class="qualification__header__left">
+              <h2>ПОДТВЕРЖДЕНИЕ МОЕЙ КВАЛИФИКАЦИИ</h2>
+            </div>
+
+            <div class="qualification__header__right">
+              <span class="hooks">[ </span>
+              <p>Сертификаты</p>
+              <span class="hooks"> ]</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container contacts__container">
+          <div class="contacts__header">
+            <div class="contacts__header__left">
+              <h2>ГДЕ И КАК МОЖНО МЕНЯ НАЙТИ</h2>
+            </div>
+
+            <div class="contacts__header__right">
+              <span class="hooks">[ </span>
+              <p>Контакты</p>
+              <span class="hooks"> ]</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- <footer class="footer">
+      <div class="container footer__container">
+        <nav class="footer__nav nav">
+          <ul class="nav__list">
+            <li class="hnav__list__item">
+              <a href="#" class="nav__list__item__link">Главная</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#" class="nav__list__item__link">Секция 2</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#" class="nav__list__item__link">Секция 3</a>
+            </li>
+            <li class="nav__list__item">
+              <a href="#" class="nav__list__item__link">Секция 4</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer> -->
     <script src="js/main.js"></script>
   </body>
 </html>
