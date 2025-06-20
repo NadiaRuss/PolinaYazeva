@@ -297,7 +297,7 @@ h4 {
   padding-bottom: 30px;
   margin-bottom: 46px; }
   .hero__header__left {
-    width: 33%; }
+    width: 40%; }
   .hero__header__right {
     border-top: 1px solid #f5ded8;
     display: flex;
@@ -339,3 +339,111 @@ h4 {
   width: 200px;
   margin: 0 15px 15px 0;
   /* Отступы: сверху, справа, снизу, слева */ }
+
+.care__header {
+  border-bottom: 1px solid #f5ded8;
+  display: flex;
+  color: #401818;
+  gap: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 46px; }
+  .care__header__left {
+    width: 40%; }
+  .care__header__right {
+    border-top: 1px solid #f5ded8;
+    display: flex;
+    gap: 3px;
+    width: 77%;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+.price__header {
+  border-bottom: 1px solid #f5ded8;
+  display: flex;
+  color: #401818;
+  gap: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 46px; }
+  .price__header__left {
+    width: 33%; }
+  .price__header__right {
+    border-top: 1px solid #f5ded8;
+    display: flex;
+    gap: 3px;
+    width: 77%;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+.result__header {
+  border-bottom: 1px solid #f5ded8;
+  display: flex;
+  color: #401818;
+  gap: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 46px; }
+  .result__header__left {
+    width: 45%; }
+  .result__header__right {
+    border-top: 1px solid #f5ded8;
+    display: flex;
+    gap: 3px;
+    width: 77%;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+.review__header {
+  border-bottom: 1px solid #f5ded8;
+  display: flex;
+  color: #401818;
+  gap: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 46px; }
+  .review__header__left {
+    width: 45%; }
+  .review__header__right {
+    border-top: 1px solid #f5ded8;
+    display: flex;
+    gap: 3px;
+    width: 68%;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+.qualification__header {
+  border-bottom: 1px solid #f5ded8;
+  display: flex;
+  color: #401818;
+  gap: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 46px; }
+  .qualification__header__left {
+    width: 55%; }
+  .qualification__header__right {
+    border-top: 1px solid #f5ded8;
+    display: flex;
+    gap: 3px;
+    width: 77%;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+.contacts__header {
+  border-bottom: 1px solid #f5ded8;
+  display: flex;
+  color: #401818;
+  gap: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 46px; }
+  .contacts__header__left {
+    width: 56%; }
+  .contacts__header__right {
+    border-top: 1px solid #f5ded8;
+    display: flex;
+    gap: 3px;
+    width: 70%;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }

@@ -1,0 +1,21 @@
+.price__header {
+  border-bottom: 1px solid #f5ded8;
+  display: flex;
+  color: #401818;
+  gap: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 46px;
+  &__left {
+    width: 33%;
+  }
+  &__right {
+    border-top: 1px solid #f5ded8;
+    display: flex;
+    gap: 3px;
+    // padding-left: 800px;
+    width: 77%;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+}
