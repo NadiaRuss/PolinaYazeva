@@ -16,16 +16,16 @@
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__list__item">
-              <a href="#" class="nav__list__item__link">Обо мне</a>
+              <a href="#about" class="nav__list__item__link">Обо мне</a>
             </li>
             <li class="nav__list__item">
-              <a href="#" class="nav__list__item__link">Услуги и цены</a>
+              <a href="#price" class="nav__list__item__link">Услуги и цены</a>
             </li>
             <li class="nav__list__item">
-              <a href="#" class="nav__list__item__link">Отзывы</a>
+              <a href="#reviews" class="nav__list__item__link">Отзывы</a>
             </li>
             <li class="nav__list__item">
-              <a href="#" class="nav__list__item__link">Контакты</a>
+              <a href="#contacts" class="nav__list__item__link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -212,7 +212,7 @@
       </section>
       <section class="hero">
         <div class="container hero__container">
-          <div class="title hero__title">
+          <div class="title hero__title" id="about">
             <div class="title__left">
               <h2>КТО Я И КАК МОГУ<br />ВАМ ПОМОЧЬ</h2>
             </div>
@@ -413,10 +413,10 @@
           </ul>
         </div>
       </section>
-      <section class="price">
+      <section class="price" id="price">
         <div class="container price__container">
           <div class="title price__title">
-            <div class="titler__left">
+            <div class="title__left">
               <h2>УСЛУГИ И ПРАЙС</h2>
             </div>
 
@@ -430,10 +430,11 @@
           </div>
           <div class="price__info">
             <div class="price__info__btn">
-              <button class="price__info__btn__el active" id="face">Лицо</button>
-              <button class="price__info__btn__el" id="shape">Коррекция фигуры</button>
+              <button class="price__info__btn__el active" data-target="face-price">Лицо</button>
+              <button class="price__info__btn__el" data-target="shape-price">Коррекция фигуры</button>
+              <button class="price__info__btn__el" data-target="depilation-price">Депиляция</button>
             </div>
-            <div class="price__info__btn__arr">
+            <div class="price__info__btn__arr" id="face-price">
               <div class="price__info__btn__arr__el">
                 <span class="price__info__btn__arr__el__num">01</span>
                 <p class="price__info__btn__arr__el__info">ЧИСТКА ЛИЦА</p>
@@ -507,7 +508,7 @@
                 <button class="broun__btn">Записаться</button>
               </div>
             </div>
-            <div class="price__info__btn__arr__shap" style="display: none;">
+            <div class="price__info__btn__arr" id="shape-price" style="display: none;">
               <div class="price__info__btn__arr__el">
                 <span class="price__info__btn__arr__el__num">001</span>
                 <p class="price__info__btn__arr__el__info">ЧИСТКА ЛИЦА!</p>
@@ -581,6 +582,79 @@
                 <button class="broun__btn">Записаться</button>
             </div>
         </div>
+        <div class="price__info__btn__arr" id="depilation-price" style="display: none;">
+          <div class="price__info__btn__arr__el">
+            <span class="price__info__btn__arr__el__num">000</span>
+            <p class="price__info__btn__arr__el__info">Депиляция</p>
+            <div class="price__info__btn__arr__el__item">
+              <span class="price__info__btn__arr__el__item__price">Цена:</span>
+              <p class="price__info__btn__arr__el__item__p">2 500 ₽</p>
+            </div>
+            <button class="broun__btn">Записаться</button>
+          </div>
+          <div class="price__info__btn__arr__el">
+            <span class="price__info__btn__arr__el__num">02</span>
+            <p class="price__info__btn__arr__el__info">ПИЛИНГ</p>
+            <div class="price__info__btn__arr__el__item">
+              <span class="price__info__btn__arr__el__item__price">Цена:</span>
+              <p class="price__info__btn__arr__el__item__p">2 000 ₽</p>
+            </div>
+            <button class="broun__btn">Записаться</button>
+          </div>
+          <div class="price__info__btn__arr__el">
+            <span class="price__info__btn__arr__el__num">03</span>
+            <p class="price__info__btn__arr__el__info">ЧИСТКА + ПИЛИНГ</p>
+            <div class="price__info__btn__arr__el__item">
+              <span class="price__info__btn__arr__el__item__price">Цена:</span>
+              <p class="price__info__btn__arr__el__item__p">3 500 ₽</p>
+            </div>
+            <button class="broun__btn">Записаться</button>
+          </div>
+          <div class="price__info__btn__arr__el">
+            <span class="price__info__btn__arr__el__num">04</span>
+            <p class="price__info__btn__arr__el__info">МАССАЖ ЛИЦА</p>
+            <div class="price__info__btn__arr__el__item">
+              <span class="price__info__btn__arr__el__item__price">Цена:</span>
+              <p class="price__info__btn__arr__el__item__p">2 000 ₽</p>
+            </div>
+            <button class="broun__btn">Записаться</button>
+          </div>
+          <div class="price__info__btn__arr__el">
+            <span class="price__info__btn__arr__el__num">05</span>
+            <p class="price__info__btn__arr__el__info">безиньекционная карбокситерапия</p>
+            <div class="price__info__btn__arr__el__item">
+              <span class="price__info__btn__arr__el__item__price">Цена:</span>                  <p class="price__info__btn__arr__el__item__p">2 000 ₽</p>
+              </div>
+            <button class="broun__btn">Записаться</button>
+          </div>              
+          <div class="price__info__btn__arr__el">
+            <span class="price__info__btn__arr__el__num">06</span>
+            <p class="price__info__btn__arr__el__info">АНТИВОЗРАСТНЫЕ ПРОГРАММЫ</p>
+            <div class="price__info__btn__arr__el__item">
+              <span class="price__info__btn__arr__el__item__price">Цена:</span>
+              <p class="price__info__btn__arr__el__item__p">2 000 ₽</p>
+            </div>
+            <button class="broun__btn">Записаться</button>
+          </div>
+          <div class="price__info__btn__arr__el">
+            <span class="price__info__btn__arr__el__num">07</span>
+            <p class="price__info__btn__arr__el__info">ЛЕЧЕНИЕ АКНЕ</p>
+            <div class="price__info__btn__arr__el__item">
+              <span class="price__info__btn__arr__el__item__price">Цена:</span>
+              <p class="price__info__btn__arr__el__item__p">2 000 ₽</p>
+            </div>
+            <button class="broun__btn">Записаться</button>
+          </div>
+          <div class="price__info__btn__arr__el">
+            <span class="price__info__btn__arr__el__num">08</span>
+            <p class="price__info__btn__arr__el__info">НАНЕСЕНИЕ МАСКИ</p>
+            <div class="price__info__btn__arr__el__item">
+              <span class="price__info__btn__arr__el__item__price">Цена:</span>
+              <p class="price__info__btn__arr__el__item__p">700 ₽</p>
+            </div>
+            <button class="broun__btn">Записаться</button>
+        </div>
+    </div>
       </section>
 
       <section class="result">
@@ -632,7 +706,7 @@
         </div>
       </section>
 
-      <section class="review">
+      <section class="review" id="reviews">
         <div class="container review__container">
           <div class="title review__title">
             <div class="title__left">
@@ -735,7 +809,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container contacts__container">
           <div class="title contacts__title">
             <div class="title__left">
@@ -760,26 +834,48 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
+        <div class="footer__img">
+          <img src="./img/svg/footer.svg">
+        </div>
       <div class="container footer__container">
         <nav class="footer__nav nav">
-          <ul class="nav__list">
-            <li class="hnav__list__item">
-              <a href="#" class="nav__list__item__link">Главная</a>
+          <ul class="nav__list__footer">
+            <li class="nav__list__item">
+              <a href="#about" class="nav__list__item__link">Обо мне</a>
             </li>
             <li class="nav__list__item">
-              <a href="#" class="nav__list__item__link">Секция 2</a>
+              <a href="#price" class="nav__list__item__link">Услуги и цены</a>
             </li>
             <li class="nav__list__item">
-              <a href="#" class="nav__list__item__link">Секция 3</a>
+              <a href="#reviews" class="nav__list__item__link">Отзывы </a>
             </li>
             <li class="nav__list__item">
-              <a href="#" class="nav__list__item__link">Секция 4</a>
+              <a href="#contacts" class="nav__list__item__link">Контакты</a>
             </li>
           </ul>
         </nav>
+        <nav class="footer__contacts nav">
+          <ul class="nav__list__contacts">
+          <li class="nav__list__item">
+            <div>
+            <img src="./img/svg/gps.svg">
+            </div>
+            <a href="#" class="nav__list__item__link"> г.Красноярск , <br>Пр-т 60 лет образования <br> СССР, д 60, вход со стороны <br> дороги, левое крыльцо</a>
+          </li>
+          <li class="nav__list__item">
+            <div>
+              <img src="./img/svg/tel.svg">
+            </div>
+            <a href="tel: +79029900645" class="nav__list__item__link">8-902-990-06-45</a>
+          </li>
+          </ul>
+            <a href="#" class="nav__list__item__link">Политика конфедециальности</a>
+        </nav>
+        <button class="broun__btn btn__footer">Записаться</button>
       </div>
-    </footer> -->
+      <img class="footer__eng" src="./img/svg/POLINA YAZEVA.svg">
+    </footer>
     <script src="js/main.js"></script>
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_ключ&lang=ru_RU"></script>
