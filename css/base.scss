@@ -138,3 +138,40 @@ h4 {
   border: 1px solid #e08269;
   color: #e08269;
 }
+
+.title {
+  border-bottom: 1px solid #f5ded8;
+  display: flex;
+  color: #401818;
+  gap: 20px;
+  padding-bottom: 30px;
+
+  &__left {
+    flex-shrink: 0;
+  }
+
+  &__right {
+    margin-top: 9px;
+    padding-top: 5px;
+    border-top: 1px solid #f5ded8;
+    gap: 3px;
+    width: 100%;
+
+    &__text {
+      display: flex;
+      justify-content: flex-end;
+      flex-shrink: 0;
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #000000;
+
+      & span {
+        color: #e08269;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -1,21 +1,109 @@
-.review__header {
-  border-bottom: 1px solid #f5ded8;
-  display: flex;
-  color: #401818;
-  gap: 20px;
-  padding-bottom: 30px;
-  margin-bottom: 46px;
-  &__left {
-    width: 45%;
-  }
-  &__right {
-    border-top: 1px solid #f5ded8;
+.review {
+  margin-top: 166px;
+
+  &__container {
     display: flex;
-    gap: 3px;
-    // padding-left: 800px;
-    width: 68%;
-    justify-content: flex-end;
-    font-size: 16px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    flex-direction: column;
+    gap: 89px;
+  }
+
+  &__slider {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &__list {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+
+      &__item {
+        position: relative;
+        border-radius: 20px;
+        border: 2px solid #F4D8D0;
+        padding: 60px 40px 46px 40px;
+        height: 309px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        bottom: unset;
+        transition: border .3s, bottom .3s;
+
+        &__desc {
+          font-family: Arial;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          letter-spacing: -3%;
+          color: #B9B9B9;
+          transition: color .3s;
+        }
+
+        &__user {
+          display: flex;
+          align-items: center;
+          gap: 11px;
+
+          &__ava {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            & img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          &__name {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #B9B9B9;
+            transition: color .3s;
+          }
+        }
+
+        &.active {
+          border: 2px solid #E08269;
+          bottom: 28px;
+          transition: border .3s, bottom .3s;
+
+          & .review__slider__list__item__desc {
+            color: #7D7B7B;
+            transition: color .3s;
+          }
+
+          & .review__slider__list__item__user__name {
+            color: #401818;
+            transition: color .3s;
+          }
+        }
+      }
+    }
+
+    &__dots {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      align-self: center;
+
+      &__item {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #F4D8D0;
+        overflow: hidden;
+
+        &.active {
+          background: #DE8067;
+        }
+      }
+    }
   }
 }
