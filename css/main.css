@@ -705,7 +705,8 @@ h4 {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000392}}
     .result__slider__btn {
       width: 30px;
-      height: 60px; }
+      height: 60px;
+      margin-right: 54px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\000031}}
 .review {
