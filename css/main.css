@@ -481,23 +481,9 @@ h4 {
         hyphens: auto;
         overflow-wrap: break-word; }
 
-.price__header {
-  border-bottom: 1px solid #f5ded8;
-  display: flex;
-  color: #401818;
-  gap: 20px;
-  padding-bottom: 30px;
-  margin-bottom: 46px; }
-  .price__header__left {
-    width: 33%; }
-  .price__header__right {
-    border-top: 1px solid #f5ded8;
-    display: flex;
-    gap: 3px;
-    width: 77%;
-    justify-content: flex-end;
-    font-size: 16px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+.price__title {
+  margin-bottom: 46px;
+  margin-top: 160px; }
 
 .price__info {
   display: flex;
@@ -506,17 +492,17 @@ h4 {
     margin: 0 auto; }
     .price__info__btn__el {
       padding: 15px 36px;
-      border: 1px solid #DDDDDD;
-      color: #C5C5C5;
+      border: 1px solid #dddddd;
+      color: #c5c5c5;
       border-radius: 50px;
       margin-right: 15px;
-      font-family: 'Inter';
+      font-family: "Inter";
       font-size: 16px;
       font-weight: 400;
       line-height: 100%; }
       .price__info__btn__el.active {
-        color: #E08269;
-        border: 1px solid #E08269; }
+        color: #e08269;
+        border: 1px solid #e08269; }
     .price__info__btn__arr__el {
       display: flex;
       justify-content: space-between;
@@ -524,16 +510,16 @@ h4 {
       align-items: center;
       position: relative; }
       .price__info__btn__arr__el ::after {
-        content: '';
+        content: "";
         width: 100%;
         height: 1px;
-        background-color: #F5DED8;
+        background-color: #f5ded8;
         position: absolute;
         bottom: -22px;
         left: 0; }
       .price__info__btn__arr__el__num {
         width: 40px;
-        font-family: 'Cactus';
+        font-family: "Cactus";
         font-weight: 400;
         font-size: 36px;
         line-height: 120%;
@@ -541,24 +527,24 @@ h4 {
         margin-right: 68px; }
       .price__info__btn__arr__el__info {
         width: 700px;
-        font-family: 'Cactus';
+        font-family: "Cactus";
         font-weight: normal;
         font-size: 28px;
         line-height: 120%;
         text-transform: uppercase;
-        color: #E08269; }
+        color: #e08269; }
       .price__info__btn__arr__el__item {
         width: 120px;
         margin-right: 60px; }
         .price__info__btn__arr__el__item__price {
-          font-family: 'Inter';
+          font-family: "Inter";
           font-size: 20px;
           font-weight: 400;
           line-height: 100%;
-          color: #7D7B7B; }
+          color: #7d7b7b; }
         .price__info__btn__arr__el__item__p {
-          font-family: 'Cactus';
-          color: #E08269;
+          font-family: "Cactus";
+          color: #e08269;
           font-size: 28px;
           font-weight: normal;
           line-height: 120%;
@@ -765,3 +751,49 @@ h4 {
   white-space: nowrap;
   font-size: 22px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+.footer {
+  background-color: #E08269;
+  width: 100%;
+  display: flex;
+  height: 467px;
+  position: relative;
+  overflow: hidden; }
+  .footer__container {
+    display: flex;
+    color: #EDEDED;
+    margin: 86px 84px;
+    height: 196px;
+    justify-content: space-between; }
+  .footer__contacts {
+    flex-direction: column;
+    justify-content: space-between; }
+
+.nav__list__footer {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column; }
+
+.nav__list__contacts {
+  display: flex;
+  gap: 13px;
+  flex-direction: column; }
+
+.nav__list__item {
+  display: flex;
+  gap: 8px; }
+  .nav__list__item__link {
+    font-family: 'inter';
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 140%; }
+
+.btn__footer {
+  background-color: #FFFFFF;
+  color: #DE8067;
+  height: fit-content; }
+
+.footer__eng {
+  position: absolute;
+  bottom: 0;
+  left: 37px; }
