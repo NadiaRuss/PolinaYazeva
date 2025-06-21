@@ -335,24 +335,6 @@ h4 {
 
   .marquee-item img {
     height: 60px; } }
-.hero__header {
-  border-bottom: 1px solid #f5ded8;
-  display: flex;
-  color: #401818;
-  gap: 20px;
-  padding-bottom: 30px;
-  margin-bottom: 46px; }
-  .hero__header__left {
-    width: 40%; }
-  .hero__header__right {
-    border-top: 1px solid #f5ded8;
-    display: flex;
-    gap: 3px;
-    width: 77%;
-    justify-content: flex-end;
-    font-size: 16px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
-
 .hero__info {
   display: flex;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -453,25 +435,6 @@ h4 {
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       line-height: 140%;
       margin-bottom: 26px; }
-
-.care__header {
-  border-bottom: 1px solid #f5ded8;
-  display: flex;
-  color: #401818;
-  gap: 20px;
-  padding-bottom: 30px;
-  margin-bottom: 46px;
-  margin-top: 60px; }
-  .care__header__left {
-    width: 40%; }
-  .care__header__right {
-    border-top: 1px solid #f5ded8;
-    display: flex;
-    gap: 3px;
-    width: 77%;
-    justify-content: flex-end;
-    font-size: 16px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .care__btns {
   margin: 0 auto 40px;
@@ -648,7 +611,8 @@ h4 {
             color: #401818; }
     .result__slider__btn {
       width: 30px;
-      height: 60px; }
+      height: 60px;
+      margin-right: 54px; }
 
 .review {
   margin-top: 166px; }
@@ -729,41 +693,39 @@ h4 {
         .review__slider__dots__item.active {
           background: #DE8067; }
 
-.qualification__header {
-  border-bottom: 1px solid #f5ded8;
-  display: flex;
-  color: #401818;
-  gap: 20px;
-  padding-bottom: 30px;
-  margin-bottom: 46px; }
-  .qualification__header__left {
-    width: 55%; }
-  .qualification__header__right {
-    border-top: 1px solid #f5ded8;
+.qual {
+  margin-top: 160px; }
+  .qual__container {
     display: flex;
-    gap: 3px;
-    width: 77%;
-    justify-content: flex-end;
-    font-size: 16px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
-
-.contacts__header {
-  border-bottom: 1px solid #f5ded8;
-  display: flex;
-  color: #401818;
-  gap: 20px;
-  padding-bottom: 30px;
-  margin-bottom: 46px; }
-  .contacts__header__left {
-    width: 56%; }
-  .contacts__header__right {
-    border-top: 1px solid #f5ded8;
+    flex-direction: column;
+    gap: 89px; }
+  .qual__slider {
+    position: relative;
     display: flex;
-    gap: 3px;
-    width: 70%;
-    justify-content: flex-end;
-    font-size: 16px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    justify-content: center;
+    align-items: center;
+    gap: 60px; }
+    .qual__slider__btn {
+      width: 30px;
+      height: 60px; }
+      .qual__slider__btn.right {
+        transform: rotate(180deg); }
+    .qual__slider__list {
+      display: flex;
+      align-items: flex-start; }
+      .qual__slider__list__item {
+        width: 474px;
+        height: 573px;
+        border-radius: 20px;
+        overflow: hidden; }
+        .qual__slider__list__item__link {
+          display: flex;
+          width: 100%;
+          height: 100%; }
+          .qual__slider__list__item__link img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
 
 .custom-marker {
   position: relative;
