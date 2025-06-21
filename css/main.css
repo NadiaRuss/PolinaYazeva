@@ -558,6 +558,103 @@ h4 {
         hyphens: auto;
         overflow-wrap: break-word; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/price\.scss}line{font-family:\000031}}
+.price__header {
+  border-bottom: 1px solid #f5ded8;
+  display: flex;
+  color: #401818;
+  gap: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 46px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/price\.scss}line{font-family:\000038}}
+  .price__header__left {
+    width: 33%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/price\.scss}line{font-family:\0000311}}
+  .price__header__right {
+    border-top: 1px solid #f5ded8;
+    display: flex;
+    gap: 3px;
+    width: 77%;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/price\.scss}line{font-family:\0000327}}
+.price__info {
+  display: flex;
+  flex-direction: column; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/price\.scss}line{font-family:\0000330}}
+  .price__info__btn {
+    margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/price\.scss}line{font-family:\0000332}}
+    .price__info__btn__el {
+      padding: 15px 36px;
+      border: 1px solid #DDDDDD;
+      color: #C5C5C5;
+      border-radius: 50px;
+      margin-right: 15px;
+      font-family: 'Inter';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/price\.scss}line{font-family:\0000342}}
+      .price__info__btn__el.active {
+        color: #E08269;
+        border: 1px solid #E08269; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/price\.scss}line{font-family:\0000348}}
+    .price__info__btn__arr__el {
+      display: flex;
+      justify-content: space-between;
+      margin: 54px 0 42px;
+      align-items: center;
+      position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/price\.scss}line{font-family:\0000354}}
+      .price__info__btn__arr__el ::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: #F5DED8;
+        position: absolute;
+        bottom: -22px;
+        left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/price\.scss}line{font-family:\0000363}}
+      .price__info__btn__arr__el__num {
+        width: 40px;
+        font-family: 'Cactus';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 120%;
+        color: #401818;
+        margin-right: 68px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/price\.scss}line{font-family:\0000372}}
+      .price__info__btn__arr__el__info {
+        width: 700px;
+        font-family: 'Cactus';
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #E08269; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/price\.scss}line{font-family:\0000381}}
+      .price__info__btn__arr__el__item {
+        width: 120px;
+        margin-right: 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/price\.scss}line{font-family:\0000384}}
+        .price__info__btn__arr__el__item__price {
+          font-family: 'Inter';
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 100%;
+          color: #7D7B7B; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/price\.scss}line{font-family:\0000391}}
+        .price__info__btn__arr__el__item__p {
+          font-family: 'Cactus';
+          color: #E08269;
+          font-size: 28px;
+          font-weight: normal;
+          line-height: 120%;
+          margin-top: 5px; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\000031}}
 .result {
   margin-top: 160px; }
