@@ -329,12 +329,12 @@
             </div>
           </div>
           <div class="care__btns">
-            <button class="care__btns__btn light__btn">Лицо</button>
-            <button class="care__btns__btn light__btn">Коррекция фигуры</button>
-            <button class="care__btns__btn light__btn">Депиляция</button>
+            <button class="care__btns__btn light__btn light__btn_active" data-target="face_care">Лицо</button>
+            <button class="care__btns__btn light__btn" data-target="shape_care">Коррекция фигуры</button>
+            <button class="care__btns__btn light__btn" data-target="depilation_care">Депиляция</button>
           </div>
 
-          <ul class="care__list">
+          <ul class="care__list" id="face_care">
             <li class="care__list__el">
               <img class="care__list__el__img" src="./img/care1.png" alt="" />
               <div class="care__list__el__text">
@@ -352,6 +352,160 @@
               <img class="care__list__el__img" src="./img/care2.png" alt="" />
               <div class="care__list__el__text">
                 <h3 class="care__list__el__text__h">Пилинг</h3>
+                <p class="care__list__el__text__p">
+                  Пилинг выбирается по типу и состоянию кожи. Этапы: очищение,
+                  нанесение пилинга,тонизирование, интенсивный уход (сыворотка,
+                  маска), завершающий уход (крем по типу кожи, SPF-защита)
+                </p>
+              </div>
+            </li>
+            <li class="care__list__el">
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">
+                  Безиньекционная карбокситерапия
+                </h3>
+                <p class="care__list__el__text__p">
+                  Уникальная методика, основанная на насыщении клеток кожи
+                  кислородом, благодаря дозированному введению углекислого газа.
+                  Во время процедуры происходит усиление микроциркуляции,
+                  улучшается трофика тканей, укрепляется кожный иммунитет.
+                </p>
+              </div>
+              <img class="care__list__el__img" src="./img/care3.png" alt="" />
+            </li>
+            <li class="care__list__el">
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">
+                  Антивозрастная программа
+                </h3>
+                <p class="care__list__el__text__p">
+                  Это комплекс процедур, созданных для максимально
+                  продолжительного сохранения молодости и красоты лица шеи и
+                  декольте
+                </p>
+              </div>
+              <img src="./img/care4.png" alt="" />
+            </li>
+            <li class="care__list__el">
+              <img class="care__list__el__img" src="./img/care5.png" alt="" />
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">Коррекция акне</h3>
+                <p class="care__list__el__text__p">
+                  Предполагает использование различных косметологических
+                  процедур для улучшения состояния кожи и уменьшения воспаления.
+                  Выбор методов лечения определяется типом акне, степенью
+                  тяжести и индивидуальными особенностями кожи.
+                </p>
+              </div>
+            </li>
+            <li class="care__list__el">
+              <img class="care__list__el__img" src="./img/care6.png" alt="" />
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">Маска</h3>
+                <p class="care__list__el__text__p">
+                  Нанесение маски этапы: очищение кожи, нанесение маски с учетом
+                  типа кожи ,тонизирование, интенсивный уход (сыворотка,крем),
+                  тонизирование, завершающий уход (крем по типу кожи,
+                  SPF-защита)
+                </p>
+              </div>
+            </li>
+          </ul>
+          <ul class="care__list" id="shape_care" style="display: none;">
+            <li class="care__list__el">
+              <img class="care__list__el__img" src="./img/care1.png" alt="" />
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">Обертывание</h3>
+                <p class="care__list__el__text__p">
+                  Этапы: очищение, подготовка кожи, чистка(ультразвук, вакуум,
+                  механическая), массаж по Жаке, дарсонвализация,,
+                  тонизирование, интенсивный уход( сыворотка,
+                  маска),тонизирование, завершающий уход ( крем по типу кожи,
+                  SPF-защита)
+                </p>
+              </div>
+            </li>
+            <li class="care__list__el">
+              <img class="care__list__el__img" src="./img/care2.png" alt="" />
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">Массаж</h3>
+                <p class="care__list__el__text__p">
+                  Пилинг выбирается по типу и состоянию кожи. Этапы: очищение,
+                  нанесение пилинга,тонизирование, интенсивный уход (сыворотка,
+                  маска), завершающий уход (крем по типу кожи, SPF-защита)
+                </p>
+              </div>
+            </li>
+            <li class="care__list__el">
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">
+                  Безиньекционная карбокситерапия
+                </h3>
+                <p class="care__list__el__text__p">
+                  Уникальная методика, основанная на насыщении клеток кожи
+                  кислородом, благодаря дозированному введению углекислого газа.
+                  Во время процедуры происходит усиление микроциркуляции,
+                  улучшается трофика тканей, укрепляется кожный иммунитет.
+                </p>
+              </div>
+              <img class="care__list__el__img" src="./img/care3.png" alt="" />
+            </li>
+            <li class="care__list__el">
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">
+                  Антивозрастная программа
+                </h3>
+                <p class="care__list__el__text__p">
+                  Это комплекс процедур, созданных для максимально
+                  продолжительного сохранения молодости и красоты лица шеи и
+                  декольте
+                </p>
+              </div>
+              <img src="./img/care4.png" alt="" />
+            </li>
+            <li class="care__list__el">
+              <img class="care__list__el__img" src="./img/care5.png" alt="" />
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">Коррекция акне</h3>
+                <p class="care__list__el__text__p">
+                  Предполагает использование различных косметологических
+                  процедур для улучшения состояния кожи и уменьшения воспаления.
+                  Выбор методов лечения определяется типом акне, степенью
+                  тяжести и индивидуальными особенностями кожи.
+                </p>
+              </div>
+            </li>
+            <li class="care__list__el">
+              <img class="care__list__el__img" src="./img/care6.png" alt="" />
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">Маска</h3>
+                <p class="care__list__el__text__p">
+                  Нанесение маски этапы: очищение кожи, нанесение маски с учетом
+                  типа кожи ,тонизирование, интенсивный уход (сыворотка,крем),
+                  тонизирование, завершающий уход (крем по типу кожи,
+                  SPF-защита)
+                </p>
+              </div>
+            </li>
+          </ul>
+          <ul class="care__list" id="depilation_care" style="display: none;">
+            <li class="care__list__el">
+              <img class="care__list__el__img" src="./img/care1.png" alt="" />
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">Подмышки</h3>
+                <p class="care__list__el__text__p">
+                  Этапы: очищение, подготовка кожи, чистка(ультразвук, вакуум,
+                  механическая), массаж по Жаке, дарсонвализация,,
+                  тонизирование, интенсивный уход( сыворотка,
+                  маска),тонизирование, завершающий уход ( крем по типу кожи,
+                  SPF-защита)
+                </p>
+              </div>
+            </li>
+            <li class="care__list__el">
+              <img class="care__list__el__img" src="./img/care2.png" alt="" />
+              <div class="care__list__el__text">
+                <h3 class="care__list__el__text__h">Ноги</h3>
                 <p class="care__list__el__text__p">
                   Пилинг выбирается по типу и состоянию кожи. Этапы: очищение,
                   нанесение пилинга,тонизирование, интенсивный уход (сыворотка,
@@ -657,6 +811,7 @@
     </div>
       </section>
 
+
       <section class="result">
         <div class="container result__container">
           <div class="title result__title">
@@ -834,9 +989,10 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+
+       <footer class="footer">
         <div class="footer__img">
-          <img src="./img/svg/footer.svg">
+          <img src="./img/svg/footer.png">
         </div>
       <div class="container footer__container">
         <nav class="footer__nav nav">
