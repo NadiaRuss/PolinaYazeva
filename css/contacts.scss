@@ -19,3 +19,21 @@
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
 }
+  .custom-marker {
+    position: relative;
+    text-align: center;
+  }
+  .marker-label {
+    position: absolute;
+    top: -35px;
+    left: 20px;
+    transform: translateX(-50%);
+    background: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    white-space: nowrap;
+    font-size: 22px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  
+  }
