@@ -967,7 +967,7 @@
         <div class="container contacts__container">
           <div class="title contacts__title">
             <div class="title__left">
-              <h2>ГДЕ И КАК МОЖНО МЕНЯ НАЙТИ</h2>
+              <h2>ГДЕ И КАК МОЖНО МЕНЯ<br>НАЙТИ</h2>
             </div>
 
             <div class="title__right">
@@ -978,14 +978,29 @@
               </div>
             </div>
           </div>
-          <!-- <iframe
-  src="https://yandex.ru/map-widget/v1/?ll=92.905518%2C56.106684&z=16&pt=92.905518%2C56.106684%2Cpm2rdm~92.905518%2C56.106684%2Ccomma"
-  width="600"
-  height="400"
-  frameborder="0">
-</iframe> -->
-          <div id="map" style="width: 100%; height: 400px"></div>
-        </div>
+          <!-- <div id="map" style="width: 100%; height: 644px"></div> -->
+        
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A22d03477d361b0526ece54002cf19f77819d6dc03174bedf9ca4d1f53b10e193&amp;
+      source=constructor" 
+      width="100%" 
+      height="644" 
+      frameborder="0">
+      </iframe>
+      <div class="contacts__window">
+        <p class="contact-header">Жду встречи с Вами!</p>
+            <div class="contacts__window__phone">
+                <a href="tel:+79029900645">8-902-990-06-45</a>
+            </div>
+            <div class="contacts__window__address">
+                <a href="https://yandex.ru/maps/?text=г. Красноярск, Пр-т 60 лет образования СССР, д. 60" target="_blank">
+                    г. Красноярск,<br>
+                    Пр-т 60 лет образования СССР, д. 60,<br>
+                    вход со стороны дороги, левое крыльцо
+                </a>
+            </div>
+            <div class="contacts__window__work-hours">Режим работы: по предварительной записи</div>
+
+      </div>
       </section>
     </main>
     <footer class="footer">
@@ -1032,37 +1047,46 @@
     </footer>
     <script src="js/main.js"></script>
 
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_ключ&lang=ru_RU"></script>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_ключ&lang=ru_RU"></script>
     <script>
-      ymaps.ready(init);
+ymaps.ready(init);
 
       function init() {
         const map = new ymaps.Map("map", {
           center: [56.106836, 92.905662],
           zoom: 16,
+          controls: [] // Отключаем все стандартные элементы управления
         });
 
-        // Создаем кастомный макет маркера
-        const TextIconLayout = ymaps.templateLayoutFactory.createClass(
-          '<div class="custom-marker">' +
-            '<img src="./img/svg/locationFill.svg" width="32" height="36">' +
-            '<div class="marker-label">{{ properties.text }}</div>' +
-            "</div>"
+        // Создаем кастомный макет с текстом "Я здесь"
+        const layout = ymaps.templateLayoutFactory.createClass(
+          '<div style="text-align: center; transform: translateY(-100%); font-family: Arial; color: #333; font-weight: bold; text-shadow: 0 1px 1px white;">Я здесь</div>' +
+          '<img src="./img/svg/locationFill.svg" style="width: 32px; height: 36px; display: block; margin: 0 auto;">'
         );
 
         const marker = new ymaps.Placemark(
           [56.106836, 92.905662],
+          {}, // Пустые свойства (без подсказок)
           {
-            text: "Я здесь", // Текст будет виден всегда
-          },
-          {
-            iconLayout: TextIconLayout,
-            iconShape: { type: "Circle", coordinates: [0, 0], radius: 20 },
+                        iconLayout: 'default#image',
+            iconImageHref: './img/svg/locationFill.svg', // Ваш файл маркера
+            iconImageSize: [32, 36], // Размер иконки
+            iconImageOffset: [-16, -36], // Смещение (якорь внизу)
+            iconShape: {
+              type: 'Circle',
+              coordinates: [16, 16],
+              radius: 16
+            },
+            hideIconOnBalloonOpen: false,
+            hasBalloon: false // Полностью отключаем балун
           }
         );
 
         map.geoObjects.add(marker);
+        
+        // Опционально: отключаем зум колесом мыши
+        map.behaviors.disable('scrollZoom');
       }
-    </script>
+    </script> -->
   </body>
 </html>
