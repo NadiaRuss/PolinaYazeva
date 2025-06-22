@@ -65,3 +65,23 @@ if (!('scrollBehavior' in document.documentElement.style)) {
     });
   });
 }
+
+//всплыте ФИ в футере
+    document.addEventListener('DOMContentLoaded', () => {
+      const textElement = document.querySelector('.footer__eng');
+
+      if(!textElement) return;
+      
+      const observer = new IntersectionObserver((entries) => { //Создаёт новый наблюдатель за пересечениями элементов с областью видимости (viewport)
+        
+        if (entries[0].isIntersecting) { // если элемент вошёл в область видимости
+          entries[0].target.classList.add('visible');
+          observer.unobserve(entries[0].target); //останавливает наблюдение после срабатывания, 
+        }
+      }, { threshold: 0.1 });
+
+  // Начинаем наблюдение
+      observer.observe(textElement); 
+    });
+
+    //попап
