@@ -48,3 +48,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
         });
+
+// Фолбэк для старых браузеров по плавному скроллу
+if (!('scrollBehavior' in document.documentElement.style)) {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        const headerHeight = document.querySelector('.header').offsetHeight;
+        window.scrollTo({
+          top: target.offsetTop - headerHeight,
+          behavior: 'auto' // Полифил добавит плавность
+        });
+      }
+    });
+  });
+}
