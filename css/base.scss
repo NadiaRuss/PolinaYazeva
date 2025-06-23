@@ -109,6 +109,8 @@ h1 {
   line-height: 120%;
   color: #8d6c56;
   letter-spacing: -0.03em;
+  position: relative;
+  z-index: 1;
 }
 h2 {
   font-family: "Cactus";
