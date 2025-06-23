@@ -85,3 +85,15 @@ if (!('scrollBehavior' in document.documentElement.style)) {
     });
 
     //попап
+
+
+//слайдер для секции result
+const swiper = new Swiper('.result__swiper', {
+  slidesPerView: 1,
+  loop: true,
+
+  navigation: {
+    nextEl: '.result__slider__btn',
+  },
+});
+//слайдер для секции result

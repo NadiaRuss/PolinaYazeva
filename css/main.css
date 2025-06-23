@@ -811,31 +811,32 @@ h4 {
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        gap: 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000329}}
+        gap: 30px;
+        cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000330}}
         .result__slider__list__item__pic {
           display: flex;
           flex-direction: column;
           align-items: center;
           gap: 24px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000336}}
           .result__slider__list__item__pic__img {
             max-width: 630px;
             height: 379px;
             border-radius: 20px;
             overflow: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000342}}
             .result__slider__list__item__pic__img img {
               width: 100%;
               height: 100%;
               object-fit: cover; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000349}}
           .result__slider__list__item__pic__text {
             width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr;
             justify-items: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000355}}
             .result__slider__list__item__pic__text span {
               font-family: Cactus;
               font-weight: 400;
@@ -843,12 +844,12 @@ h4 {
               line-height: 120%;
               letter-spacing: 0%;
               color: #401818; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000366}}
         .result__slider__list__item__info {
           display: flex;
           flex-direction: column;
           gap: 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000371}}
           .result__slider__list__item__info__desc {
             font-family: Cactus;
             font-weight: 400;
@@ -857,7 +858,7 @@ h4 {
             letter-spacing: 0%;
             text-transform: uppercase;
             color: #E08269; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000381}}
           .result__slider__list__item__info__name {
             font-family: Cactus;
             font-weight: 400;
@@ -865,7 +866,7 @@ h4 {
             line-height: 120%;
             letter-spacing: 0%;
             color: #401818; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/result\.scss}line{font-family:\0000393}}
     .result__slider__btn {
       width: 30px;
       height: 60px;

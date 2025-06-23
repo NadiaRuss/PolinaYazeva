@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
     <link rel="stylesheet" href="libs/normalize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -922,30 +923,70 @@
             </div>
           </div>
           <div class="result__slider">
-            <ul class="result__slider__list">
-              <li class="result__slider__list__item">
-                <div class="result__slider__list__item__pic">
-                  <div class="result__slider__list__item__pic__img">
-                    <img src="img/result/001.png" alt="фото работы" />
+            <div class="result__slider__wrap swiper result__swiper">
+              <ul class="result__slider__list swiper-wrapper">
+                <li class="result__slider__list__item swiper-slide">
+                  <div class="result__slider__list__item__pic">
+                    <div class="result__slider__list__item__pic__img">
+                      <img src="img/result/001.png" alt="фото работы" />
+                    </div>
+                    <div class="result__slider__list__item__pic__text">
+                      <span>До</span>
+                      <span>После</span>
+                    </div>
                   </div>
-                  <div class="result__slider__list__item__pic__text">
-                    <span>До</span>
-                    <span>После</span>
+                  <div class="result__slider__list__item__info">
+                    <span class="result__slider__list__item__info__desc"
+                      >Коррекция АКНЕ</span
+                    >
+                    <span class="result__slider__list__item__info__name"
+                      >Наталья, 24 г.</span
+                    >
                   </div>
-                </div>
-                <div class="result__slider__list__item__info">
-                  <span class="result__slider__list__item__info__desc"
-                    >Коррекция АКНЕ</span
-                  >
-                  <span class="result__slider__list__item__info__name"
-                    >Наталья, 24 г.</span
-                  >
-                </div>
-              </li>
-            </ul>
+                </li>
+                <li class="result__slider__list__item swiper-slide">
+                  <div class="result__slider__list__item__pic">
+                    <div class="result__slider__list__item__pic__img">
+                      <img src="img/result/001.png" alt="фото работы" />
+                    </div>
+                    <div class="result__slider__list__item__pic__text">
+                      <span>До</span>
+                      <span>После</span>
+                    </div>
+                  </div>
+                  <div class="result__slider__list__item__info">
+                    <span class="result__slider__list__item__info__desc"
+                      >Коррекция АКНЕ</span
+                    >
+                    <span class="result__slider__list__item__info__name"
+                      >Наталья, 24 г.</span
+                    >
+                  </div>
+                </li>
+                <li class="result__slider__list__item swiper-slide">
+                  <div class="result__slider__list__item__pic">
+                    <div class="result__slider__list__item__pic__img">
+                      <img src="img/result/001.png" alt="фото работы" />
+                    </div>
+                    <div class="result__slider__list__item__pic__text">
+                      <span>До</span>
+                      <span>После</span>
+                    </div>
+                  </div>
+                  <div class="result__slider__list__item__info">
+                    <span class="result__slider__list__item__info__desc"
+                      >Коррекция АКНЕ</span
+                    >
+                    <span class="result__slider__list__item__info__name"
+                      >Наталья, 24 г.</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
             <button
               type="button"
-              class="result__slider__btn result__slider__btn__next"
+              class="result__slider__btn"
             >
               <img src="img/svg/icon-arrow-brown.svg" alt="стрелка вправо" />
             </button>
@@ -1275,6 +1316,7 @@
         <p>POLINA YAZEVA</p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
