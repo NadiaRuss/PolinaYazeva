@@ -407,7 +407,8 @@ h4 {
   width: 225px;
   z-index: -1;
   right: -15px;
-  bottom: -80px; }
+  bottom: -80px;
+  filter: blur(40px); }
 
 .runningLine__container {
   overflow: hidden;
@@ -422,7 +423,8 @@ h4 {
 
 .marquee-track {
   display: inline-flex;
-  animation: marquee 30s linear infinite; }
+  animation: marquee 30s linear infinite;
+  min-width: max-content; }
 
 .marquee-item {
   flex: 0 0 auto;
@@ -876,16 +878,55 @@ h4 {
 
 .contacts__title {
   max-width: 80rem;
-  margin: auto; }
+  margin: 160px auto 89px; }
 
 .contacts__window {
   position: absolute;
-  left: 20%;
+  left: 10%;
   top: 40%;
   padding: 48px 71px 75px;
   background-color: #ffffff;
-  border: 2px solid #E08269;
-  border-radius: 20px; }
+  border: 2px solid #e08269;
+  border-radius: 20px;
+  color: #401818;
+  display: flex;
+  flex-direction: column;
+  gap: 28px; }
+  .contacts__window__header {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%; }
+  .contacts__window__phone {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    gap: 8px; }
+  .contacts__window__adress {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px; }
+    .contacts__window__adress__text {
+      display: flex;
+      flex-direction: column; }
+  .contacts__window p {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%; }
+  .contacts__window span {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #7d7b7b; }
+  .contacts__window__work-hours {
+    display: flex;
+    align-items: center;
+    gap: 8px; }
 
 .footer {
   background-color: #E08269;
