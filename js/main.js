@@ -111,3 +111,15 @@ const swiper2 = new Swiper('.review__swiper', {
   },
 });
 //слайдер для секции review
+
+//слайдер для секции qual
+const swiper3 = new Swiper('.qual__slider__swiper', {
+  slidesPerView: 1,
+  loop: true,
+
+  navigation: {
+    prevEl: '.qual__slider__btn.left',
+    nextEl: '.qual__slider__btn.right',
+  },
+});
+//слайдер для секции qual

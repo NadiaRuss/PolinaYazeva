@@ -23,12 +23,19 @@
       }
     }
 
+    &__wrap {
+      margin-left: 0;
+      margin-right: 0;
+      border-radius: 20px;
+    }
+
     &__list {
       display: flex;
       align-items: flex-start;
+      max-width: 434px;
 
       &__item {
-        width: 474px;
+        width: 434px;
         height: 573px;
         border-radius: 20px;
         overflow: hidden;
@@ -41,7 +48,7 @@
           & img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
           }
         }
       }
