@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
     <link rel="stylesheet" href="libs/normalize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -922,30 +924,70 @@
             </div>
           </div>
           <div class="result__slider">
-            <ul class="result__slider__list">
-              <li class="result__slider__list__item">
-                <div class="result__slider__list__item__pic">
-                  <div class="result__slider__list__item__pic__img">
-                    <img src="img/result/001.png" alt="фото работы" />
+            <div class="result__slider__wrap swiper result__swiper">
+              <ul class="result__slider__list swiper-wrapper">
+                <li class="result__slider__list__item swiper-slide">
+                  <div class="result__slider__list__item__pic">
+                    <div class="result__slider__list__item__pic__img">
+                      <img src="img/result/001.png" alt="фото работы" />
+                    </div>
+                    <div class="result__slider__list__item__pic__text">
+                      <span>До</span>
+                      <span>После</span>
+                    </div>
                   </div>
-                  <div class="result__slider__list__item__pic__text">
-                    <span>До</span>
-                    <span>После</span>
+                  <div class="result__slider__list__item__info">
+                    <span class="result__slider__list__item__info__desc"
+                      >Коррекция АКНЕ</span
+                    >
+                    <span class="result__slider__list__item__info__name"
+                      >Наталья, 24 г.</span
+                    >
                   </div>
-                </div>
-                <div class="result__slider__list__item__info">
-                  <span class="result__slider__list__item__info__desc"
-                    >Коррекция АКНЕ</span
-                  >
-                  <span class="result__slider__list__item__info__name"
-                    >Наталья, 24 г.</span
-                  >
-                </div>
-              </li>
-            </ul>
+                </li>
+                <li class="result__slider__list__item swiper-slide">
+                  <div class="result__slider__list__item__pic">
+                    <div class="result__slider__list__item__pic__img">
+                      <img src="img/result/001.png" alt="фото работы" />
+                    </div>
+                    <div class="result__slider__list__item__pic__text">
+                      <span>До</span>
+                      <span>После</span>
+                    </div>
+                  </div>
+                  <div class="result__slider__list__item__info">
+                    <span class="result__slider__list__item__info__desc"
+                      >Коррекция АКНЕ</span
+                    >
+                    <span class="result__slider__list__item__info__name"
+                      >Наталья, 24 г.</span
+                    >
+                  </div>
+                </li>
+                <li class="result__slider__list__item swiper-slide">
+                  <div class="result__slider__list__item__pic">
+                    <div class="result__slider__list__item__pic__img">
+                      <img src="img/result/001.png" alt="фото работы" />
+                    </div>
+                    <div class="result__slider__list__item__pic__text">
+                      <span>До</span>
+                      <span>После</span>
+                    </div>
+                  </div>
+                  <div class="result__slider__list__item__info">
+                    <span class="result__slider__list__item__info__desc"
+                      >Коррекция АКНЕ</span
+                    >
+                    <span class="result__slider__list__item__info__name"
+                      >Наталья, 24 г.</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
             <button
               type="button"
-              class="result__slider__btn result__slider__btn__next"
+              class="result__slider__btn"
             >
               <img src="img/svg/icon-arrow-brown.svg" alt="стрелка вправо" />
             </button>
@@ -971,54 +1013,97 @@
             </div>
           </div>
           <div class="review__slider">
-            <ul class="review__slider__list">
-              <li class="review__slider__list__item">
-                <p class="review__slider__list__item__desc">
-                  Добрый день! Была у мастера по шугарингу Полины, все прошло
-                  безболезненно на одном дыхании, всем советую!
-                </p>
-                <div class="review__slider__list__item__user">
-                  <div class="review__slider__list__item__user__ava">
-                    <img src="img/review/001.jpg" alt="фото" />
+            <div class="review__slider__wrap swiper review__swiper">
+              <ul class="review__slider__list swiper-wrapper">
+                <li class="review__slider__list__item swiper-slide">
+                  <p class="review__slider__list__item__desc">
+                    Добрый день! Была у мастера по шугарингу Полины, все прошло
+                    безболезненно на одном дыхании, всем советую!
+                  </p>
+                  <div class="review__slider__list__item__user">
+                    <div class="review__slider__list__item__user__ava">
+                      <img src="img/review/001.jpg" alt="фото" />
+                    </div>
+                    <span class="review__slider__list__item__user__name"
+                      >Татьяна И.</span
+                    >
                   </div>
-                  <span class="review__slider__list__item__user__name"
-                    >Татьяна И.</span
-                  >
-                </div>
-              </li>
-              <li class="review__slider__list__item active">
-                <p class="review__slider__list__item__desc">
-                  Добрый день! Была у мастера по шугарингу Полины, все прошло
-                  безболезненно на одном дыхании, всем советую!
-                </p>
-                <div class="review__slider__list__item__user">
-                  <div class="review__slider__list__item__user__ava">
-                    <img src="img/review/001.jpg" alt="фото" />
+                </li>
+                <li class="review__slider__list__item swiper-slide active">
+                  <p class="review__slider__list__item__desc">
+                    Добрый день! Была у мастера по шугарингу Полины, все прошло
+                    безболезненно на одном дыхании, всем советую!
+                  </p>
+                  <div class="review__slider__list__item__user">
+                    <div class="review__slider__list__item__user__ava">
+                      <img src="img/review/001.jpg" alt="фото" />
+                    </div>
+                    <span class="review__slider__list__item__user__name"
+                      >Татьяна И.</span
+                    >
                   </div>
-                  <span class="review__slider__list__item__user__name"
-                    >Татьяна И.</span
-                  >
-                </div>
-              </li>
-              <li class="review__slider__list__item">
-                <p class="review__slider__list__item__desc">
-                  Добрый день! Была у мастера по шугарингу Полины, все прошло
-                  безболезненно на одном дыхании, всем советую!
-                </p>
-                <div class="review__slider__list__item__user">
-                  <div class="review__slider__list__item__user__ava">
-                    <img src="img/review/001.jpg" alt="фото" />
+                </li>
+                <li class="review__slider__list__item swiper-slide">
+                  <p class="review__slider__list__item__desc">
+                    Добрый день! Была у мастера по шугарингу Полины, все прошло
+                    безболезненно на одном дыхании, всем советую!
+                  </p>
+                  <div class="review__slider__list__item__user">
+                    <div class="review__slider__list__item__user__ava">
+                      <img src="img/review/001.jpg" alt="фото" />
+                    </div>
+                    <span class="review__slider__list__item__user__name"
+                      >Татьяна И.</span
+                    >
                   </div>
-                  <span class="review__slider__list__item__user__name"
-                    >Татьяна И.</span
-                  >
-                </div>
-              </li>
-            </ul>
+                </li>
+
+                <li class="review__slider__list__item swiper-slide">
+                  <p class="review__slider__list__item__desc">
+                    Добрый день! Была у мастера по шугарингу Полины, все прошло
+                    безболезненно на одном дыхании, всем советую!
+                  </p>
+                  <div class="review__slider__list__item__user">
+                    <div class="review__slider__list__item__user__ava">
+                      <img src="img/review/001.jpg" alt="фото" />
+                    </div>
+                    <span class="review__slider__list__item__user__name"
+                      >Татьяна И.</span
+                    >
+                  </div>
+                </li>
+                <li class="review__slider__list__item swiper-slide active">
+                  <p class="review__slider__list__item__desc">
+                    Добрый день! Была у мастера по шугарингу Полины, все прошло
+                    безболезненно на одном дыхании, всем советую!
+                  </p>
+                  <div class="review__slider__list__item__user">
+                    <div class="review__slider__list__item__user__ava">
+                      <img src="img/review/001.jpg" alt="фото" />
+                    </div>
+                    <span class="review__slider__list__item__user__name"
+                      >Татьяна И.</span
+                    >
+                  </div>
+                </li>
+                <li class="review__slider__list__item swiper-slide">
+                  <p class="review__slider__list__item__desc">
+                    Добрый день! Была у мастера по шугарингу Полины, все прошло
+                    безболезненно на одном дыхании, всем советую!
+                  </p>
+                  <div class="review__slider__list__item__user">
+                    <div class="review__slider__list__item__user__ava">
+                      <img src="img/review/001.jpg" alt="фото" />
+                    </div>
+                    <span class="review__slider__list__item__user__name"
+                      >Татьяна И.</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
             <ul class="review__slider__dots">
-              <li class="review__slider__dots__item"></li>
-              <li class="review__slider__dots__item active"></li>
-              <li class="review__slider__dots__item"></li>
+              <div class="review__slider__dots__swiper"></div>
             </ul>
           </div>
         </div>
@@ -1029,8 +1114,7 @@
           <div class="title qual__title">
             <div class="title__left">
               <h2>
-                ЧТО ГОВОРЯТ О МОЕЙ<br />
-                РАБОТЕ
+                ПОДТВЕРЖДЕНИЕ МОЕЙ<br> КВАЛИФИКАЦИИ
               </h2>
             </div>
             <div class="title__right">
@@ -1045,13 +1129,45 @@
             <button type="button" class="qual__slider__btn left">
               <img src="img/svg/icon-arrow-pink.svg" alt="стрелка влево" />
             </button>
-            <ul class="qual__slider__list">
-              <li class="qual__slider__list__item">
-                <a href="#" class="qual__slider__list__item__link">
-                  <img src="img/qual/001.png" alt="фото сертификата" />
-                </a>
-              </li>
-            </ul>
+            <div class="qual__slider__wrap swiper qual__slider__swiper">
+              <ul class="qual__slider__list swiper-wrapper">
+                <li class="qual__slider__list__item swiper-slide">
+                  <a data-fancybox="gallery1" href="img/qual/001.jpg" class="qual__slider__list__item__link">
+                    <img src="img/qual/001.jpg" alt="фото сертификата" />
+                  </a>
+                </li>
+                <li class="qual__slider__list__item swiper-slide">
+                  <a data-fancybox="gallery1" href="img/qual/002.jpg" class="qual__slider__list__item__link">
+                    <img src="img/qual/002.jpg" alt="фото сертификата" />
+                  </a>
+                </li>
+                <li class="qual__slider__list__item swiper-slide">
+                  <a data-fancybox="gallery1" href="img/qual/003.jpg" class="qual__slider__list__item__link">
+                    <img src="img/qual/003.jpg" alt="фото сертификата" />
+                  </a>
+                </li>
+                <li class="qual__slider__list__item swiper-slide">
+                  <a data-fancybox="gallery1" href="img/qual/004.jpg" class="qual__slider__list__item__link">
+                    <img src="img/qual/004.jpg" alt="фото сертификата" />
+                  </a>
+                </li>
+                <li class="qual__slider__list__item swiper-slide">
+                  <a data-fancybox="gallery1" href="img/qual/005.jpg" class="qual__slider__list__item__link">
+                    <img src="img/qual/005.jpg" alt="фото сертификата" />
+                  </a>
+                </li>
+                <li class="qual__slider__list__item swiper-slide">
+                  <a data-fancybox="gallery1" href="img/qual/006.jpg" class="qual__slider__list__item__link">
+                    <img src="img/qual/006.jpg" alt="фото сертификата" />
+                  </a>
+                </li>
+                <li class="qual__slider__list__item swiper-slide">
+                  <a data-fancybox="gallery1" href="img/qual/007.jpg" class="qual__slider__list__item__link">
+                    <img src="img/qual/007.jpg" alt="фото сертификата" />
+                  </a>
+                </li>
+              </ul>
+            </div>
             <button type="button" class="qual__slider__btn right">
               <img src="img/svg/icon-arrow-pink.svg" alt="стрелка вправо" />
             </button>
@@ -1276,6 +1392,9 @@
         <p>POLINA YAZEVA</p>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
