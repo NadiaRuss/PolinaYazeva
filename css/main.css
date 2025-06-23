@@ -493,16 +493,14 @@ h4 {
   margin: 0 15px 15px 0;
   /* Отступы: сверху, справа, снизу, слева */ }
 
-.help {
-  background-color: #E08269; }
-
 .help__container {
-  max-width: 1400px; }
+  max-width: 100%; }
 
 .help__behind {
   background-color: #e08269;
   display: flex;
-  margin-top: 146px; }
+  margin-top: 146px;
+  justify-content: center; }
 
 .help__text {
   max-width: 606px;

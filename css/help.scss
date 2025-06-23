@@ -1,14 +1,12 @@
-.help {
-  background-color: #E08269;
-}
 .help__container {
-  max-width: 1400px;
+  max-width: 100%;
   //   padding: 0;
 }
 .help__behind {
   background-color: #e08269;
   display: flex;
   margin-top: 146px;
+  justify-content: center;
 }
 .help__text {
   max-width: 606px;
@@ -67,9 +65,9 @@
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       line-height: 140%;
     }
-    &__img{
-        position: absolute;
-        bottom: 0;
+    &__img {
+      position: absolute;
+      bottom: 0;
     }
   }
   &__right {
