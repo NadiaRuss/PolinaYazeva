@@ -97,3 +97,17 @@ const swiper = new Swiper('.result__swiper', {
   },
 });
 //слайдер для секции result
+
+//слайдер для секции review
+const swiper2 = new Swiper('.review__swiper', {
+  slidesPerView: 3,
+  loop: false,
+  initialSlide: 1,
+  centeredSlides: true,
+
+  pagination: {
+    el: '.review__slider__dots__swiper',
+    clickable: true,
+  },
+});
+//слайдер для секции review

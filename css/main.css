@@ -886,24 +886,31 @@ h4 {
     flex-direction: column;
     gap: 40px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000315}}
+    .review__slider__wrap {
+      width: 100%;
+      overflow: unset; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000320}}
     .review__slider__list {
       display: flex;
       align-items: flex-start;
-      gap: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000320}}
+      gap: 20px;
+      max-width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000326}}
       .review__slider__list__item {
         position: relative;
         border-radius: 20px;
         border: 2px solid #F4D8D0;
         padding: 60px 40px 46px 40px;
         height: 309px;
+        max-width: 414px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         overflow: hidden;
-        bottom: unset;
-        transition: border .3s, bottom .3s; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000333}}
+        transition: all 0.3s ease;
+        transform: translateY(0);
+        cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000341}}
         .review__slider__list__item__desc {
           font-family: Arial;
           font-weight: 400;
@@ -912,23 +919,23 @@ h4 {
           letter-spacing: -3%;
           color: #B9B9B9;
           transition: color .3s; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000351}}
         .review__slider__list__item__user {
           display: flex;
           align-items: center;
           gap: 11px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000356}}
           .review__slider__list__item__user__ava {
             width: 45px;
             height: 45px;
             border-radius: 50%;
             overflow: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000362}}
             .review__slider__list__item__user__ava img {
               width: 100%;
               height: 100%;
               object-fit: cover; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000369}}
           .review__slider__list__item__user__name {
             font-family: Inter;
             font-weight: 400;
@@ -937,34 +944,31 @@ h4 {
             letter-spacing: 0%;
             color: #B9B9B9;
             transition: color .3s; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000372}}
-        .review__slider__list__item.active {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000380}}
+        .review__slider__list__item.swiper-slide-active {
           border: 2px solid #E08269;
-          bottom: 28px;
-          transition: border .3s, bottom .3s; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000377}}
-          .review__slider__list__item.active .review__slider__list__item__desc {
+          transform: translateY(-28px); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000384}}
+          .review__slider__list__item.swiper-slide-active .review__slider__list__item__desc {
             color: #7D7B7B;
             transition: color .3s; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000382}}
-          .review__slider__list__item.active .review__slider__list__item__user__name {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000389}}
+          .review__slider__list__item.swiper-slide-active .review__slider__list__item__user__name {
             color: #401818;
             transition: color .3s; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000397}}
     .review__slider__dots {
       display: flex;
       align-items: center;
       gap: 12px;
       align-self: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\0000396}}
-      .review__slider__dots__item {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\00003103}}
+      .review__slider__dots .swiper-pagination-bullet {
         width: 10px;
         height: 10px;
-        border-radius: 50%;
-        background: #F4D8D0;
-        overflow: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\00003103}}
-        .review__slider__dots__item.active {
+        margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/review\.scss}line{font-family:\00003108}}
+        .review__slider__dots .swiper-pagination-bullet-active {
           background: #DE8067; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/qualification\.scss}line{font-family:\000031}}
