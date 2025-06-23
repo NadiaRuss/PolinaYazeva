@@ -493,8 +493,11 @@ h4 {
   margin: 0 15px 15px 0;
   /* Отступы: сверху, справа, снизу, слева */ }
 
+.help {
+  background-color: #E08269; }
+
 .help__container {
-  max-width: 100%; }
+  max-width: 1400px; }
 
 .help__behind {
   background-color: #e08269;
