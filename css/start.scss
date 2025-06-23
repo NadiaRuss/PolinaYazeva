@@ -1,6 +1,10 @@
 .start {
+  position: relative; // Добавляем для корректного позиционирования дочерних элементов
   background-color: #ffffff;
+  overflow: hidden; // Обрезаем всё, что выходит за пределы секции
+  
   &__container {
+    position: relative; // Для позиционирования элементов внутри
     max-width: 1400px;
     height: 580px;
     padding-top: 77px;
@@ -44,14 +48,36 @@
       clip-path: inset(0 100% 0 0); /* Начальное состояние - стрелка скрыта */
     }
   }
-}
-.start__girl {
-  position: absolute;
-  right: 0;
-  // bottom: 50%;
-  transform: translateY(-65%);
-  // max-width: 871px;
-  z-index: 0;
+
+  &__girl {
+    position: absolute;
+    right: 0;
+
+    height: 100%; // Занимает всю высоту контейнера
+    width: auto; // Сохраняем пропорции
+    max-width: none; // Убираем ограничение максимальной ширины
+    z-index: 0;
+    
+    // На маленьких экранах (до 1400px) показываем только часть изображения
+    @media (max-width: 1400px) {
+      transform: translateX(40%); // Показываем только 70% изображения
+    }
+    
+    // На средних экранах (1400px - 1900px) показываем больше
+    @media (min-width: 1401px) and (max-width: 1900px) {
+      transform: translateX(15%); // Показываем 85% изображения
+    }
+    
+    // На больших экранах (от 1900px) показываем полностью
+    @media (min-width: 1901px) {
+      transform: translateX(0); // Показываем всё изображение
+      right: -10%; // Добавляем небольшой отступ справа для баланса
+    }
+    
+    // Вертикальное выравнивание
+    top: 0%;
+    // transform: translateY(-60%);
+  }
 }
 /* Анимации */
 @keyframes fadeIn {
