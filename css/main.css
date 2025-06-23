@@ -581,7 +581,8 @@ h4 {
 .help__behind {
   background-color: #e08269;
   display: flex;
-  margin-top: 146px; }
+  margin-top: 146px;
+  justify-content: center; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/help\.scss}line{font-family:\0000310}}
 .help__text {
@@ -658,7 +659,7 @@ h4 {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/care\.scss}line{font-family:\000031}}
 .care__title {
   margin-top: 65px;
-  margin-bottom: 90px; }
+  margin-bottom: 60px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/WORK\/Yazeva\/PolinaYazeva\/css\/care\.scss}line{font-family:\000035}}
 .care__btns {
