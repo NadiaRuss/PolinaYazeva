@@ -91,6 +91,7 @@ if (!('scrollBehavior' in document.documentElement.style)) {
 const swiper = new Swiper('.result__swiper', {
   slidesPerView: 1,
   loop: true,
+  spaceBetween: 20, 
 
   navigation: {
     nextEl: '.result__slider__btn',
