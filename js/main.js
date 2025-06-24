@@ -84,6 +84,34 @@ if (!('scrollBehavior' in document.documentElement.style)) {
       observer.observe(textElement); 
     });
 
+
+  document.addEventListener('DOMContentLoaded', function() {
+  const engElement = document.querySelector('.hero__info__eng');
+  
+  if (!engElement) {
+    console.warn('Элемент для анимации не найден');
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+  });
+
+  observer.observe(engElement);
+
+  // Запасной вариант для старых браузеров
+  if (!('IntersectionObserver' in window)) {
+    engElement.classList.add('animate');
+  }
+});
     //попап
 
 

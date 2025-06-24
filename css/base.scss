@@ -157,6 +157,23 @@ h4 {
   border: 1px solid #e08269;
   color: #e08269;
 }
+.pulse__btn{
+animation: pulse 2s infinite 1.7s forwards;
+}
+@keyframes pulse {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 0 rgba(222, 128, 103, 0.4);
+  }
+  50% {
+    transform: translateY(0) scale(1.05);
+    box-shadow: 0 5px 15px rgba(222, 128, 103, 0.6);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 0 rgba(222, 128, 103, 0.4);
+  }
+}
 
 .title {
   border-bottom: 1px solid #f5ded8;
