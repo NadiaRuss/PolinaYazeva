@@ -30,6 +30,31 @@
       0px 27px 27px rgba(224, 130, 105, 0.09),
       0px 7px 15px rgba(224, 130, 105, 0.1);
     border-radius: 20px;
+    transition: all 0.3s ease-out; // Плавная анимация всех изменений
+    transform-style: preserve-3d; // Для 3D-эффектов
+    will-change: transform, box-shadow; // Оптимизация анимации
+    
+    &:not(.noBG):hover {
+      transform: translateY(-10px) scale(1.05) perspective(1000px) rotateX(5deg); // Подъем и увеличение
+      box-shadow: 0 20px 30px rgba(224, 130, 105, 0.2), 
+                  0 10px 10px rgba(224, 130, 105, 0.1); // Усиленная тень
+      z-index: 1; // Поднимаем над другими элементами
+      
+      .history__list__item__img {
+        transform: scale(1.1); // Увеличение иконки
+        transition: transform 0.3s ease-out;
+      }
+    }
+
+    &__img {
+      transition: transform 0.3s ease-out;
+    }
+
+    &__p {
+      transition: transform 0.3s ease-out;
+    }
+  
+
     &__img {
       max-width: 24px;
       margin-bottom: 10px;
@@ -48,6 +73,8 @@
     }
   }
 }
+
+
 
 .noBG {
   background: none;
