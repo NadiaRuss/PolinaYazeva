@@ -6,7 +6,7 @@
     position: relative;
     overflow: hidden;
     justify-content: center;
-    padding: 86px 80px 86px 423px;
+    padding: 86px 80px 86px 550px;
 
     &__container{
         display: flex;
@@ -67,12 +67,12 @@
       opacity: 0;
       transform: translateX(-100px);
         transition: 
-            opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-            transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            opacity 2s cubic-bezier(0.16, 1, 0.3, 1),
+            transform 2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .footer__eng.visible{
       opacity: 1;
-      transform: translateX(-50%);
+      transform: translateX(-36%);
     }
 
 .footer__img{
