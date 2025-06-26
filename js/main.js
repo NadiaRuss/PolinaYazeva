@@ -216,7 +216,7 @@ $(".popup__form--consult").on("submit", function (e) {
   let allValid = false;
 
   function checkInputs() {
-    const inputs = $(".popup-input");
+    const inputs = $(".popup-input").not("#comment");
 
     inputs.each(function () {
       if ($(this).val().trim() === "") {
