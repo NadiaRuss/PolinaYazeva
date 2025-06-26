@@ -970,18 +970,17 @@ h4 {
     gap: 8px; }
 
 .footer {
-  background-color: #E08269;
+  background-color: #e08269;
   width: 100%;
   display: flex;
-  height: 467px;
   position: relative;
   overflow: hidden;
-  justify-content: center;
-  padding: 86px 80px 86px 550px; }
+  justify-content: center; }
   .footer__container {
     display: flex;
-    color: #EDEDED;
-    justify-content: space-between; }
+    color: #ededed;
+    justify-content: space-between;
+    padding: 86px 0 185px 550px; }
   .footer__contacts {
     flex-direction: column;
     gap: 54px; }
@@ -1000,34 +999,32 @@ h4 {
   display: flex;
   gap: 8px; }
   .nav__list__item__link {
-    font-family: 'inter';
+    font-family: "inter";
     font-size: 16px;
     font-weight: normal;
     line-height: 140%; }
 
 .btn__footer {
-  background-color: #FFFFFF;
-  color: #DE8067;
+  background-color: #ffffff;
+  color: #de8067;
   height: fit-content; }
 
 .footer__eng {
-  font-family: 'Cactus';
+  font-family: "Cactus";
   font-weight: normal;
   font-size: 160px;
   line-height: 120%;
-  color: #FFFCFC;
+  color: #fffcfc;
   position: absolute;
-  bottom: -66px;
+  bottom: -70px;
   letter-spacing: -0.03em;
-  left: 50%;
-  width: 94%;
   opacity: 0;
-  transform: translateX(-100px);
-  transition: opacity 2s cubic-bezier(0.16, 1, 0.3, 1), transform 2s cubic-bezier(0.16, 1, 0.3, 1); }
+  transform: translateX(-1000px);
+  transition: transform 2s linear, opacity 2s linear; }
 
-.footer__eng.visible {
+.footer__eng.animate {
   opacity: 1;
-  transform: translateX(-36%); }
+  transform: translateX(0); }
 
 .footer__img {
   position: absolute;
