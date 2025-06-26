@@ -1064,7 +1064,7 @@ h4 {
   .popup__title {
     margin-bottom: 34px;
     font-size: 24px;
-    font-family: 'Inter';
+    font-family: "Inter";
     color: #401818; }
   .popup__consult {
     max-width: 478px;
@@ -1087,7 +1087,7 @@ h4 {
     .popup__form__list__item {
       width: 100%;
       padding: 18px 22px;
-      background: #FFFFFF;
+      background: #ffffff;
       border-radius: 5px; }
   .popup__form__check {
     display: flex;
@@ -1103,11 +1103,11 @@ h4 {
       flex-shrink: 0;
       width: 27px;
       height: 27px;
-      background: #FFFFFF;
+      background: #ffffff;
       border-radius: 8px; }
     .popup__form__check__text {
       display: inline-block;
-      font-family: 'Inter';
+      font-family: "Inter";
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
@@ -1117,12 +1117,16 @@ h4 {
     margin-left: 25%;
     margin-top: 20px; }
   .popup__message__text {
-    font-family: 'MainFont';
+    font-family: "MainFont";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #252525; }
+  .popup__info {
+    padding-bottom: 34px; }
+    .popup__info__link {
+      text-decoration: underline; }
 
 .request__form__list__item__check__link {
   text-decoration: underline; }
@@ -1132,7 +1136,7 @@ input[type="radio"] {
   display: none; }
 
 .popup__form__check__input:checked + .popup__form__check__fake:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1142,5 +1146,28 @@ input[type="radio"] {
   width: 23px;
   height: 26px; }
 
-.popup__form__list__item, .popup__form__check__text {
-  font-family: 'Inter', sans-serif; }
+.popup__form__list__item,
+.popup__form__check__text {
+  font-family: "Inter", sans-serif; }
+
+.popup--cookie {
+  top: auto;
+  top: initial;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+  left: 40px;
+  bottom: 40px;
+  max-width: 755px;
+  padding: 32px;
+  font-family: 'Cactus';
+  font-size: 14px; }
+
+.popup__close__cook {
+  right: 17px;
+  top: 12px;
+  position: absolute;
+  cursor: pointer; }

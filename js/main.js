@@ -278,3 +278,75 @@ $(".popup__form--consult").on("submit", function (e) {
     //код для отправки формы
   }
 });
+
+//куки
+document.addEventListener('DOMContentLoaded', function() {
+  // Функции для работы с cookie
+  function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    document.cookie = `${name}=${value};expires=${date.toUTCString()};path=/`;
+  }
+
+  function getCookie(name) {
+    const cookies = document.cookie.split(';');
+    for (let cookie of cookies) {
+      const [cookieName, cookieValue] = cookie.split('=');
+      if (cookieName.trim() === name) {
+        return cookieValue;
+      }
+    }
+    return null;
+  }
+
+  // Элементы cookie-попапа
+document.addEventListener('DOMContentLoaded', function() {
+  // Элементы cookie-попапа
+  const cookiePopup = document.querySelector('.popup--cookie');
+  const overlay = document.querySelector('.overlay');
+  const cookieCloseBtn = cookiePopup.querySelector('.popup__close__cook');
+  const cookieAcceptBtn = cookiePopup.querySelector('.cookie-btn');
+debugger
+  // Проверяем, есть ли запись в localStorage
+  const cookieConsent = localStorage.getItem('cookieConsent');
+
+  // Если записи нет или значение false - показываем попап через 5 сек
+  if (cookieConsent === null || cookieConsent === 'false') {
+    setTimeout(showCookiePopup, 5000);
+    console.log('false')
+  }
+
+  // Функция показа попапа
+  function showCookiePopup() {
+    cookiePopup.style.display = 'block';
+    overlay.style.display = 'block';
+  }
+
+  // Функция скрытия попапа
+  function hideCookiePopup() {
+    cookiePopup.style.display = 'none';
+    overlay.style.display = 'none';
+  }
+
+  // При клике на крестик
+  cookieCloseBtn.addEventListener('click', function() {
+    hideCookiePopup();
+    localStorage.setItem('cookieConsent', 'false');
+    // Устанавливаем на год (в миллисекундах)
+    setTimeout(() => {
+      localStorage.removeItem('cookieConsent');
+    }, 365 * 24 * 60 * 60 * 1000);
+  });
+
+  // При клике на кнопку "принимаю"
+  cookieAcceptBtn.addEventListener('click', function() {
+    hideCookiePopup();
+    localStorage.setItem('cookieConsent', 'true');
+    // Устанавливаем на год (в миллисекундах)
+    setTimeout(() => {
+      localStorage.removeItem('cookieConsent');
+    }, 365 * 24 * 60 * 60 * 1000);
+    console.log('trye')
+  });
+})
+})
