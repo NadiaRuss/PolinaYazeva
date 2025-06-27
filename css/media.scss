@@ -1,0 +1,23 @@
+@media (max-width: 1300px) {
+  .hero__info__eng {
+    font-size: 120px;
+    bottom: 14px;
+    left: 7%;
+  }
+  .hero__info {
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 1200px) {
+  .start__container {
+    height: 680px;
+  }
+  .start__h1 {
+    max-width: 800px;
+    font-size: 120px;
+  }
+  .start__girl {
+    transform: translateX(28%);
+  }
+}
