@@ -2,7 +2,7 @@
   position: relative; // Добавляем для корректного позиционирования дочерних элементов
   background-color: #ffffff;
   // overflow: hidden; // Обрезаем всё, что выходит за пределы секции
-  
+
   &__container {
     position: relative; // Для позиционирования элементов внутри
     max-width: 1400px;
@@ -29,7 +29,10 @@
     line-height: 140%;
     z-index: 1;
   }
-
+  &__btn {
+    position: relative;
+    z-index: 100;
+  }
   &__dec {
     position: absolute;
     right: 37%;
@@ -56,7 +59,6 @@
     z-index: 0;
     transform: translateX(20%);
     top: 0%;
-
   }
 }
 /* Анимации */
@@ -148,8 +150,6 @@
     clip-path: inset(0 0 0 0);
   }
 }
-
-
 
 .start {
   &__blur-spot {
