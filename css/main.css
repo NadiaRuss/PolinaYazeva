@@ -1164,7 +1164,8 @@ h4 {
     line-height: 17px;
     color: #252525; }
   .popup__info {
-    padding-bottom: 34px; }
+    padding-bottom: 34px;
+    font-family: 'Inter', sans-serif; }
     .popup__info__link {
       text-decoration: underline; }
 
