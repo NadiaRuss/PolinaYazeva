@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Пользователь ранее закрывал крестиком (значение 'closed')
   if (cookieConsent === null || cookieConsent === 'closed') {
     setTimeout(showCookiePopup, 5000);
-    console.log('false')
+    // console.log('false')
   }
 
   // Функция показа попапа
@@ -321,8 +321,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Устанавливаем на год 
     const oneYear = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
     localStorage.setItem('cookieExpire', oneYear);
-    console.log('trye')
-    console.log(oneYear)
+    // console.log('trye')
+    // console.log(oneYear)
+    // console.log(localStorage)
   });
    if (cookieConsent === 'true') {
     const expireDate = localStorage.getItem('cookieExpire');
