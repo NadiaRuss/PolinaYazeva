@@ -137,10 +137,10 @@ h4 {
 
 .light__btn {
   padding: 12px 36px;
-  border: 1px solid #cac0c0;
+  border: 1px solid #CAC0C0;
   border-radius: 50px;
-  color: #cac0c0;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #736B6B;
+  font-family: "Inter";
   font-size: 16px; }
 
 .light__btn:active {
@@ -667,8 +667,8 @@ h4 {
     margin: 0 auto; }
     .price__info__btn__el {
       padding: 15px 36px;
-      border: 1px solid #DDDDDD;
-      color: #C5C5C5;
+      border: 1px solid #CAC0C0;
+      color: #736B6B;
       border-radius: 50px;
       margin-right: 15px;
       font-family: 'Inter';
@@ -747,7 +747,7 @@ h4 {
         justify-content: space-between;
         width: 100%;
         gap: 30px;
-        cursor: pointer; }
+        cursor: grab; }
         .result__slider__list__item__pic {
           display: flex;
           flex-direction: column;
