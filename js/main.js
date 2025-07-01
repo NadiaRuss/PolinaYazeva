@@ -24,6 +24,57 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  // Функция для анимации элементов прайса
+  function animatePriceItems() {
+    const activeTab = document.querySelector('.price__info__btn__arr:not([style*="none"])');
+    if (!activeTab) return;
+    
+    const items = activeTab.querySelectorAll('.price__info__btn__arr__el');
+    
+    // Сбрасываем анимацию и сразу показываем элементы (без анимации)
+    items.forEach(item => {
+      item.style.opacity = '0';
+      item.style.transform = 'translateY(20px)';
+      item.style.transition = 'none';
+    });
+    
+    // Даем браузеру время на отрисовку, затем включаем анимацию
+    setTimeout(() => {
+      items.forEach((item, index) => {
+        item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        
+        setTimeout(() => {
+          item.style.opacity = '1';
+          item.style.transform = 'translateY(0)';
+        }, index * 100); // Задержка между элементами
+      });
+    }, 10);
+  }
+  
+  // Обработчик для кнопок переключения вкладок
+  const buttons = document.querySelectorAll('.price__info__btn__el');
+  buttons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Стандартное переключение вкладок
+      buttons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      
+      const targetId = this.dataset.target;
+      document.querySelectorAll('.price__info__btn__arr').forEach(content => {
+        content.style.display = 'none';
+      });
+      document.getElementById(targetId).style.display = 'block';
+      
+      // Запускаем анимацию после переключения
+      animatePriceItems();
+    });
+  });
+  
+  // Инициализация анимации для активной вкладки при загрузке
+  animatePriceItems();
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".care__btns__btn");
   const priceContents = document.querySelectorAll(".care__list");
