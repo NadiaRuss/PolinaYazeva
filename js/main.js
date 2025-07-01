@@ -105,54 +105,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-//     document.addEventListener('DOMContentLoaded', () => {
-//       const textElement = document.querySelector('.footer__eng');
-
-//       if(!textElement) return;
-
-//       const observer = new IntersectionObserver((entries) => { //Создаёт новый наблюдатель за пересечениями элементов с областью видимости (viewport)
-
-//         if (entries[0].isIntersecting) { // если элемент вошёл в область видимости
-//           entries[0].target.classList.add('visible');
-//           observer.unobserve(entries[0].target); //останавливает наблюдение после срабатывания,
-//         }
-//       }, { threshold: 0.1,
-//         rootMargin: '0px 0px -100px 0px',
-
-//  });
-
-//   // Начинаем наблюдение
-//       observer.observe(textElement);
-//     });
-
-//   document.addEventListener('DOMContentLoaded', function() {
-//   const engElement = document.querySelector('.hero__info__eng');
-
-//   if (!engElement) {
-//     console.warn('Элемент для анимации не найден');
-//     return;
-//   }
-
-//   const observer = new IntersectionObserver((entries) => {
-//     entries.forEach(entry => {
-//       if (entry.isIntersecting) {
-//         entry.target.classList.add('animate');
-//         observer.unobserve(entry.target);
-//       }
-//     });
-//   }, {
-//     threshold: 0.1,
-//     rootMargin: '0px 0px -100px 0px'
-//   });
-
-//   observer.observe(engElement);
-
-//   // Запасной вариант для старых браузеров
-//   if (!('IntersectionObserver' in window)) {
-//     engElement.classList.add('animate');
-//   }
-// });
-//попап
 
 //слайдер для секции result
 const swiper = new Swiper(".result__swiper", {
