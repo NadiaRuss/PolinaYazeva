@@ -725,6 +725,14 @@ h4 {
           line-height: 120%;
           margin-top: 5px; }
 
+.price__info__btn__arr__el {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease; }
+
+.price__info__btn__arr {
+  overflow: hidden; }
+
 .result {
   margin-top: 160px; }
   .result__container {
