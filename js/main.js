@@ -25,6 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
+  let lastScrollPosition = window.scrollY;
+  let isScrollingDown = false;
+  
   // Функция для анимации элементов прайса
   function animatePriceItems() {
     const activeTab = document.querySelector('.price__info__btn__arr:not([style*="none"])');
@@ -32,14 +35,12 @@ document.addEventListener("DOMContentLoaded", function() {
     
     const items = activeTab.querySelectorAll('.price__info__btn__arr__el');
     
-    // Сбрасываем анимацию и сразу показываем элементы (без анимации)
     items.forEach(item => {
       item.style.opacity = '0';
       item.style.transform = 'translateY(20px)';
       item.style.transition = 'none';
     });
     
-    // Даем браузеру время на отрисовку, затем включаем анимацию
     setTimeout(() => {
       items.forEach((item, index) => {
         item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
@@ -47,16 +48,37 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(() => {
           item.style.opacity = '1';
           item.style.transform = 'translateY(0)';
-        }, index * 100); // Задержка между элементами
+        }, index * 100);
       });
-    }, 10);
+    }, 50);
+  }
+  
+  // Обработчик скролла
+  function handleScroll() {
+    const currentScrollPosition = window.scrollY;
+    isScrollingDown = currentScrollPosition > lastScrollPosition;
+    lastScrollPosition = currentScrollPosition;
+    
+    const priceSection = document.querySelector('.price');
+    if (!priceSection) return;
+    
+    const sectionTop = priceSection.offsetTop;
+    const sectionHeight = priceSection.offsetHeight;
+    const windowHeight = window.innerHeight;
+    
+    // Проверяем, видна ли секция и скроллим вниз
+    if (isScrollingDown && 
+        currentScrollPosition + windowHeight > sectionTop + 100 && 
+        currentScrollPosition < sectionTop + sectionHeight - 100) {
+      animatePriceItems();
+      window.removeEventListener('scroll', handleScroll); // Удаляем обработчик после срабатывания
+    }
   }
   
   // Обработчик для кнопок переключения вкладок
   const buttons = document.querySelectorAll('.price__info__btn__el');
   buttons.forEach(button => {
     button.addEventListener('click', function() {
-      // Стандартное переключение вкладок
       buttons.forEach(btn => btn.classList.remove('active'));
       this.classList.add('active');
       
@@ -66,13 +88,21 @@ document.addEventListener("DOMContentLoaded", function() {
       });
       document.getElementById(targetId).style.display = 'block';
       
-      // Запускаем анимацию после переключения
-      animatePriceItems();
+      setTimeout(animatePriceItems, 50);
     });
   });
   
-  // Инициализация анимации для активной вкладки при загрузке
-  animatePriceItems();
+  // Наблюдатель за появлением секции при скролле вниз
+  window.addEventListener('scroll', handleScroll);
+  
+  // Инициализация анимации при загрузке, если секция уже видна
+  const priceSection = document.querySelector('.price');
+  if (priceSection) {
+    const rect = priceSection.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      animatePriceItems();
+    }
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
