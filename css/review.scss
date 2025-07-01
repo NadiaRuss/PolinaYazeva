@@ -26,9 +26,9 @@
       &__item {
         position: relative;
         border-radius: 20px;
-        border: 2px solid #F4D8D0;
-        padding: 60px 40px 46px 40px;
-        height: 309px;
+        border: 2px solid #f4d8d0;
+        padding: 58px 39px 53px 39px;
+        height: 320px;
         max-width: 414px;
         display: flex;
         flex-direction: column;
@@ -44,8 +44,11 @@
           font-size: 16px;
           line-height: 140%;
           letter-spacing: -3%;
-          color: #B9B9B9;
-          transition: color .3s;
+          color: #b9b9b9;
+          transition: color 0.3s;
+          &__all {
+            color: #ada9a9;
+          }
         }
 
         &__user {
@@ -58,12 +61,13 @@
             height: 45px;
             border-radius: 50%;
             overflow: hidden;
-
-            & img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
+            color: #999898;
+            background-color: #fff0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Inter";
+            margin-top: 12px;
           }
 
           &__name {
@@ -72,23 +76,31 @@
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0%;
-            color: #B9B9B9;
-            transition: color .3s;
+            color: #b9b9b9;
+            transition: color 0.3s;
           }
         }
 
         &.swiper-slide-active {
-          border: 2px solid #E08269;
+          border: 2px solid #e08269;
           transform: translateY(-28px);
 
           & .review__slider__list__item__desc {
-            color: #7D7B7B;
-            transition: color .3s;
+            color: #7d7b7b;
+            transition: color 0.3s;
           }
 
           & .review__slider__list__item__user__name {
             color: #401818;
-            transition: color .3s;
+            transition: color 0.3s;
+          }
+          & .review__slider__list__item__desc__all {
+            color: #ada9a9;
+            transition: color 0.3s;
+          }
+          & .review__slider__list__item__user__ava {
+            background-color: #FFE9E9;
+            color: #747070;
           }
         }
       }
@@ -106,9 +118,24 @@
         margin: 0;
 
         &-active {
-          background: #DE8067;
+          background: #de8067;
         }
       }
     }
   }
+}
+
+.review__swiper {
+  overflow: hidden; /* Обрезаем всё, что выходит за границы */
+}
+
+.swiper-slide {
+  visibility: hidden; /* Сначала скрываем все слайды */
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.swiper-slide-active {
+  visibility: visible; /* Показываем только активный */
+  opacity: 1;
 }
