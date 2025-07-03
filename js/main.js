@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function() {
   let lastScrollPosition = window.scrollY;
   let isScrollingDown = false;
+  let isRendered = false;
   
   // Функция для анимации элементов прайса
   function animatePriceItems() {
@@ -55,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
   // Обработчик скролла
   function handleScroll() {
+    
     const currentScrollPosition = window.scrollY;
     isScrollingDown = currentScrollPosition > lastScrollPosition;
     lastScrollPosition = currentScrollPosition;
@@ -69,12 +71,34 @@ document.addEventListener("DOMContentLoaded", function() {
     // Проверяем, видна ли секция и скроллим вниз
     if (isScrollingDown && 
         currentScrollPosition + windowHeight > sectionTop + 100 && 
-        currentScrollPosition < sectionTop + sectionHeight - 100) {
+        currentScrollPosition < sectionTop + sectionHeight - 100 && !isRendered) {
       animatePriceItems();
-      window.removeEventListener('scroll', handleScroll); // Удаляем обработчик после срабатывания
+      isRendered = true;
+    } else if (!isScrollingDown) {
+      const listElements = document.querySelectorAll('.price__info__btn__arr__el');
+      listElements.forEach(el => {
+        el.style.opacity = '1';
+      });
+      isRendered = true;
     }
   }
   
+  // Наблюдатель за появлением секции при скролле вниз
+  if (!isRendered) {
+    window.addEventListener('scroll', handleScroll);
+  } else if (isRendered) {
+    return;
+  }
+  
+  // Инициализация анимации при загрузке, если секция уже видна
+  const priceSection = document.querySelector('.price');
+  if (priceSection) {
+    const rect = priceSection.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      animatePriceItems();
+    }
+  }
+
   // Обработчик для кнопок переключения вкладок
   const buttons = document.querySelectorAll('.price__info__btn__el');
   buttons.forEach(button => {
@@ -91,18 +115,6 @@ document.addEventListener("DOMContentLoaded", function() {
       setTimeout(animatePriceItems, 50);
     });
   });
-  
-  // Наблюдатель за появлением секции при скролле вниз
-  window.addEventListener('scroll', handleScroll);
-  
-  // Инициализация анимации при загрузке, если секция уже видна
-  const priceSection = document.querySelector('.price');
-  if (priceSection) {
-    const rect = priceSection.getBoundingClientRect();
-    if (rect.top < window.innerHeight && rect.bottom > 0) {
-      animatePriceItems();
-    }
-  }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
