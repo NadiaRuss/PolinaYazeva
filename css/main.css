@@ -193,6 +193,13 @@ h4 {
         color: #e08269;
         font-weight: 700; }
 
+.ellipseYellow {
+  width: 225px;
+  height: 226px;
+  position: absolute;
+  background-color: #c4644b;
+  filter: blur(170px); }
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -431,21 +438,6 @@ h4 {
   color: #ffe6df;
   position: relative; }
 
-.ellipsePink {
-  position: absolute;
-  width: 257px;
-  z-index: -1;
-  top: -101px;
-  left: -30px; }
-
-.ellipseYellow {
-  position: absolute;
-  width: 225px;
-  z-index: -1;
-  right: -15px;
-  bottom: -80px;
-  filter: blur(40px); }
-
 .runningLine__container {
   overflow: hidden;
   white-space: nowrap;
@@ -665,19 +657,6 @@ h4 {
   flex-direction: column; }
   .price__info__btn {
     margin: 0 auto; }
-    .price__info__btn__el {
-      padding: 15px 36px;
-      border: 1px solid #CAC0C0;
-      color: #736B6B;
-      border-radius: 50px;
-      margin-right: 15px;
-      font-family: 'Inter';
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 100%; }
-      .price__info__btn__el.active {
-        color: #E08269;
-        border: 1px solid #E08269; }
     .price__info__btn__arr__el {
       display: flex;
       justify-content: space-between;
@@ -685,16 +664,16 @@ h4 {
       align-items: center;
       position: relative; }
       .price__info__btn__arr__el ::after {
-        content: '';
+        content: "";
         width: 100%;
         height: 1px;
-        background-color: #F5DED8;
+        background-color: #f5ded8;
         position: absolute;
         bottom: -22px;
         left: 0; }
       .price__info__btn__arr__el__num {
         width: 40px;
-        font-family: 'Cactus';
+        font-family: "Cactus";
         font-weight: 400;
         font-size: 36px;
         line-height: 120%;
@@ -702,24 +681,24 @@ h4 {
         margin-right: 68px; }
       .price__info__btn__arr__el__info {
         width: 700px;
-        font-family: 'Cactus';
+        font-family: "Cactus";
         font-weight: normal;
         font-size: 28px;
         line-height: 120%;
         text-transform: uppercase;
-        color: #E08269; }
+        color: #e08269; }
       .price__info__btn__arr__el__item {
         width: 120px;
         margin-right: 60px; }
         .price__info__btn__arr__el__item__price {
-          font-family: 'Inter';
+          font-family: "Inter";
           font-size: 20px;
           font-weight: 400;
           line-height: 100%;
-          color: #7D7B7B; }
+          color: #7d7b7b; }
         .price__info__btn__arr__el__item__p {
-          font-family: 'Cactus';
-          color: #E08269;
+          font-family: "Cactus";
+          color: #e08269;
           font-size: 28px;
           font-weight: normal;
           line-height: 120%;
@@ -732,6 +711,12 @@ h4 {
 
 .price__info__btn__arr {
   overflow: hidden; }
+
+.price__ellipseYellow {
+  top: -88px; }
+
+.title__left {
+  position: relative; }
 
 .result {
   margin-top: 160px; }
