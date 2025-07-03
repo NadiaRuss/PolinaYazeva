@@ -899,21 +899,6 @@ h4 {
         .review__slider__dots .swiper-pagination-bullet-active {
           background: #de8067; }
 
-.review__swiper {
-  overflow: hidden;
-  /* Обрезаем всё, что выходит за границы */ }
-
-.swiper-slide {
-  visibility: hidden;
-  /* Сначала скрываем все слайды */
-  opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease; }
-
-.swiper-slide-active {
-  visibility: visible;
-  /* Показываем только активный */
-  opacity: 1; }
-
 .qual {
   margin-top: 160px; }
   .qual__container {
