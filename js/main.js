@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
   buttons.forEach((button) => {
     button.addEventListener("click", function () {
       // Удаляем active у всех кнопок
-      buttons.forEach((btn) => btn.classList.remove("active"));
+      buttons.forEach((btn) => btn.classList.remove("light__btn_active"));
       // Добавляем active текущей кнопке
-      this.classList.add("active");
+      this.classList.add("light__btn_active");
 
       // Получаем target из data-атрибута
       const targetId = this.dataset.target;
