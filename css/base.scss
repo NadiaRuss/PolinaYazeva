@@ -218,3 +218,11 @@ animation: pulse 2s infinite 1.7s forwards;
     }
   }
 }
+
+.ellipseYellow {
+  width: 225px;
+  height: 226px;
+  position: absolute;
+  background-color: #c4644b;
+  filter: blur(170px);
+}

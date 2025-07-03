@@ -193,6 +193,13 @@ h4 {
         color: #e08269;
         font-weight: 700; }
 
+.ellipseYellow {
+  width: 225px;
+  height: 226px;
+  position: absolute;
+  background-color: #c4644b;
+  filter: blur(170px); }
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -431,21 +438,6 @@ h4 {
   color: #ffe6df;
   position: relative; }
 
-.ellipsePink {
-  position: absolute;
-  width: 257px;
-  z-index: -1;
-  top: -101px;
-  left: -30px; }
-
-.ellipseYellow {
-  position: absolute;
-  width: 225px;
-  z-index: -1;
-  right: -15px;
-  bottom: -80px;
-  filter: blur(40px); }
-
 .runningLine__container {
   overflow: hidden;
   white-space: nowrap;
@@ -670,43 +662,36 @@ h4 {
       justify-content: space-between;
       margin: 54px 0 42px;
       align-items: center;
-      position: relative; }
-      .price__info__btn__arr__el ::after {
-        content: '';
-        width: 100%;
-        height: 1px;
-        background-color: #F5DED8;
-        position: absolute;
-        bottom: -22px;
-        left: 0; }
+      position: relative;
+      border-bottom: 1px solid #f5ded8;
+      padding-bottom: 40px; }
       .price__info__btn__arr__el__num {
         width: 40px;
-        font-family: 'Cactus';
+        font-family: "Cactus";
         font-weight: 400;
         font-size: 36px;
         line-height: 120%;
         color: #401818;
         margin-right: 68px; }
       .price__info__btn__arr__el__info {
-        width: 700px;
-        font-family: 'Cactus';
+        font-family: "Cactus";
         font-weight: normal;
         font-size: 28px;
         line-height: 120%;
         text-transform: uppercase;
-        color: #E08269; }
+        color: #e08269; }
       .price__info__btn__arr__el__item {
         width: 120px;
         margin-right: 60px; }
         .price__info__btn__arr__el__item__price {
-          font-family: 'Inter';
+          font-family: "Inter";
           font-size: 20px;
           font-weight: 400;
           line-height: 100%;
-          color: #7D7B7B; }
+          color: #7d7b7b; }
         .price__info__btn__arr__el__item__p {
-          font-family: 'Cactus';
-          color: #E08269;
+          font-family: "Cactus";
+          color: #e08269;
           font-size: 28px;
           font-weight: normal;
           line-height: 120%;
@@ -719,6 +704,17 @@ h4 {
 
 .price__info__btn__arr {
   overflow: hidden; }
+
+.price__ellipseYellow {
+  top: -88px; }
+
+.title__left {
+  position: relative; }
+
+.price__div {
+  display: flex;
+  width: 60%;
+  align-items: center; }
 
 .result {
   margin-top: 160px; }
@@ -1078,6 +1074,65 @@ h4 {
 
   .start__girl {
     transform: translateX(28%); } }
+@media (max-width: 1100px) {
+  .price__info__btn__arr__el__item {
+    width: 160px; } }
+@media (max-width: 900px) {
+  .price__info__btn__arr__el__info {
+    font-size: 26px; }
+
+  .price__info__btn__arr__el__item {
+    font-size: 26px;
+    margin-right: -27px; }
+
+  .price__info__btn__arr__el__num {
+    margin-right: 27px; }
+
+  .broun__btn {
+    padding: 18px 32px; }
+
+  .price__info__btn__arr__el__item__p {
+    font-size: 26px; } }
+@media (max-width: 700px) {
+  .price__div {
+    display: flex;
+    width: 100%;
+    padding-bottom: 16px; }
+
+  .price__info__btn__arr__el {
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-bottom: 30px; }
+    .price__info__btn__arr__el__item {
+      flex-direction: row;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      justify-content: flex-end;
+      width: 100%;
+      padding-bottom: 36px;
+      margin-right: 0; }
+
+  .broun__btn {
+    padding: 20px 62px; }
+
+  .price__info__btn__el {
+    padding: 12px 25px; } }
+@media (max-width: 400px) {
+  .price__info__btn__arr__el__num {
+    font-size: 25px; }
+
+  .price__info__btn__arr__el__info,
+  .price__info__btn__arr__el__item__p {
+    font-size: 20px; }
+
+  .price__info__btn__arr__el__item__price {
+    font-size: 14px; }
+
+  .price__info__btn__el {
+    font-size: 14px;
+    padding: 10px 23px; } }
 .overlay {
   display: none;
   position: fixed;
