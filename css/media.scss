@@ -1,3 +1,11 @@
+@media (max-width: 1315px) {
+
+  .review__container {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
 @media (max-width: 1300px) {
   .hero__info__eng {
     font-size: 120px;
@@ -28,6 +36,13 @@
   // }
   .price__info__btn__arr__el__item {
     width: 160px;
+  }
+}
+
+@media (max-width: 970px) {
+  
+  .review__slider__list__item {
+    padding: 26px;
   }
 }
 
@@ -79,6 +94,43 @@
   }
   .price__info__btn__el {
     padding: 12px 25px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  h2 {
+    font-size: 20px;
+  }
+
+  section:not(.review), header, footer {
+    display: none !important;
+  }
+
+  .review__slider__wrap {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .review__slider__list__item {
+    height: unset;
+    padding: 20px;
+    max-width: unset;
+    width: 242px !important;
+    //width: 100%;
+  }
+
+  .review__slider__list__item__desc {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -3%;
+  }
+
+  .review__slider__list__item__user {
+    margin-top: 30px;
   }
 }
 

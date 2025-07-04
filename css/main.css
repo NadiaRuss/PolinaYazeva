@@ -800,7 +800,6 @@ h4 {
     flex-direction: column;
     gap: 40px; }
     .review__slider__wrap {
-      width: 100%;
       overflow: unset; }
     .review__slider__list {
       display: flex;
@@ -834,7 +833,8 @@ h4 {
         .review__slider__list__item__user {
           display: flex;
           align-items: center;
-          gap: 11px; }
+          gap: 11px;
+          margin-top: 12px; }
           .review__slider__list__item__user__ava {
             width: 45px;
             height: 45px;
@@ -845,8 +845,7 @@ h4 {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: "Inter";
-            margin-top: 12px; }
+            font-family: "Inter"; }
           .review__slider__list__item__user__name {
             font-family: Inter;
             font-weight: 400;
@@ -1056,6 +1055,10 @@ h4 {
   left: 0;
   bottom: -3px; }
 
+@media (max-width: 1315px) {
+  .review__container {
+    padding-left: 2%;
+    padding-right: 2%; } }
 @media (max-width: 1300px) {
   .hero__info__eng {
     font-size: 120px;
@@ -1077,6 +1080,9 @@ h4 {
 @media (max-width: 1100px) {
   .price__info__btn__arr__el__item {
     width: 160px; } }
+@media (max-width: 970px) {
+  .review__slider__list__item {
+    padding: 26px; } }
 @media (max-width: 900px) {
   .price__info__btn__arr__el__info {
     font-size: 26px; }
@@ -1119,6 +1125,33 @@ h4 {
 
   .price__info__btn__el {
     padding: 12px 25px; } }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 20px; }
+
+  section:not(.review), header, footer {
+    display: none !important; }
+
+  .review__slider__wrap {
+    max-width: 100%;
+    width: 100%; }
+
+  .review__slider__list__item {
+    height: unset;
+    padding: 20px;
+    max-width: unset;
+    width: 242px !important; }
+
+  .review__slider__list__item__desc {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -3%; }
+
+  .review__slider__list__item__user {
+    margin-top: 30px; } }
 @media (max-width: 400px) {
   .price__info__btn__arr__el__num {
     font-size: 25px; }
