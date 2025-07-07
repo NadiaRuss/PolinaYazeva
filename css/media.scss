@@ -7,6 +7,10 @@
   .hero__info {
     align-items: flex-end;
   }
+  .footer__eng {
+    font-size: 120px;
+    bottom: -54px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -20,6 +24,9 @@
   .start__girl {
     transform: translateX(28%);
   }
+  .footer__container {
+    padding-left: 452px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -28,6 +35,18 @@
   // }
   .price__info__btn__arr__el__item {
     width: 160px;
+  }
+  .nav__list__footer {
+    gap: 30px;
+  }
+  .footer__contacts {
+    gap: 36px;
+  }
+  .footer__container {
+    padding-left: 401px;
+  }
+  .btn__footer{
+    padding: 17px 30px;
   }
 }
 
@@ -96,5 +115,36 @@
   .price__info__btn__el {
     font-size: 14px;
     padding: 10px 23px;
+  }
+}
+
+@media (max-width: 500px) {
+  h2 {
+    font-size: 25px;
+  }
+  .title__right {
+    display: none;
+  }
+  .price__title {
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+  .title__right__mobile {
+    display: block;
+    border: none;
+    // margin-top: -36px;
+    margin-bottom: 45px;
+    & span {
+      color: #e08269;
+      font-weight: 700;
+    }
+    &__text {
+      font-family: "Arial";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0;
+      color: #401818;
+    }
   }
 }

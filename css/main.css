@@ -172,13 +172,13 @@ h4 {
   padding-bottom: 30px; }
   .title__left {
     flex-shrink: 0; }
-  .title__right {
+  .title__right, .title__right__mobile {
     margin-top: 9px;
     padding-top: 5px;
     border-top: 1px solid #f5ded8;
     gap: 3px;
     width: 100%; }
-    .title__right__text {
+    .title__right__text, .title__right__mobile__text, .title__right__mobile__text, .title__right__mobile__mobile__text {
       display: flex;
       justify-content: flex-end;
       gap: 3px;
@@ -189,7 +189,7 @@ h4 {
       line-height: 100%;
       letter-spacing: 0%;
       color: #000000; }
-      .title__right__text span {
+      .title__right__text span, .title__right__mobile__text span, .title__right__mobile__text span, .title__right__mobile__mobile__text span {
         color: #e08269;
         font-weight: 700; }
 
@@ -199,6 +199,9 @@ h4 {
   position: absolute;
   background-color: #c4644b;
   filter: blur(170px); }
+
+.title__right__mobile {
+  display: none; }
 
 .header__container {
   display: flex;
@@ -1063,7 +1066,11 @@ h4 {
     left: 7%; }
 
   .hero__info {
-    align-items: flex-end; } }
+    align-items: flex-end; }
+
+  .footer__eng {
+    font-size: 120px;
+    bottom: -54px; } }
 @media (max-width: 1200px) {
   .start__container {
     height: 680px; }
@@ -1073,10 +1080,25 @@ h4 {
     font-size: 120px; }
 
   .start__girl {
-    transform: translateX(28%); } }
+    transform: translateX(28%); }
+
+  .footer__container {
+    padding-left: 452px; } }
 @media (max-width: 1100px) {
   .price__info__btn__arr__el__item {
-    width: 160px; } }
+    width: 160px; }
+
+  .nav__list__footer {
+    gap: 30px; }
+
+  .footer__contacts {
+    gap: 36px; }
+
+  .footer__container {
+    padding-left: 401px; }
+
+  .btn__footer {
+    padding: 17px 30px; } }
 @media (max-width: 900px) {
   .price__info__btn__arr__el__info {
     font-size: 26px; }
@@ -1133,6 +1155,31 @@ h4 {
   .price__info__btn__el {
     font-size: 14px;
     padding: 10px 23px; } }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 25px; }
+
+  .title__right {
+    display: none; }
+
+  .price__title {
+    margin-top: 100px;
+    margin-bottom: 0; }
+
+  .title__right__mobile {
+    display: block;
+    border: none;
+    margin-bottom: 45px; }
+    .title__right__mobile span {
+      color: #e08269;
+      font-weight: 700; }
+    .title__right__mobile__text {
+      font-family: "Arial";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0;
+      color: #401818; } }
 .overlay {
   display: none;
   position: fixed;
