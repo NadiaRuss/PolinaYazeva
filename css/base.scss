@@ -192,14 +192,14 @@ animation: pulse 2s infinite 1.7s forwards;
     flex-shrink: 0;
   }
 
-  &__right {
+  &__right, &__right__mobile {
     margin-top: 9px;
     padding-top: 5px;
     border-top: 1px solid #f5ded8;
     gap: 3px;
     width: 100%;
 
-    &__text {
+    &__text, &__mobile__text {
       display: flex;
       justify-content: flex-end;
       gap: 3px;
@@ -215,6 +215,7 @@ animation: pulse 2s infinite 1.7s forwards;
         color: #e08269;
         font-weight: 700;
       }
+
     }
   }
 }
@@ -225,4 +226,9 @@ animation: pulse 2s infinite 1.7s forwards;
   position: absolute;
   background-color: #c4644b;
   filter: blur(170px);
+}
+
+.title__right__mobile{
+  display: none;
+  
 }
