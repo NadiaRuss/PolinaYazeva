@@ -110,30 +110,13 @@
   .price__info__btn__el {
     padding: 12px 25px;
   }
-  .footer__container{
+  .footer__container {
     flex-direction: column;
     gap: 48px;
   }
-  .btn__footer{
+  .btn__footer {
     position: absolute;
     right: 20px;
-  }
-}
-
-@media (max-width: 400px) {
-  .price__info__btn__arr__el__num {
-    font-size: 25px;
-  }
-  .price__info__btn__arr__el__info,
-  .price__info__btn__arr__el__item__p {
-    font-size: 20px;
-  }
-  .price__info__btn__arr__el__item__price {
-    font-size: 14px;
-  }
-  .price__info__btn__el {
-    font-size: 14px;
-    padding: 10px 23px;
   }
 }
 
@@ -165,5 +148,31 @@
       letter-spacing: 0;
       color: #401818;
     }
+  }
+}
+
+@media (max-width: 400px) {
+  .price__info__btn__arr__el__num {
+    font-size: 25px;
+  }
+  .price__info__btn__arr__el__info,
+  .price__info__btn__arr__el__item__p {
+    font-size: 20px;
+  }
+  .price__info__btn__arr__el__item__price {
+    font-size: 14px;
+  }
+  .price__info__btn__el {
+    font-size: 14px;
+    padding: 10px 23px;
+  }
+  .footer__img__el {
+    width: 114%;
+  }
+  .footer__container {
+    padding-bottom: 348px;
+  }
+  .btn__footer{
+    padding: 20px 21px;
   }
 }
