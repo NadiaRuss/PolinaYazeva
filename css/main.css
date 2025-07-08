@@ -1031,6 +1031,8 @@ h4 {
     font-size: 16px;
     font-weight: normal;
     line-height: 140%; }
+    .nav__list__item__link__tel {
+      color: #ffffff; }
 
 .btn__footer {
   background-color: #ffffff;
@@ -1111,10 +1113,23 @@ h4 {
     margin-right: 27px; }
 
   .broun__btn {
-    padding: 18px 32px; }
+    padding: 18px 21px; }
 
   .price__info__btn__arr__el__item__p {
-    font-size: 26px; } }
+    font-size: 26px; }
+
+  .footer__img {
+    bottom: -4px; }
+    .footer__img__el {
+      width: 294px; }
+
+  .footer__container {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .footer__eng {
+    font-size: 76px;
+    bottom: -30px; } }
 @media (max-width: 700px) {
   .price__div {
     display: flex;
@@ -1140,7 +1155,15 @@ h4 {
     padding: 20px 62px; }
 
   .price__info__btn__el {
-    padding: 12px 25px; } }
+    padding: 12px 25px; }
+
+  .footer__container {
+    flex-direction: column;
+    gap: 48px; }
+
+  .btn__footer {
+    position: absolute;
+    right: 20px; } }
 @media (max-width: 400px) {
   .price__info__btn__arr__el__num {
     font-size: 25px; }
