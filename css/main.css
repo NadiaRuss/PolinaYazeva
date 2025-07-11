@@ -1132,7 +1132,12 @@ h4 {
 
   .price__info__btn__el {
     font-size: 14px;
-    padding: 10px 23px; } }
+    padding: 10px 23px; }
+
+  .footer__container {
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 356px; } }
 .overlay {
   display: none;
   position: fixed;
