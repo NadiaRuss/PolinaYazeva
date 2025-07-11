@@ -1562,7 +1562,7 @@
     </main>
     <footer class="footer">
       <div class="footer__img">
-        <img src="./img/footer.webp" alt="ноги" />
+        <img src="./img/footer.webp" alt="ноги" class="footer__img__el" />
       </div>
       <div class="container footer__container">
         <nav class="footer__nav nav">
@@ -1589,20 +1589,25 @@
               </div>
               <a href="#" class="nav__list__item__link">
                 г.Красноярск , <br />Пр-т 60 лет образования <br />
-                СССР, д 60, вход со стороны <br />
-                дороги, левое крыльцо</a
-              >
+                СССР, д 60,
+                <span class="nav__list__item__link__span">
+                  вход со стороны <br />
+                  дороги, левое крыльцо
+                </span>
+              </a>
             </li>
             <li class="nav__list__item">
               <div>
                 <img src="./img/svg/tel.svg" alt="telphone" />
               </div>
-              <a href="tel:+79029900645" class="nav__list__item__link"
+              <a
+                href="tel:+79029900645"
+                class="nav__list__item__link nav__list__item__link__tel"
                 >8-902-990-06-45</a
               >
             </li>
           </ul>
-          <a href="#" class="nav__list__item__link"
+          <a href="#" class="nav__list__item__link nav__list__item__link__span"
             >Политика конфедециальности</a
           >
         </nav>
@@ -1613,7 +1618,10 @@
           Записаться
         </button>
       </div>
-      <p class="footer__eng">POLINA YAZEVA</p>
+      <p class="footer__eng">
+        <span class="footer__eng__name">POLINA</span>
+        <span class="footer__eng__surname">YAZEVA</span>
+      </p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

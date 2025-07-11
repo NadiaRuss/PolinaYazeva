@@ -43,7 +43,13 @@
     font-size: 16px;
     font-weight: normal;
     line-height: 140%;
-    color: #ffffff;
+    &__tel{
+      color: #ffffff;
+
+    }
+    &__span{
+      color: #D8D8D8;
+    }
   }
 }
 
