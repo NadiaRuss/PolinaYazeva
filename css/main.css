@@ -1027,7 +1027,8 @@ h4 {
     font-family: "inter";
     font-size: 16px;
     font-weight: normal;
-    line-height: 140%; }
+    line-height: 140%;
+    color: #ffffff; }
 
 .btn__footer {
   background-color: #ffffff;
@@ -1136,8 +1137,26 @@ h4 {
 
   .footer__container {
     flex-direction: column;
-    padding: 0;
-    padding-bottom: 356px; } }
+    padding: 60px 20px;
+    padding-bottom: 411px;
+    gap: 48px; }
+
+  .btn__footer {
+    position: absolute;
+    right: 20px;
+    padding: 20px 21px; }
+
+  .footer__contacts {
+    gap: 36px; }
+
+  .broun__btn {
+    font-size: 14px; }
+
+  .footer__img {
+    left: -37px; }
+
+  .nav__list__item__link {
+    font-size: 18px; } }
 .overlay {
   display: none;
   position: fixed;
