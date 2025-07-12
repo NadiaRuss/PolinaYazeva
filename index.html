@@ -18,25 +18,10 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <!-- <div class="header__logo logo">
-                    <img class="logo__pic" src="" alt="логотип">
-                </div> -->
-        <nav class="header__nav nav">
-          <ul class="nav__list">
-            <li class="nav__list__item">
-              <a href="#about" class="nav__list__item__link">Обо мне</a>
-            </li>
-            <li class="nav__list__item">
-              <a href="#price" class="nav__list__item__link">Услуги и цены</a>
-            </li>
-            <li class="nav__list__item">
-              <a href="#reviews" class="nav__list__item__link">Отзывы</a>
-            </li>
-            <li class="nav__list__item">
-              <a href="#contacts" class="nav__list__item__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header__logo logo">
+          <img class="logo__pic" src="./img/svg/logo.svg" alt="логотип" />
+          <p class="logo__text">POLINA<br />YAZEVA</p>
+        </div>
         <div class="header__adress">
           <img
             class="header__adress__icon"
@@ -52,25 +37,76 @@
             >
           </div>
         </div>
-        <div class="header__social">
-          <a class="header__social__link" href="#"
-            ><img
-              class="header__social__link__img"
-              src="./img/svg/telegram.svg"
-              alt="telegram icon"
-          /></a>
-          <a class="header__social__link" href="#"
-            ><img
-              class="header__social__link__img"
-              src="./img/svg/whatsapp.svg"
-              alt="whatsapp icon"
-          /></a>
-          <a class="header__social__link" href="#"
-            ><img
-              class="header__social__link__img"
-              src="./img/svg/vk.svg"
-              alt="vk icon"
-          /></a>
+        <div class="header__tel">
+          <img
+            class="header__tel__icon"
+            src="./img/svg/telBrown.svg"
+            alt="иконка телефона"
+          />
+          <p class="header__tel__tel">+7-902-990-06-45</p>
+        </div>
+        <div class="header__menu">
+          <div class="header__menu__icon" id="menuToggle">
+            <img
+              src="./img/svg/burger.svg"
+              alt="иконка меню"
+              class="icon burger-icon"
+            />
+            <img
+              src="./img/svg/close.svg"
+              alt="закрыть"
+              class="icon close-icon"
+            />
+          </div>
+
+          <div class="mobile-menu" id="mobileMenu">
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__list__item">
+                  <a href="#about" class="nav__list__item__link">Обо мне</a>
+                </li>
+                <li class="nav__list__item">
+                  <a href="#price" class="nav__list__item__link"
+                    >Услуги и цены</a
+                  >
+                </li>
+                <li class="nav__list__item">
+                  <a href="#reviews" class="nav__list__item__link">Отзывы</a>
+                </li>
+                <li class="nav__list__item">
+                  <a href="#contacts" class="nav__list__item__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <p class="header__p">
+              Подписывайтесь на меня в соц. <br />
+              сетях. Буду рада знакомству!
+            </p>
+            <div class="ellipseYe"></div>
+            <div class="header__social">
+              <a class="header__social__link" href="#">
+                <img
+                  class="header__social__link__img"
+                  src="./img/svg/telegram.svg"
+                  alt="telegram icon"
+                />
+              </a>
+              <a class="header__social__link" href="#">
+                <img
+                  class="header__social__link__img"
+                  src="./img/svg/whatsapp.svg"
+                  alt="whatsapp icon"
+                />
+              </a>
+              <a class="header__social__link" href="#">
+                <img
+                  class="header__social__link__img"
+                  src="./img/svg/vk.svg"
+                  alt="vk icon"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -118,7 +154,7 @@
               </p>
             </li>
             <li class="history__list__item noBG">
-              <img class="ellipsePink" src="./img/svg/ellipsePink.svg" alt="" />
+              <div class="ellipsePink"></div>
               <p class="history__list__item__bigP">
                 2022<span class="history__list__item__bigP__span">г.</span>
               </p>
@@ -162,11 +198,7 @@
               </p>
             </li>
             <li class="history__list__item noBG">
-              <img
-                class="ellipseYellow"
-                src="./img/svg/ellipseYellow.svg"
-                alt=""
-              />
+              <div class="ellipseYellow"></div>
               <p class="history__list__item__bigP">
                 2025<span class="history__list__item__bigP__span">г.</span>
               </p>
@@ -226,6 +258,24 @@
               <img src="./img/runningLine6.webp" alt="Логотип 6" />
             </div>
             <!-- Дублируем для бесконечного эффекта -->
+            <div class="marquee-item">
+              <img src="./img/runningLine1.webp" alt="Логотип 1" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine2.webp" alt="Логотип 2" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine3.webp" alt="Логотип 3" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine4.webp" alt="Логотип 4" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine5.webp" alt="Логотип 5" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine6.webp" alt="Логотип 6" />
+            </div>
             <div class="marquee-item">
               <img src="./img/runningLine1.webp" alt="Логотип 1" />
             </div>
