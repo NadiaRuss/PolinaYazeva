@@ -15,6 +15,11 @@
     padding-left: 409px;
   }
 }
+@media (max-width: 700px) {
+.start__dec {
+  display: none;
+}
+}
 
 @media (max-width: 1200px) {
   .start__container {
