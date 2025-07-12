@@ -139,18 +139,18 @@ h4 {
   font-weight: 600;
   text-transform: uppercase;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
- &:hover{
-  background-color: #f89d84;
-  box-shadow: 0 6px 8px rgba(222, 128, 103, 0.6);
+  &:hover {
+    background-color: #f89d84;
+    box-shadow: 0 6px 8px rgba(222, 128, 103, 0.6);
     transform: translateY(-2px); /* Дополнительный эффект "поднятия" */
-  transition: all 0.3s ease; 
-}
+    transition: all 0.3s ease;
+  }
 }
 .light__btn {
   padding: 12px 36px;
-  border: 1px solid #CAC0C0;
+  border: 1px solid #cac0c0;
   border-radius: 50px;
-  color: #736B6B;
+  color: #736b6b;
   font-family: "Inter";
   font-size: 16px;
 }
@@ -163,8 +163,8 @@ h4 {
   border: 1px solid #e08269;
   color: #e08269;
 }
-.pulse__btn{
-animation: pulse 2s infinite 1.7s forwards;
+.pulse__btn {
+  animation: pulse 2s infinite 1.7s forwards;
 }
 @keyframes pulse {
   0% {
@@ -225,4 +225,24 @@ animation: pulse 2s infinite 1.7s forwards;
   position: absolute;
   background-color: #c4644b;
   filter: blur(170px);
+}
+.ellipseYe {
+  width: 349px;
+  height: 350px;
+  position: absolute;
+  background-color: #fcc645;
+  filter: blur(170px);
+  opacity: 0.5;
+}
+.ellipseLight {
+  position: absolute;
+  background-color: #ffefef;
+  filter: blur(170px);
+}
+.ellipsePink {
+  position: absolute;
+  background-color: #fff2fd;
+  filter: blur(170px);
+  width: 257px;
+  height: 267px;
 }

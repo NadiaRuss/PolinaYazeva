@@ -377,3 +377,45 @@ document.addEventListener('DOMContentLoaded', function() {
       localStorage.removeItem('cookieExpire');
     }}
 })
+
+// меню для хэдера
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  let isMenuOpen = false;
+
+  if (menuToggle && mobileMenu) {
+    // Переключение меню
+    menuToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      isMenuOpen = !isMenuOpen;
+      
+      // Переключаем классы
+      menuToggle.classList.toggle('active', isMenuOpen);
+      mobileMenu.classList.toggle('active', isMenuOpen);
+    });
+
+    // Закрытие при клике вне меню
+    document.addEventListener('click', function(e) {
+      if (isMenuOpen && 
+          !mobileMenu.contains(e.target) && 
+          !menuToggle.contains(e.target)) {
+        closeMenu();
+      }
+    });
+
+    // Закрытие при скролле
+    window.addEventListener('scroll', function() {
+      if (isMenuOpen) {
+        closeMenu();
+      }
+    });
+
+    function closeMenu() {
+      isMenuOpen = false;
+      menuToggle.classList.remove('active');
+      mobileMenu.classList.remove('active');
+    }
+  }
+});
+// меню для хэдера
