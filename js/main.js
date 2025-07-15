@@ -24,74 +24,80 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   let lastScrollPosition = window.scrollY;
   let isScrollingDown = false;
   let isRendered = false;
-  
+
   // Функция для анимации элементов прайса
   function animatePriceItems() {
-    const activeTab = document.querySelector('.price__info__btn__arr:not([style*="none"])');
+    const activeTab = document.querySelector(
+      '.price__info__btn__arr:not([style*="none"])'
+    );
     if (!activeTab) return;
-    
-    const items = activeTab.querySelectorAll('.price__info__btn__arr__el');
-    
-    items.forEach(item => {
-      item.style.opacity = '0';
-      item.style.transform = 'translateY(20px)';
-      item.style.transition = 'none';
+
+    const items = activeTab.querySelectorAll(".price__info__btn__arr__el");
+
+    items.forEach((item) => {
+      item.style.opacity = "0";
+      item.style.transform = "translateY(20px)";
+      item.style.transition = "none";
     });
-    
+
     setTimeout(() => {
       items.forEach((item, index) => {
-        item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-        
+        item.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+
         setTimeout(() => {
-          item.style.opacity = '1';
-          item.style.transform = 'translateY(0)';
+          item.style.opacity = "1";
+          item.style.transform = "translateY(0)";
         }, index * 100);
       });
     }, 50);
   }
-  
+
   // Обработчик скролла
   function handleScroll() {
-    
     const currentScrollPosition = window.scrollY;
     isScrollingDown = currentScrollPosition > lastScrollPosition;
     lastScrollPosition = currentScrollPosition;
-    
-    const priceSection = document.querySelector('.price');
+
+    const priceSection = document.querySelector(".price");
     if (!priceSection) return;
-    
+
     const sectionTop = priceSection.offsetTop;
     const sectionHeight = priceSection.offsetHeight;
     const windowHeight = window.innerHeight;
-    
+
     // Проверяем, видна ли секция и скроллим вниз
-    if (isScrollingDown && 
-        currentScrollPosition + windowHeight > sectionTop + 100 && 
-        currentScrollPosition < sectionTop + sectionHeight - 100 && !isRendered) {
+    if (
+      isScrollingDown &&
+      currentScrollPosition + windowHeight > sectionTop + 100 &&
+      currentScrollPosition < sectionTop + sectionHeight - 100 &&
+      !isRendered
+    ) {
       animatePriceItems();
       isRendered = true;
     } else if (!isScrollingDown) {
-      const listElements = document.querySelectorAll('.price__info__btn__arr__el');
-      listElements.forEach(el => {
-        el.style.opacity = '1';
+      const listElements = document.querySelectorAll(
+        ".price__info__btn__arr__el"
+      );
+      listElements.forEach((el) => {
+        el.style.opacity = "1";
       });
       isRendered = true;
     }
   }
-  
+
   // Наблюдатель за появлением секции при скролле вниз
   if (!isRendered) {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
   } else if (isRendered) {
     return;
   }
-  
+
   // Инициализация анимации при загрузке, если секция уже видна
-  const priceSection = document.querySelector('.price');
+  const priceSection = document.querySelector(".price");
   if (priceSection) {
     const rect = priceSection.getBoundingClientRect();
     if (rect.top < window.innerHeight && rect.bottom > 0) {
@@ -100,18 +106,18 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Обработчик для кнопок переключения вкладок
-  const buttons = document.querySelectorAll('.price__info__btn__el');
-  buttons.forEach(button => {
-    button.addEventListener('click', function() {
-      buttons.forEach(btn => btn.classList.remove('active'));
-      this.classList.add('active');
-      
+  const buttons = document.querySelectorAll(".price__info__btn__el");
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+
       const targetId = this.dataset.target;
-      document.querySelectorAll('.price__info__btn__arr').forEach(content => {
-        content.style.display = 'none';
+      document.querySelectorAll(".price__info__btn__arr").forEach((content) => {
+        content.style.display = "none";
       });
-      document.getElementById(targetId).style.display = 'block';
-      
+      document.getElementById(targetId).style.display = "block";
+
       setTimeout(animatePriceItems, 50);
     });
   });
@@ -182,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       threshold: 0.1,
-      rootMargin: "0px 0px -50px 0px",
+      rootMargin: "0px 0px 20% 0px",
     }
   );
 
@@ -197,7 +203,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
 
 //слайдер для секции result
 const swiper = new Swiper(".result__swiper", {
@@ -236,7 +241,6 @@ const swiper3 = new Swiper(".qual__slider__swiper", {
   },
 });
 //слайдер для секции qual
-
 
 //popup
 $(".open__popup").on("click", function (e) {
@@ -325,87 +329,92 @@ $(".popup__form--consult").on("submit", function (e) {
 });
 
 //куки
-document.addEventListener('DOMContentLoaded', function() {
-  const cookiePopup = document.querySelector('.popup--cookie');
-  const overlay = document.querySelector('.overlay');
-  const cookieCloseBtn = cookiePopup.querySelector('.popup__close__cook');
-  const cookieAcceptBtn = cookiePopup.querySelector('.cookie-btn');
-// debugger
+document.addEventListener("DOMContentLoaded", function () {
+  const cookiePopup = document.querySelector(".popup--cookie");
+  const overlay = document.querySelector(".overlay");
+  const cookieCloseBtn = cookiePopup.querySelector(".popup__close__cook");
+  const cookieAcceptBtn = cookiePopup.querySelector(".cookie-btn");
+  // debugger
   // Проверяем, есть ли запись в localStorage
-  const cookieConsent = localStorage.getItem('cookieConsent');
+  const cookieConsent = localStorage.getItem("cookieConsent");
 
   // Если записи нет или значение false - показываем попап через 5 сек
   // Пользователь ранее закрывал крестиком (значение 'closed')
-  if (cookieConsent === null || cookieConsent === 'closed') {
+  if (cookieConsent === null || cookieConsent === "closed") {
     setTimeout(showCookiePopup, 5000);
-    console.log('false')
+    console.log("false");
   }
 
   // Функция показа попапа
   function showCookiePopup() {
-    cookiePopup.style.display = 'block';
-    overlay.style.display = 'block';
+    cookiePopup.style.display = "block";
+    overlay.style.display = "block";
   }
 
   // Функция скрытия попапа
   function hideCookiePopup() {
-    cookiePopup.style.display = 'none';
-    overlay.style.display = 'none';
+    cookiePopup.style.display = "none";
+    overlay.style.display = "none";
   }
 
   // При клике на крестик
-  cookieCloseBtn.addEventListener('click', function() {
+  cookieCloseBtn.addEventListener("click", function () {
     hideCookiePopup();
-    localStorage.setItem('cookieConsent', 'closed');
+    localStorage.setItem("cookieConsent", "closed");
   });
 
   // При клике на кнопку "принимаю"
-  cookieAcceptBtn.addEventListener('click', function() {
+  cookieAcceptBtn.addEventListener("click", function () {
     hideCookiePopup();
-    localStorage.setItem('cookieConsent', 'true');
-    // Устанавливаем на год 
-    const oneYear = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
-    localStorage.setItem('cookieExpire', oneYear);
-    console.log('trye')
-    console.log(oneYear)
+    localStorage.setItem("cookieConsent", "true");
+    // Устанавливаем на год
+    const oneYear = new Date(
+      new Date().setFullYear(new Date().getFullYear() + 1)
+    );
+    localStorage.setItem("cookieExpire", oneYear);
+    console.log("trye");
+    console.log(oneYear);
   });
-   if (cookieConsent === 'true') {
-    const expireDate = localStorage.getItem('cookieExpire');
+  if (cookieConsent === "true") {
+    const expireDate = localStorage.getItem("cookieExpire");
     if (expireDate && new Date(expireDate) < new Date()) {
       // Срок истек - удаляем записи
-      localStorage.removeItem('cookieConsent');
-      localStorage.removeItem('cookieExpire');
-    }}
-})
+      localStorage.removeItem("cookieConsent");
+      localStorage.removeItem("cookieExpire");
+    }
+  }
+});
 
 // меню для хэдера
-document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.getElementById('menuToggle');
-  const mobileMenu = document.getElementById('mobileMenu');
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
   let isMenuOpen = false;
 
   if (menuToggle && mobileMenu) {
     // Переключение меню
-    menuToggle.addEventListener('click', function(e) {
+    menuToggle.addEventListener("click", function (e) {
       e.stopPropagation();
       isMenuOpen = !isMenuOpen;
-      
+
       // Переключаем классы
-      menuToggle.classList.toggle('active', isMenuOpen);
-      mobileMenu.classList.toggle('active', isMenuOpen);
+      menuToggle.classList.toggle("active", isMenuOpen);
+      mobileMenu.classList.toggle("active", isMenuOpen);
     });
 
     // Закрытие при клике вне меню
-    document.addEventListener('click', function(e) {
-      if (isMenuOpen && 
-          !mobileMenu.contains(e.target) && 
-          !menuToggle.contains(e.target)) {
+    document.addEventListener("click", function (e) {
+      if (
+        isMenuOpen &&
+        !mobileMenu.contains(e.target) &&
+        !menuToggle.contains(e.target)
+      ) {
         closeMenu();
       }
     });
 
     // Закрытие при скролле
-    window.addEventListener('scroll', function() {
+    window.addEventListener("scroll", function () {
       if (isMenuOpen) {
         closeMenu();
       }
@@ -413,8 +422,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function closeMenu() {
       isMenuOpen = false;
-      menuToggle.classList.remove('active');
-      mobileMenu.classList.remove('active');
+      menuToggle.classList.remove("active");
+      mobileMenu.classList.remove("active");
     }
   }
 });

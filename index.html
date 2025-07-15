@@ -111,7 +111,7 @@
       </div>
     </header>
     <main class="wrapper">
-      <section class="start">
+      <section class="start" id="start">
         <div class="container start__container">
           <h2 class="start__h2">Косметолог- эстетист</h2>
           <h1 class="start__h1">Полина Язева</h1>
@@ -684,7 +684,7 @@
       <section class="price" id="price">
         <div class="container price__container">
           <div class="title price__title">
-            <div class="title__left">
+            <div class="title__left title__left__price">
               <!-- <img
                 class="ellipseYellow"
                 src="./img/svg/ellipseYellow.svg"
@@ -703,28 +703,30 @@
             </div>
           </div>
           <div class="price__info">
-            <div class="price__info__btn">
-              <button
-                type="button"
-                class="price__info__btn__el light__btn light__btn_active"
-                data-target="face-price"
-              >
-                Лицо
-              </button>
-              <button
-                type="button"
-                class="price__info__btn__el light__btn"
-                data-target="shape-price"
-              >
-                Коррекция фигуры
-              </button>
-              <button
-                type="button"
-                class="price__info__btn__el light__btn"
-                data-target="depilation-price"
-              >
-                Депиляция
-              </button>
+            <div class="price__info__btn-wrapper">
+              <div class="price__info__btn">
+                <button
+                  type="button"
+                  class="price__info__btn__el light__btn light__btn_active"
+                  data-target="face-price"
+                >
+                  Лицо
+                </button>
+                <button
+                  type="button"
+                  class="price__info__btn__el light__btn"
+                  data-target="shape-price"
+                >
+                  Коррекция фигуры
+                </button>
+                <button
+                  type="button"
+                  class="price__info__btn__el light__btn"
+                  data-target="depilation-price"
+                >
+                  Депиляция
+                </button>
+              </div>
             </div>
             <div class="price__info__btn__arr" id="face-price">
               <div class="price__info__btn__arr__el">
@@ -1611,6 +1613,16 @@
       </div>
     </main>
     <footer class="footer">
+      <div class="footer__logo logo">
+        <a href="#start">
+          <img
+            class="footer__logo__pic"
+            src="./img/svg/footerLogo.svg"
+            alt="логотип"
+          />
+        </a>
+      </div>
+
       <div class="footer__img">
         <img src="./img/footer.webp" alt="ноги" class="footer__img__el" />
       </div>
