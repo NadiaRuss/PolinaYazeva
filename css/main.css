@@ -764,7 +764,9 @@ h4 {
   display: flex;
   flex-direction: column; }
   .price__info__btn {
-    margin: 0 auto; }
+    display: flex;
+    gap: 10px;
+    justify-content: center; }
     .price__info__btn__arr__el {
       display: flex;
       justify-content: space-between;
@@ -1113,7 +1115,7 @@ h4 {
     display: flex;
     color: #ededed;
     justify-content: space-between;
-    padding: 86px 0 185px 550px; }
+    padding: 86px 84px 185px 337px; }
   .footer__contacts {
     flex-direction: column;
     gap: 54px; }
@@ -1149,7 +1151,7 @@ h4 {
 .footer__eng {
   font-family: "Cactus";
   font-weight: normal;
-  font-size: 160px;
+  font-size: 159px;
   line-height: 120%;
   color: #fffcfc;
   position: absolute;
@@ -1167,6 +1169,10 @@ h4 {
   position: absolute;
   left: 0;
   bottom: -3px; }
+
+.footer__logo {
+  padding-top: 65px;
+  padding-left: 63px; }
 
 @media (max-width: 1300px) {
   .container {
@@ -1186,7 +1192,8 @@ h4 {
     bottom: -56px; }
 
   .footer__container {
-    padding-left: 409px; } }
+    padding-left: 196px;
+    padding-right: 40px; } }
 @media (max-width: 1100px) {
   .start__dec {
     display: none; } }
@@ -1202,7 +1209,7 @@ h4 {
     transform: translateX(28%); }
 
   .footer__container {
-    padding-left: 420px; } }
+    padding-left: 207px; } }
 @media (max-width: 1100px) {
   .price__info__btn__arr__el__item {
     width: 160px; }
@@ -1212,7 +1219,7 @@ h4 {
     bottom: -43px; }
 
   .footer__container {
-    padding-left: 370px; }
+    padding-left: 41px; }
 
   .footer__img {
     bottom: -5px; }
@@ -1243,20 +1250,27 @@ h4 {
     gap: 30px; }
 
   .footer__container {
-    padding: 60px 20px 345px 20px; }
+    padding: 106px 20px 300px 0;
+    margin-left: -110px; }
 
   .footer__img__el {
-    width: 363px; } }
+    width: 363px; }
+
+  .footer__logo__pic {
+    width: 120px; }
+
+  .footer__logo {
+    padding-top: 28px;
+    padding-left: 26px; } }
 @media (max-width: 700px) {
   .price__div {
     display: flex;
     width: 100%;
-    padding-bottom: 16px; }
+    padding-bottom: 16px;
+    align-items: flex-start; }
 
   .price__info__btn__arr__el {
     flex-direction: column;
-    margin-right: 20px;
-    margin-left: 20px;
     padding-bottom: 30px; }
     .price__info__btn__arr__el__item {
       flex-direction: row;
@@ -1265,14 +1279,11 @@ h4 {
       gap: 6px;
       justify-content: flex-end;
       width: 100%;
-      padding-bottom: 36px;
+      padding-bottom: 60px;
       margin-right: 0; }
 
   .broun__btn {
     padding: 20px 62px; }
-
-  .price__info__btn__el {
-    padding: 12px 25px; }
 
   .footer__eng {
     font-size: 60px;
@@ -1287,9 +1298,10 @@ h4 {
 
   .footer__container {
     flex-direction: column;
-    padding: 60px 20px;
+    padding: 60px 35px;
     padding-bottom: 411px;
-    gap: 48px; }
+    gap: 48px;
+    margin: 0; }
 
   .btn__footer {
     position: absolute;
@@ -1297,27 +1309,67 @@ h4 {
     padding: 20px 21px; }
 
   .footer__img__el {
-    width: 100vw; } }
+    width: 100vw; }
+
+  .footer__logo {
+    display: none; }
+
+  .price__info__btn {
+    display: flex;
+    gap: 6px;
+    /* Расстояние между кнопками */
+    white-space: nowrap;
+    /* Предотвращаем перенос кнопок */
+    padding: 12px 0;
+    justify-content: center; }
+    .price__info__btn-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 10px;
+      /* Для пространства под скроллбаром */
+      -webkit-overflow-scrolling: touch;
+      /* Плавный скролл на iOS */ }
+    .price__info__btn__el {
+      flex-shrink: 0;
+      /* Запрещаем уменьшение кнопок */
+      font-size: 14px;
+      padding: 10px 23px; }
+
+  /* Стили для скроллбара (опционально) */
+  .price__info__btn-wrapper::-webkit-scrollbar {
+    height: 2px; }
+
+  .price__info__btn-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1; }
+
+  .price__info__btn-wrapper::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 2px; }
+
+  .price__info__btn-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #736B6B; } }
 @media (max-width: 400px) {
   .price__info__btn__arr__el__num {
-    font-size: 25px; }
+    font-size: 25px;
+    margin-right: 8px;
+    width: 30px;
+    height: 27px; }
 
   .price__info__btn__arr__el__info,
   .price__info__btn__arr__el__item__p {
-    font-size: 20px; }
+    font-size: 20px;
+    line-height: 140%; }
 
   .price__info__btn__arr__el__item__price {
     font-size: 14px; }
-
-  .price__info__btn__el {
-    font-size: 14px;
-    padding: 10px 23px; }
 
   .footer__contacts {
     gap: 36px; }
 
   .broun__btn {
-    font-size: 14px; }
+    font-size: 14px;
+    font-family: Inter;
+    line-height: 100%; }
 
   .footer__img {
     left: -37px; }
@@ -1326,7 +1378,29 @@ h4 {
     font-size: 18px; }
 
   .footer__img__el {
-    width: 118vw; } }
+    width: 118vw; }
+
+  .price__info__btn {
+    justify-content: start; }
+
+  .price__title {
+    margin-bottom: 40px; }
+
+  .title {
+    gap: 15px;
+    border: none;
+    flex-wrap: wrap; }
+    .title__right {
+      padding-top: 6px; }
+    .title__left__price {
+      width: 139px; }
+
+  h2 {
+    font-size: 25px; }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px; } }
 .overlay {
   display: none;
   position: fixed;

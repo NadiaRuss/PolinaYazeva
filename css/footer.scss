@@ -15,7 +15,7 @@
     // height: 196px;
     justify-content: space-between;
     // justify-self: center;
-    padding: 86px 0 185px 550px;
+    padding: 86px 84px 185px 337px;
   }
   &__contacts {
     flex-direction: column;
@@ -62,7 +62,7 @@
 .footer__eng {
   font-family: "Cactus";
   font-weight: normal;
-  font-size: 160px;
+  font-size: 159px;
   line-height: 120%;
   color: #fffcfc;
   position: absolute;
@@ -84,4 +84,9 @@
   position: absolute;
   left: 0;
   bottom: -3px;
+}
+
+.footer__logo{
+  padding-top: 65px;
+    padding-left: 63px;
 }

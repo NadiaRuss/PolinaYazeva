@@ -16,7 +16,8 @@
     bottom: -56px;
   }
   .footer__container {
-    padding-left: 409px;
+    padding-left: 196px;
+    padding-right: 40px;
   }
 }
 @media (max-width: 1100px) {
@@ -37,7 +38,7 @@
     transform: translateX(28%);
   }
   .footer__container {
-    padding-left: 420px;
+    padding-left: 207px;
   }
 }
 
@@ -53,7 +54,7 @@
     bottom: -43px;
   }
   .footer__container {
-    padding-left: 370px;
+    padding-left: 41px;
   }
   .footer__img {
     bottom: -5px;
@@ -88,12 +89,20 @@
     gap: 30px;
   }
   .footer__container {
-    padding: 60px 20px 345px 20px;
+    padding: 106px 20px 300px 0;
+    margin-left: -110px;
   }
   .footer__img {
     &__el {
       width: 363px;
     }
+  }
+  .footer__logo__pic {
+    width: 120px;
+  }
+  .footer__logo {
+    padding-top: 28px;
+    padding-left: 26px;
   }
 }
 
@@ -102,13 +111,12 @@
     display: flex;
     width: 100%;
     padding-bottom: 16px;
+    align-items: flex-start;
     // width: 60%;
     // align-items: center;
   }
   .price__info__btn__arr__el {
     flex-direction: column;
-    margin-right: 20px;
-    margin-left: 20px;
     padding-bottom: 30px;
     &__item {
       flex-direction: row;
@@ -117,16 +125,15 @@
       gap: 6px;
       justify-content: flex-end;
       width: 100%;
-      padding-bottom: 36px;
+      padding-bottom: 60px;
       margin-right: 0;
     }
   }
   .broun__btn {
     padding: 20px 62px;
   }
-  .price__info__btn__el {
-    padding: 12px 25px;
-  }
+  // .price__info__btn__el {
+  // }
   .footer__eng {
     font-size: 60px;
     bottom: 17px;
@@ -143,9 +150,10 @@
   }
   .footer__container {
     flex-direction: column;
-    padding: 60px 20px;
+    padding: 60px 35px;
     padding-bottom: 411px;
     gap: 48px;
+    margin: 0;
   }
   .btn__footer {
     position: absolute;
@@ -155,29 +163,71 @@
   .footer__img__el {
     width: 100vw;
   }
+  .footer__logo {
+    display: none;
+  }
+    .price__info__btn {
+    display: flex;
+    gap: 6px; /* Расстояние между кнопками */
+    white-space: nowrap; /* Предотвращаем перенос кнопок */
+    padding: 12px 0;
+    justify-content: center;
+    &-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 10px; /* Для пространства под скроллбаром */
+      -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
+    }
+    &__el {
+      flex-shrink: 0; /* Запрещаем уменьшение кнопок */
+      font-size: 14px;
+      padding: 10px 23px;
+    }
+  }
+
+  /* Стили для скроллбара (опционально) */
+  .price__info__btn-wrapper::-webkit-scrollbar {
+    height: 2px;
+  }
+  .price__info__btn-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .price__info__btn-wrapper::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 2px;
+  }
+  .price__info__btn-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #736B6B;
+  }
 }
 
 @media (max-width: 400px) {
   .price__info__btn__arr__el__num {
     font-size: 25px;
+    margin-right: 8px;
+    width: 30px;
+    height: 27px;
   }
   .price__info__btn__arr__el__info,
   .price__info__btn__arr__el__item__p {
     font-size: 20px;
+    line-height: 140%;
   }
   .price__info__btn__arr__el__item__price {
     font-size: 14px;
   }
-  .price__info__btn__el {
-    font-size: 14px;
-    padding: 10px 23px;
-  }
+  // .price__info__btn__el {
+  //   font-size: 14px;
+  //   padding: 10px 23px;
+  // }
 
   .footer__contacts {
     gap: 36px;
   }
   .broun__btn {
     font-size: 14px;
+    font-family: Inter;
+    line-height: 100%;
   }
   .footer__img {
     left: -37px;
@@ -187,5 +237,61 @@
   }
   .footer__img__el {
     width: 118vw;
+  }
+  .price__info__btn {
+    justify-content: start;
+  }
+  // .price__info__btn {
+  //   display: inline-flex;
+  //   gap: 6px; /* Расстояние между кнопками */
+  //   white-space: nowrap; /* Предотвращаем перенос кнопок */
+  //   padding: 5px 0; /* Отступы внутри контейнера */
+  //   &-wrapper {
+  //     width: 100%;
+  //     overflow-x: auto;
+  //     padding-bottom: 10px; /* Для пространства под скроллбаром */
+  //     -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
+  //   }
+  //   &__el {
+  //     flex-shrink: 0; /* Запрещаем уменьшение кнопок */
+  //     font-size: 14px;
+  //     padding: 10px 23px;
+  //   }
+  // }
+
+  // /* Стили для скроллбара (опционально) */
+  // .price__info__btn-wrapper::-webkit-scrollbar {
+  //   height: 2px;
+  // }
+  // .price__info__btn-wrapper::-webkit-scrollbar-track {
+  //   background: #f1f1f1;
+  // }
+  // .price__info__btn-wrapper::-webkit-scrollbar-thumb {
+  //   background: #888;
+  //   border-radius: 2px;
+  // }
+  // .price__info__btn-wrapper::-webkit-scrollbar-thumb:hover {
+  //   background: #736B6B;
+  // }
+  .price__title {
+    margin-bottom: 40px;
+  }
+  .title {
+    gap: 15px;
+    border: none;
+    flex-wrap: wrap;
+    &__right {
+      padding-top: 6px;
+    }
+    &__left__price {
+      width: 139px;
+    }
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
