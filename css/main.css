@@ -653,7 +653,9 @@ br.mobile-only {
     letter-spacing: -0.03em;
     color: rgba(114, 53, 37, 0.1);
     position: absolute;
-    bottom: 0;
+    display: flex;
+    gap: 20px;
+    bottom: -135px;
     left: 11%;
     z-index: -1;
     transform: translateX(-100%);
@@ -1214,7 +1216,6 @@ br.mobile-only {
 
   .hero__info__eng {
     font-size: 120px;
-    bottom: 14px;
     left: 7%; }
 
   .hero__info {
@@ -1268,6 +1269,9 @@ br.mobile-only {
   .floatImg {
     float: right; }
 
+  .hero__info__eng {
+    left: 3%; }
+
   .price__info__btn__arr__el__item {
     width: 160px; }
 
@@ -1299,9 +1303,6 @@ br.mobile-only {
 
   br.mobile-only {
     display: inline; } }
-.hero__info__eng {
-  left: 10%; }
-
 @media (max-width: 994px) {
   .noBG {
     display: none; }

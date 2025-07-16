@@ -29,7 +29,9 @@
     letter-spacing: -0.03em;
     color: rgba(114, 53, 37, 0.1);
     position: absolute;
-    bottom: 0;
+    display: flex;
+    gap: 20px;
+    bottom: -135px;
     left: 11%;
     z-index: -1;
     transform: translateX(-100%); // Начальное положение за экраном

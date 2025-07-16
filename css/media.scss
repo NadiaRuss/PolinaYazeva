@@ -5,7 +5,6 @@
   }
   .hero__info__eng {
     font-size: 120px;
-    bottom: 14px;
     left: 7%;
   }
   .hero__info {
@@ -66,6 +65,9 @@
   .floatImg {
     float: right;
   }
+  .hero__info__eng {
+    left: 3%;
+  }
   // .hero__info__eng {
   //   font-size: 90px;
   //   left: 15%;
@@ -120,9 +122,9 @@
     display: inline;
   }
 }
-.hero__info__eng {
-  left: 10%;
-}
+// .hero__info__eng {
+//   left: 10%;
+// }
 
 @media (max-width: 994px) {
   .noBG {
