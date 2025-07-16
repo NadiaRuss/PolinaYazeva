@@ -211,7 +211,9 @@ h4 {
 .ellipseLight {
   position: absolute;
   background-color: #ffefef;
-  filter: blur(170px); }
+  filter: blur(170px);
+  width: 194px;
+  height: 201px; }
 
 .ellipsePink {
   position: absolute;
@@ -306,7 +308,6 @@ h4 {
   top: -17px;
   right: -20px;
   width: 373px;
-  /* Можно настроить по вашему вкусу */
   min-height: 400px;
   overflow: hidden;
   background: #fff;
@@ -318,7 +319,6 @@ h4 {
   padding: 60px; }
   .mobile-menu.active {
     max-height: 500px;
-    /* Достаточно для содержимого */
     opacity: 1; }
 
 /* Стили содержимого меню */
@@ -327,6 +327,10 @@ h4 {
   flex-direction: column;
   gap: 30px;
   font-family: "Inter"; }
+  .mobile-menu .nav__list .nav__list__item__link {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 140%; }
 
 .header__p {
   margin-top: 50px;
@@ -1165,6 +1169,10 @@ h4 {
   bottom: -3px; }
 
 @media (max-width: 1300px) {
+  .container {
+    padding-left: 2%;
+    padding-right: 2%; }
+
   .hero__info__eng {
     font-size: 120px;
     bottom: 14px;
@@ -1179,7 +1187,7 @@ h4 {
 
   .footer__container {
     padding-left: 409px; } }
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
   .start__dec {
     display: none; } }
 @media (max-width: 1200px) {

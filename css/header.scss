@@ -107,9 +107,8 @@
 .mobile-menu {
   position: absolute;
   top: -17px;
-  // top: calc(100% + 30px); /* Позиционируем ниже иконки */
   right: -20px;
-  width: 373px; /* Можно настроить по вашему вкусу */
+  width: 373px;
   min-height: 400px;
   overflow: hidden;
   background: #fff;
@@ -121,7 +120,7 @@
   padding: 60px;
 
   &.active {
-    max-height: 500px; /* Достаточно для содержимого */
+    max-height: 500px;
     opacity: 1;
   }
 }
@@ -132,6 +131,11 @@
   flex-direction: column;
   gap: 30px;
   font-family: "Inter";
+  .nav__list__item__link {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 140%;
+  }
 }
 .header__p {
   margin-top: 50px;

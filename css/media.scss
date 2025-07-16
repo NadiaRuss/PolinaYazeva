@@ -1,4 +1,8 @@
 @media (max-width: 1300px) {
+  .container{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
   .hero__info__eng {
     font-size: 120px;
     bottom: 14px;
@@ -15,7 +19,7 @@
     padding-left: 409px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
 .start__dec {
   display: none;
 }
