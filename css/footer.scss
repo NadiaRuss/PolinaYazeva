@@ -69,10 +69,10 @@
   bottom: -70px;
   letter-spacing: -0.03em;
   // left: 0;
-  // transform: translateX(-50%);
+  transform: translateX(-50%);
   // width: 94%;
   opacity: 0;
-  transform: translateX(-1000px);
+  // transform: translateX(-1000px);
   transition: transform 2s linear, opacity 2s linear;
 }
 .footer__eng.animate {

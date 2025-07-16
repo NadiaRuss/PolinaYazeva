@@ -187,8 +187,8 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     {
-      threshold: 0.1,
-      rootMargin: "0px 0px 20% 0px",
+      threshold: 0.05,
+      rootMargin: "0px 0px 40% 0px",
     }
   );
 
