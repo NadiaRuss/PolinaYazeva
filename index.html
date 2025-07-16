@@ -43,7 +43,9 @@
             src="./img/svg/telBrown.svg"
             alt="иконка телефона"
           />
-          <p class="header__tel__tel">+7-902-990-06-45</p>
+          <a href="tel:+7-902-990-06-45" class="header__tel__tel"
+            >+7-902-990-06-45</a
+          >
         </div>
         <div class="header__menu">
           <div class="header__menu__icon" id="menuToggle">
@@ -60,6 +62,16 @@
           </div>
 
           <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile__tel">
+              <img
+                class="mobile__tel__icon"
+                src="./img/svg/telBrown.svg"
+                alt="иконка телефона"
+              />
+              <a href="tel:+7-902-990-06-45" class="mobile__tel__tel"
+                >+7-902-990-06-45</a
+              >
+            </div>
             <nav class="header__nav nav">
               <ul class="nav__list">
                 <li class="nav__list__item">
@@ -113,7 +125,9 @@
     <main class="wrapper">
       <section class="start" id="start">
         <div class="container start__container">
-          <h2 class="start__h2">Косметолог- эстетист</h2>
+          <h2 class="start__h2">
+            Косметолог-<br class="mobile-only" />эстетист
+          </h2>
           <h1 class="start__h1">Полина Язева</h1>
           <p class="start__description">
             Индивидуальные программы по уходу за лицом и телом с учетом ваших
@@ -133,15 +147,31 @@
               alt="arrow"
             />
           </div>
-          <img
-            class="start__girl"
-            src="./img/startGirl.webp"
-            alt="Красивая ухоженная девушка"
-          />
+          <div class="start__girl">
+            <picture>
+              <source
+                srcset="./img/startGirlMob.png"
+                media="(max-width: 380px)"
+              />
+              <source
+                srcset="./img/startGirl.webp"
+                media="(min-width: 381px)"
+              />
+              <img
+                src="./img/startGirl.webp"
+                alt="Красивая ухоженная девушка"
+              />
+            </picture>
+          </div>
         </div>
       </section>
       <section class="history">
         <div class="container history__container">
+          <div class="history__list__item history__mobile">
+            <p class="history__list__item__bigP">
+              2022 - 2025<span class="history__list__item__bigP__span">г.</span>
+            </p>
+          </div>
           <ul class="history__list">
             <li class="history__list__item">
               <img
@@ -330,13 +360,9 @@
                 предпочтение только безопасным и наиболее эффективным
                 процедурам. <br /><br />
               </p>
-              <float>
-                <img
-                  class="floatImg"
-                  src="./img/heroTravel.webp"
-                  alt="женщина путешествует"
-                />
-              </float>
+              <div class="floatImg">
+                <img src="./img/heroTravel.webp" alt="женщина путешествует" />
+              </div>
               <p class="hero__info__text__greeting">
                 <br />
                 Активно посещаю форумы, конференции, в том числе и
@@ -348,7 +374,12 @@
             <div class="hero__info__img">
               <img src="./img/hero.webp" alt="hero foto" />
             </div>
-            <p class="hero__info__eng">POLINA YAZEVA</p>
+            <p class="hero__info__eng">
+              <span class="hero__info__eng__name">POLINA</span>
+              <br>
+              <br>
+              <span class="hero__info__eng__family"> YAZEVA</span>
+            </p>
           </div>
         </div>
       </section>

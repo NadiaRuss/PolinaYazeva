@@ -235,10 +235,15 @@ h4 {
 
 .header__logo {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin-right: 25%; }
   .header__logo .logo__text {
-    color: #723525; }
+    color: #723525;
+    font-family: "Cactus";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.03em; }
 
 .header__adress {
   font-family: "Inter";
@@ -306,7 +311,7 @@ h4 {
 .mobile-menu {
   position: absolute;
   top: -17px;
-  right: -20px;
+  right: -11px;
   width: 373px;
   min-height: 400px;
   overflow: hidden;
@@ -332,6 +337,9 @@ h4 {
     font-weight: normal;
     line-height: 140%; }
 
+.mobile__tel {
+  display: none; }
+
 .header__p {
   margin-top: 50px;
   margin-bottom: 10px;
@@ -354,6 +362,7 @@ h4 {
     height: 580px;
     padding-top: 77px;
     padding-left: 60px;
+    overflow: hidden;
     background-image: url(../img/startBG.png);
     background-size: cover;
     background-position: right center; }
@@ -369,7 +378,8 @@ h4 {
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
-    z-index: 1; }
+    z-index: 2;
+    position: relative; }
   .start__btn {
     position: relative;
     z-index: 100; }
@@ -398,6 +408,21 @@ h4 {
     z-index: 0;
     transform: translateX(20%);
     top: 0%; }
+    .start__girl-wrapper {
+      position: relative;
+      height: 100%;
+      width: 100%; }
+    .start__girl picture {
+      position: relative;
+      display: block;
+      height: 100%;
+      width: auto;
+      z-index: 1; }
+    .start__girl img {
+      display: block;
+      height: 100%;
+      width: auto;
+      max-width: none; }
 
 /* Анимации */
 @keyframes fadeIn {
@@ -441,6 +466,9 @@ h4 {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 0.8s ease-out 0.9s forwards, slideUp 0.8s ease-out 0.9s forwards, pulse 2s infinite 1.7s forwards; }
+
+br.mobile-only {
+  display: none; }
 
 /* Кейфреймы анимаций */
 @keyframes fadeIn {
@@ -546,6 +574,9 @@ h4 {
   color: #ffe6df;
   position: relative; }
 
+.history__mobile {
+  display: none; }
+
 .runningLine__container {
   overflow: hidden;
   white-space: nowrap;
@@ -602,7 +633,8 @@ h4 {
   padding-bottom: 100px;
   position: relative;
   overflow: hidden;
-  margin-top: 89px; }
+  margin-top: 89px;
+  gap: 20px; }
   .hero__info__text__name {
     color: #e08269;
     font-weight: bold; }
@@ -612,7 +644,8 @@ h4 {
   .hero__info__text__greeting {
     font-weight: 400;
     color: #7d7b7b;
-    margin-top: 36px; }
+    margin-top: 36px;
+    hyphens: auto; }
   .hero__info__eng {
     font-family: "Cactus";
     font-size: 128px;
@@ -1157,8 +1190,8 @@ h4 {
   position: absolute;
   bottom: -70px;
   letter-spacing: -0.03em;
+  transform: translateX(-50%);
   opacity: 0;
-  transform: translateX(-1000px);
   transition: transform 2s linear, opacity 2s linear; }
 
 .footer__eng.animate {
@@ -1194,10 +1227,27 @@ h4 {
   .footer__container {
     padding-left: 196px;
     padding-right: 40px; } }
-@media (max-width: 1100px) {
-  .start__dec {
-    display: none; } }
 @media (max-width: 1200px) {
+  .mobile__tel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px; }
+    .mobile__tel__tel {
+      font-family: "Inter";
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      color: #401818; }
+
+  .header__tel {
+    display: none; }
+
+  .start__dec {
+    display: none; }
+
   .start__container {
     height: 680px; }
 
@@ -1206,11 +1256,18 @@ h4 {
     font-size: 120px; }
 
   .start__girl {
-    transform: translateX(28%); }
+    transform: translateX(25%); }
 
   .footer__container {
     padding-left: 207px; } }
 @media (max-width: 1100px) {
+  .hero__info {
+    flex-direction: column-reverse;
+    align-items: center; }
+
+  .floatImg {
+    float: right; }
+
   .price__info__btn__arr__el__item {
     width: 160px; }
 
@@ -1225,7 +1282,40 @@ h4 {
     bottom: -5px; }
     .footer__img__el {
       width: 420px; } }
+@media (max-width: 1000px) {
+  .start__girl {
+    transform: translateX(30%); }
+
+  .start__girl::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(250.92deg, rgba(0, 0, 0, 0.05) 34.77%, rgba(255, 255, 255, 0.5) 50.89%);
+    z-index: 2;
+    pointer-events: none; }
+
+  br.mobile-only {
+    display: inline; } }
+.hero__info__eng {
+  left: 10%; }
+
+@media (max-width: 994px) {
+  .noBG {
+    display: none; }
+
+  .history__mobile {
+    display: block;
+    background: none;
+    box-shadow: none;
+    color: #ffe6df;
+    position: relative; } }
 @media (max-width: 900px) {
+  .hero__info__eng {
+    font-size: 80px; }
+
   .price__info__btn__arr__el__info {
     font-size: 26px; }
 
@@ -1263,6 +1353,9 @@ h4 {
     padding-top: 28px;
     padding-left: 26px; } }
 @media (max-width: 700px) {
+  .header__adress {
+    display: none; }
+
   .price__div {
     display: flex;
     width: 100%;
@@ -1347,7 +1440,7 @@ h4 {
     border-radius: 2px; }
 
   .price__info__btn-wrapper::-webkit-scrollbar-thumb:hover {
-    background: #736B6B; } }
+    background: #736b6b; } }
 @media (max-width: 400px) {
   .price__info__btn__arr__el__num {
     font-size: 25px;

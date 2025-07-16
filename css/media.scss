@@ -1,5 +1,5 @@
 @media (max-width: 1300px) {
-  .container{
+  .container {
     padding-left: 2%;
     padding-right: 2%;
   }
@@ -20,13 +20,29 @@
     padding-right: 40px;
   }
 }
-@media (max-width: 1100px) {
-.start__dec {
-  display: none;
-}
-}
 
 @media (max-width: 1200px) {
+  .mobile__tel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    &__tel {
+      font-family: "Inter";
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      color: #401818;
+    }
+  }
+  .header__tel {
+    display: none;
+  }
+  .start__dec {
+    display: none;
+  }
   .start__container {
     height: 680px;
   }
@@ -35,7 +51,7 @@
     font-size: 120px;
   }
   .start__girl {
-    transform: translateX(28%);
+    transform: translateX(25%);
   }
   .footer__container {
     padding-left: 207px;
@@ -43,8 +59,25 @@
 }
 
 @media (max-width: 1100px) {
-  // .price__info__btn__arr__el__info {
-  //   width: 650px;
+  .hero__info {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .floatImg {
+    float: right;
+  }
+  // .hero__info__eng {
+  //   font-size: 90px;
+  //   left: 15%;
+  //   bottom: 0px;
+  //   // position: relative;
+  //   display: flex;
+  //   &__name {
+  //     align-self: flex-start;
+  //   }
+  //   &__family {
+  //     align-self: flex-end;
+  //   }
   // }
   .price__info__btn__arr__el__item {
     width: 160px;
@@ -64,7 +97,50 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .start__girl {
+    transform: translateX(30%);
+  }
+  .start__girl::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      250.92deg,
+      rgba(0, 0, 0, 0.05) 34.77%,
+      rgba(255, 255, 255, 0.5) 50.89%
+    );
+    z-index: 2;
+    pointer-events: none;
+  }
+  br.mobile-only {
+    display: inline;
+  }
+}
+.hero__info__eng {
+  left: 10%;
+}
+
+@media (max-width: 994px) {
+  .noBG {
+    display: none;
+  }
+  .history__mobile {
+    display: block;
+    background: none;
+    box-shadow: none;
+    color: #ffe6df;
+    position: relative;
+  }
+}
+
 @media (max-width: 900px) {
+  .hero__info__eng {
+    font-size: 80px;
+  }
   .price__info__btn__arr__el__info {
     font-size: 26px;
   }
@@ -107,6 +183,10 @@
 }
 
 @media (max-width: 700px) {
+  .header__adress {
+    display: none;
+  }
+
   .price__div {
     display: flex;
     width: 100%;
@@ -166,7 +246,7 @@
   .footer__logo {
     display: none;
   }
-    .price__info__btn {
+  .price__info__btn {
     display: flex;
     gap: 6px; /* Расстояние между кнопками */
     white-space: nowrap; /* Предотвращаем перенос кнопок */
@@ -197,7 +277,7 @@
     border-radius: 2px;
   }
   .price__info__btn-wrapper::-webkit-scrollbar-thumb:hover {
-    background: #736B6B;
+    background: #736b6b;
   }
 }
 
