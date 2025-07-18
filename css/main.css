@@ -192,6 +192,8 @@ h4 {
       .title__right__text span {
         color: #e08269;
         font-weight: 700; }
+      .title__right__text p {
+        text-align: center; }
 
 .ellipseYellow {
   width: 225px;
@@ -1305,7 +1307,12 @@ br.mobile-only {
     pointer-events: none; }
 
   br.mobile-only {
-    display: inline; } }
+    display: inline; }
+
+  .title {
+    flex-direction: column;
+    border-bottom: 0;
+    padding-bottom: 0; } }
 @media (max-width: 994px) {
   .noBG {
     display: none; }
@@ -1504,6 +1511,10 @@ br.mobile-only {
   .container {
     padding-left: 20px;
     padding-right: 20px; } }
+/* .header, .start, .history, .runningLine, .hero, .help, .care, 
+ .result, .review, .qual {
+  display: none;
+} */
 .overlay {
   display: none;
   position: fixed;

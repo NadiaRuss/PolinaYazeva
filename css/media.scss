@@ -68,19 +68,7 @@
   .hero__info__eng {
     left: 3%;
   }
-  // .hero__info__eng {
-  //   font-size: 90px;
-  //   left: 15%;
-  //   bottom: 0px;
-  //   // position: relative;
-  //   display: flex;
-  //   &__name {
-  //     align-self: flex-start;
-  //   }
-  //   &__family {
-  //     align-self: flex-end;
-  //   }
-  // }
+
   .price__info__btn__arr__el__item {
     width: 160px;
   }
@@ -121,10 +109,13 @@
   br.mobile-only {
     display: inline;
   }
+
+  .title {
+    flex-direction: column;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
 }
-// .hero__info__eng {
-//   left: 10%;
-// }
 
 @media (max-width: 994px) {
   .noBG {
@@ -194,8 +185,6 @@
     width: 100%;
     padding-bottom: 16px;
     align-items: flex-start;
-    // width: 60%;
-    // align-items: center;
   }
   .price__info__btn__arr__el {
     flex-direction: column;
@@ -214,14 +203,11 @@
   .broun__btn {
     padding: 20px 62px;
   }
-  // .price__info__btn__el {
-  // }
   .footer__eng {
     font-size: 60px;
     bottom: 17px;
     left: 0;
     width: 100%;
-    // display: flex;
     flex-direction: column;
     &__name {
       align-self: flex-start;
@@ -304,10 +290,6 @@
   .price__info__btn__arr__el__item__price {
     font-size: 14px;
   }
-  // .price__info__btn__el {
-  //   font-size: 14px;
-  //   padding: 10px 23px;
-  // }
 
   .footer__contacts {
     gap: 36px;
@@ -329,38 +311,7 @@
   .price__info__btn {
     justify-content: start;
   }
-  // .price__info__btn {
-  //   display: inline-flex;
-  //   gap: 6px; /* Расстояние между кнопками */
-  //   white-space: nowrap; /* Предотвращаем перенос кнопок */
-  //   padding: 5px 0; /* Отступы внутри контейнера */
-  //   &-wrapper {
-  //     width: 100%;
-  //     overflow-x: auto;
-  //     padding-bottom: 10px; /* Для пространства под скроллбаром */
-  //     -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
-  //   }
-  //   &__el {
-  //     flex-shrink: 0; /* Запрещаем уменьшение кнопок */
-  //     font-size: 14px;
-  //     padding: 10px 23px;
-  //   }
-  // }
-
-  // /* Стили для скроллбара (опционально) */
-  // .price__info__btn-wrapper::-webkit-scrollbar {
-  //   height: 2px;
-  // }
-  // .price__info__btn-wrapper::-webkit-scrollbar-track {
-  //   background: #f1f1f1;
-  // }
-  // .price__info__btn-wrapper::-webkit-scrollbar-thumb {
-  //   background: #888;
-  //   border-radius: 2px;
-  // }
-  // .price__info__btn-wrapper::-webkit-scrollbar-thumb:hover {
-  //   background: #736B6B;
-  // }
+  
   .price__title {
     margin-bottom: 40px;
   }
@@ -383,3 +334,8 @@
     padding-right: 20px;
   }
 }
+
+/* .header, .start, .history, .runningLine, .hero, .help, .care, 
+ .result, .review, .qual {
+  display: none;
+} */
