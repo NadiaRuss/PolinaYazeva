@@ -362,7 +362,6 @@ h4 {
     height: 580px;
     padding-top: 77px;
     padding-left: 60px;
-    overflow: hidden;
     background-image: url(../img/startBG.png);
     background-size: cover;
     background-position: right center; }
@@ -671,14 +670,18 @@ br.mobile-only {
   margin: 0 15px 15px 0; }
 
 .help__container {
-  max-width: 100%; }
+  max-width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: relative; }
 
 .help__behind {
   background-color: #e08269;
   display: flex;
   margin-top: 146px;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .help__text {
   max-width: 1400px;
@@ -705,14 +708,13 @@ br.mobile-only {
 
 .help__img {
   position: relative;
-  max-width: 621px; }
+  max-width: 60%; }
   .help__img__girl {
     position: absolute;
     right: 0;
     height: 100%;
     width: auto;
-    max-width: 695px;
-    z-index: 0;
+    z-index: 1;
     transform: translateX(20%);
     top: 0%; }
   .help__img__ellips {
@@ -724,13 +726,14 @@ br.mobile-only {
 .help__ahead {
   display: flex;
   max-width: 1205px;
+  width: 90%;
   min-height: 220px;
   background: #ffffff;
   box-shadow: 0px 142px 57px rgba(227, 117, 94, 0.01), 0px 80px 48px rgba(227, 117, 94, 0.05), 0px 35px 35px rgba(227, 117, 94, 0.09), 0px 9px 19px rgba(227, 117, 94, 0.1);
   border-radius: 20px;
   position: relative;
   margin: auto;
-  z-index: 1;
+  z-index: 3;
   bottom: 110px;
   padding: 40px 71px 0;
   gap: 62px; }
@@ -1443,6 +1446,12 @@ br.mobile-only {
   .price__info__btn-wrapper::-webkit-scrollbar-thumb:hover {
     background: #736b6b; } }
 @media (max-width: 400px) {
+  .floatImg {
+    display: flex;
+    float: unset;
+    width: 100%;
+    justify-content: flex-end; }
+
   .price__info__btn__arr__el__num {
     font-size: 25px;
     margin-right: 8px;

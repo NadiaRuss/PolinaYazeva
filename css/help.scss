@@ -1,5 +1,8 @@
 .help__container {
   max-width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: relative;
 }
 .help__behind {
   background-color: #e08269;
@@ -7,6 +10,7 @@
   margin-top: 146px;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 .help__text {
   max-width: 1400px;
@@ -36,14 +40,14 @@
 }
 .help__img {
   position: relative;
-  max-width: 621px;
+  max-width: 60%;
   &__girl {
     position: absolute;
     right: 0;
     height: 100%; // Занимает всю высоту контейнера
     width: auto; // Сохраняем пропорции
-    max-width: 695px;
-    z-index: 0;
+    // max-width: 695px;
+    z-index: 1;
     transform: translateX(20%);
     top: 0%;
   }
@@ -57,6 +61,7 @@
 .help__ahead {
   display: flex;
   max-width: 1205px;
+  width: 90%;
   min-height: 220px;
   background: #ffffff;
   box-shadow: 0px 142px 57px rgba(227, 117, 94, 0.01),
@@ -65,7 +70,7 @@
   border-radius: 20px;
   position: relative;
   margin: auto;
-  z-index: 1;
+  z-index: 3;
   bottom: 110px;
   padding: 40px 71px 0;
   gap: 62px;
