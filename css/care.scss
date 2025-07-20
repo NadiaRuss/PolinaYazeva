@@ -24,6 +24,15 @@
       width: 320px;
       height: 315px;
       object-fit: cover;
+      &__border{
+        border-radius: 20px 0 0 0;
+        &__end{
+          border-radius: 0 0 0 20px;
+          &__el{
+            border-radius: 0 0 20px 0;
+          }
+        }
+      }
     }
     &__text {
       padding: 26px 24px;
@@ -44,3 +53,7 @@
     }
   }
 }
+
+// .care__list__el:nth-child(3), .care__list__el:nth-child(4){
+//   flex-direction: row-reverse;
+// }
