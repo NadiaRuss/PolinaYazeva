@@ -1327,7 +1327,14 @@ br.mobile-only {
   .care__list__el__img__border__end {
     border-radius: 0; }
     .care__list__el__img__border__end__mob {
-      border-radius: 0 0 20px 0; } }
+      border-radius: 0 0 20px 0; }
+
+  .care__list__el__img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    height: auto; } }
 @media (max-width: 1000px) {
   .start__girl {
     transform: translateX(30%); }

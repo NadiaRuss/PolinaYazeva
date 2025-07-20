@@ -132,6 +132,13 @@
       border-radius: 0 0 20px 0;
     }
   }
+  .care__list__el__img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    height: auto;
+  }
 }
 
 @media (max-width: 1000px) {
