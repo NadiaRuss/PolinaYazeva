@@ -17,10 +17,15 @@
     }
     &__greeting {
       font-weight: 400;
+      font-size: 16px;
       color: #7d7b7b;
       margin-top: 36px;
       hyphens: auto;
     }
+  }
+  &__img img{
+    border-radius: 10px;
+    max-width: 523px;
   }
   &__eng {
     font-family: "Cactus";
@@ -48,6 +53,10 @@
 
 .floatImg {
   float: left;
-  width: 200px;
+  // width: 200px;
   margin: 0 15px 15px 0;
+}
+.floatImg img{
+    max-height: 237px;
+    border-radius: 10px;
 }

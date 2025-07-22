@@ -1,7 +1,8 @@
 .header {
   width: 100%;
-  position: relative;
+  position: fixed;
   z-index: 100;
+  background: #FFF6F6;
 }
 
 .header__container {
@@ -30,7 +31,7 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  margin-right: 2%;
+  margin-right: 10%;
   &__icon {
     width: 20px;
   }
@@ -119,7 +120,8 @@
   background: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: max-height 0.5s ease, opacity 0.3s ease;
-  opacity: 0;
+  // opacity: 0;
+  display: none;
   z-index: 1000;
   border-radius: 9px;
   padding: 60px;
@@ -127,6 +129,8 @@
   &.active {
     max-height: 500px;
     opacity: 1;
+    display: block;
+    
   }
 }
 
