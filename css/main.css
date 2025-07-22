@@ -632,7 +632,6 @@ br.mobile-only {
 .hero__info {
   display: flex;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  padding-bottom: 100px;
   position: relative;
   overflow: hidden;
   margin-top: 89px;
@@ -652,24 +651,25 @@ br.mobile-only {
   .hero__info__img img {
     border-radius: 10px;
     max-width: 523px; }
-  .hero__info__eng {
-    font-family: "Cactus";
-    font-size: 128px;
-    line-height: 120%;
-    letter-spacing: -0.03em;
-    color: rgba(114, 53, 37, 0.1);
-    position: absolute;
-    display: flex;
-    gap: 20px;
-    bottom: -135px;
-    left: 11%;
-    z-index: -1;
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: transform 2s linear, opacity 2s linear; }
-    .hero__info__eng.animate {
-      transform: translateX(0);
-      opacity: 1; }
+
+.hero__eng {
+  font-family: "Cactus";
+  font-size: 128px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: rgba(114, 53, 37, 0.1);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  top: -60px;
+  z-index: 0;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 2s linear, opacity 2s linear; }
+  .hero__eng.animate {
+    transform: translateX(0);
+    opacity: 1; }
 
 .floatImg {
   float: left;
@@ -1236,9 +1236,8 @@ br.mobile-only {
     padding-left: 2%;
     padding-right: 2%; }
 
-  .hero__info__eng {
-    font-size: 120px;
-    left: 7%; }
+  .hero__eng {
+    font-size: 120px; }
 
   .hero__info {
     align-items: flex-end; }
@@ -1306,8 +1305,8 @@ br.mobile-only {
   .floatImg {
     float: right; }
 
-  .hero__info__eng {
-    left: 3%; }
+  .hero__eng {
+    font-size: 101px; }
 
   .hero__info__text__greeting {
     font-size: 18px; }
@@ -1385,8 +1384,8 @@ br.mobile-only {
     color: #ffe6df;
     position: relative; } }
 @media (max-width: 900px) {
-  .hero__info__eng {
-    font-size: 80px; }
+  .hero__eng {
+    font-size: 72px; }
 
   .price__info__btn__arr__el__info {
     font-size: 26px; }
@@ -1427,6 +1426,9 @@ br.mobile-only {
 @media (max-width: 700px) {
   .header__adress {
     display: none; }
+
+  .hero__eng {
+    font-size: 60px; }
 
   .price__div {
     display: flex;
