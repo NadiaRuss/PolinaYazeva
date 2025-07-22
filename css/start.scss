@@ -1,6 +1,7 @@
 .start {
   position: relative; // Добавляем для корректного позиционирования дочерних элементов
   background-color: #ffffff;
+  padding-top: 67px;
   // overflow: hidden; // Обрезаем всё, что выходит за пределы секции
 
   &__container {
