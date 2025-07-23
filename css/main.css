@@ -1456,9 +1456,6 @@ br.mobile-only {
   .help__img__girl {
     right: -223px; } }
 @media (max-width: 700px) {
-  .help__img__girl {
-    right: -176px; }
-
   .start__h1 {
     max-width: 50%; }
 
@@ -1693,21 +1690,7 @@ br.mobile-only {
     gap: 20px; }
 
   .contacts__window__header {
-    font-size: 20px; }
-
-  .help__text {
-    padding-right: 477px; }
-    .help__text__buttons {
-      display: none; }
-      .help__text__buttons__btn {
-        padding: 9px 13px;
-        font-size: 14px; }
-      .help__text__buttons__mob {
-        margin-left: 70%;
-        display: flex; }
-
-  .help__img__girl {
-    right: -109px; } }
+    font-size: 20px; } }
 @media (max-width: 400px) {
   .start__container {
     min-height: 524px;
@@ -1791,24 +1774,7 @@ br.mobile-only {
 
   .contacts__container {
     padding-left: 0;
-    padding-right: 0; }
-
-  .help__ahead {
-    margin-top: 260px; }
-
-  .help__btn {
-    width: 100%;
-    padding: 20px 36px;
-    justify-content: center; }
-
-  .help__text__buttons__mob {
-    margin-left: 94%; }
-
-  .help__text__p {
-    bottom: -159px; }
-
-  .help__img__girl {
-    right: -76px; } }
+    padding-right: 0; } }
 .overlay {
   display: none;
   position: fixed;
