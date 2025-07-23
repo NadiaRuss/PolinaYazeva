@@ -1,11 +1,10 @@
 @media (max-width: 1300px) {
   .container {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: clamp(15px, 5%, 80px);
+    padding-right: clamp(15px, 5%, 80px);
   }
-  .hero__info__eng {
+  .hero__eng {
     font-size: 120px;
-    left: 7%;
   }
   .hero__info {
     align-items: flex-end;
@@ -33,6 +32,9 @@
 }
 
 @media (max-width: 1200px) {
+  h2 {
+    font-size: 30px;
+  }
   .mobile__tel {
     display: flex;
     align-items: center;
@@ -54,13 +56,13 @@
   .start__dec {
     display: none;
   }
-  .start__container {
-    height: 680px;
-  }
-  .start__h1 {
-    max-width: 800px;
-    font-size: 120px;
-  }
+  // .start__container {
+  //   height: 680px;
+  // }
+  // .start__h1 {
+  //   max-width: 800px;
+  //   font-size: 120px;
+  // }
   .start__girl {
     transform: translateX(25%);
   }
@@ -83,8 +85,9 @@
   .floatImg {
     float: right;
   }
-  .hero__info__eng {
-    left: 3%;
+  .hero__eng {
+    // left: 3%;
+    font-size: 101px;
   }
   .hero__info__text__greeting {
     font-size: 18px;
@@ -94,7 +97,7 @@
     width: 300px;
     height: auto;
   }
-  // .hero__info__eng {
+  // .hero__eng {
   //   font-size: 90px;
   //   left: 15%;
   //   bottom: 0px;
@@ -175,7 +178,7 @@
     width: 70%;
   }
 }
-// .hero__info__eng {
+// .hero__eng {
 //   left: 10%;
 // }
 
@@ -193,8 +196,16 @@
 }
 
 @media (max-width: 900px) {
-  .hero__info__eng {
-    font-size: 80px;
+  .start__container {
+    padding-top: 68px;
+    // height: 70vh;
+  }
+  .start__h1 {
+    // font-size: 100px;
+    max-width: 600px;
+  }
+  .hero__eng {
+    font-size: 72px;
   }
   .price__info__btn__arr__el__info {
     font-size: 26px;
@@ -238,10 +249,21 @@
 }
 
 @media (max-width: 700px) {
+    .start__h1 {
+        max-width: 50%;
+    }
+  h2 {
+    font-size: 25px;
+  }
   .header__adress {
     display: none;
   }
-
+  .hero__eng {
+    font-size: 60px;
+  }
+  .history__list__item__bigP {
+    font-size: 80px;
+  }
   .price__div {
     display: flex;
     width: 100%;

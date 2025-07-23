@@ -91,8 +91,6 @@ fieldset {
   max-width: rem(1280px); //ширина контейнера
   width: 100%;
   margin: 0 auto;
-  // padding-left: 2%;
-  // padding-right: 2%;
 }
 
 // кавычки для заголовков
@@ -104,7 +102,7 @@ fieldset {
 
 h1 {
   font-family: "Cactus";
-  font-size: 128px;
+  font-size: clamp(3rem, 10vw, 8rem); 
   font-weight: 400;
   line-height: 120%;
   color: #8d6c56;
