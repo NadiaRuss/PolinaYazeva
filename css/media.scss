@@ -32,6 +32,9 @@
 }
 
 @media (max-width: 1200px) {
+  .header__adress {
+    margin-right: 0;
+  }
   h2 {
     font-size: 30px;
   }

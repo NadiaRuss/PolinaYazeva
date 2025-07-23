@@ -362,7 +362,6 @@ h4 {
   .start__container {
     position: relative;
     max-width: 1400px;
-    height: 580px;
     padding-top: 77px;
     padding-left: 60px;
     background-image: url(../img/startBG.png);
@@ -384,7 +383,8 @@ h4 {
     position: relative; }
   .start__btn {
     position: relative;
-    z-index: 100; }
+    z-index: 100;
+    margin-bottom: 9vw; }
   .start__dec {
     position: absolute;
     right: 37%;
@@ -1258,6 +1258,9 @@ br.mobile-only {
       width: 50%;
       padding: 12px 24px; } }
 @media (max-width: 1200px) {
+  .header__adress {
+    margin-right: 0; }
+
   h2 {
     font-size: 30px; }
 
@@ -1425,6 +1428,9 @@ br.mobile-only {
     padding-top: 28px;
     padding-left: 26px; } }
 @media (max-width: 700px) {
+  .start__h1 {
+    max-width: 50%; }
+
   h2 {
     font-size: 25px; }
 

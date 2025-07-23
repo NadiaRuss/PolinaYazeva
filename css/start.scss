@@ -7,7 +7,7 @@
   &__container {
     position: relative; // Для позиционирования элементов внутри
     max-width: 1400px;
-    height: 580px;
+    // height: 580px;
     padding-top: 77px;
     padding-left: 60px;
     background-image: url(../img/startBG.png);
@@ -33,6 +33,7 @@
   &__btn {
     position: relative;
     z-index: 100;
+    margin-bottom: 9vw;
   }
   &__dec {
     position: absolute;
