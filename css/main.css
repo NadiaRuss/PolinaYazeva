@@ -1614,6 +1614,15 @@ br.mobile-only {
   .contacts__window__header {
     font-size: 20px; } }
 @media (max-width: 400px) {
+  .start__container {
+    min-height: 524px;
+    overflow: hidden; }
+
+  .start__girl {
+    max-width: 100%;
+    height: 683px;
+    transform: translate(0%, -17%); }
+
   .floatImg {
     display: flex;
     float: unset;
