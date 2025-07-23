@@ -428,3 +428,48 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 // меню для хэдера
+
+//ymaps
+var placemarkCoords = [56.106836, 92.905662];
+
+ymaps.ready(function () {
+  //var placemarkCoords = [55.76, 37.64]; // Ваши координаты метки
+  var map = new ymaps.Map("yandex-map", {
+    center: placemarkCoords, // По умолчанию — метка по центру
+    zoom: 16,
+    controls: [] // Опционально: убрать лишние элементы управления
+  });
+
+  var placemark = new ymaps.Placemark(
+    placemarkCoords,
+    { hintContent: "проспект 60 лет Образования СССР, 60" },
+    { preset: "islands#redDotIcon" }
+  );
+  map.geoObjects.add(placemark);
+
+  function adjustMapCenter() {
+    var newLongitude;
+    var newLatitude = placemarkCoords[0]; // Исходная широта
+
+    if (window.innerWidth > 900) {
+      // Смещение по долготе на 10% ширины карты
+      newLongitude = placemarkCoords[1] - (map.getBounds()[1][1] - map.getBounds()[0][1]) * 0.1;
+      map.setCenter([newLatitude, newLongitude]);
+    } else if (window.innerWidth > 500) {
+      // Смещение по долготе на 30% ширины карты
+      newLongitude = placemarkCoords[1] - (map.getBounds()[1][1] - map.getBounds()[0][1]) * 0.3;
+      map.setCenter([newLatitude, newLongitude]);
+    } else {
+      // Для экранов <500px: смещение по долготе на 30% и по широте вверх на 10%
+      newLongitude = placemarkCoords[1] - (map.getBounds()[1][1] - map.getBounds()[0][1]) * 0.1;
+      var bounds = map.getBounds();
+      var mapHeight = bounds[1][0] - bounds[0][0]; // Высота карты в градусах
+      newLatitude = placemarkCoords[0] + mapHeight * (-0.3); // Смещаем вверх на 10% высоты
+      map.setCenter([newLatitude, newLongitude]);
+    }
+  }
+
+  adjustMapCenter();
+  window.addEventListener('resize', adjustMapCenter);
+});
+//ymaps

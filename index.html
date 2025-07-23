@@ -1463,14 +1463,7 @@
               </div>
             </div>
           </div>
-
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A22d03477d361b0526ece54002cf19f77819d6dc03174bedf9ca4d1f53b10e193&amp;scroll=false&amp;zoom=false&amp;source=constructor"
-            width="100%"
-            height="644"
-            style="border: none"
-          ></iframe>
-
+          <div id="yandex-map" style="width: 100%; height: 644px;"></div>
           <div class="contacts__window">
             <h5 class="contacts__window__header">Жду встречи с Вами!</h5>
             <div class="contacts__window__phone">
@@ -1489,8 +1482,10 @@
             </div>
             <div class="contacts__window__work-hours">
               <img src="./img/svg/work-hours.svg" alt="clock icon" />
-              <p>Режим работы:</p>
-              <span> по предварительной записи</span>
+              <div class="contacts__window__work-hours__text">
+                <p>Режим работы:</p>
+                <span> по предварительной записи</span>
+              </div>
             </div>
           </div>
         </div>
@@ -1720,6 +1715,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=bbda5195-a929-4ff1-9ef3-d5e26c58d07f&lang=ru_RU"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
