@@ -153,6 +153,10 @@
     object-position: center;
     height: auto;
   }
+  .help__text {
+    padding-left: 30px;
+    padding-right: 439px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -263,12 +267,15 @@
     padding-top: 28px;
     padding-left: 26px;
   }
+  .help__img__girl {
+    right: -223px;
+  }
 }
 
 @media (max-width: 700px) {
-  .start__h1 {
-    max-width: 50%;
-  }
+    .start__h1 {
+        max-width: 50%;
+    }
   h2 {
     font-size: 25px;
   }
@@ -392,6 +399,30 @@
   .care__btns-wrapper::-webkit-scrollbar-thumb:hover {
     background: #736b6b;
   }
+  .help__text__p {
+    position: absolute;
+    bottom: -118px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0em;
+    color: #7d7b7b;
+    left: 12%;
+  }
+  .help__behind {
+    overflow: visible;
+  }
+  .help__ahead {
+    margin-top: 240px;
+    padding: 32px 57px 0;
+  }
+  .help__btn {
+    padding: 15px 25px;
+  }
+  .help__text__buttons {
+    margin-left: 25%;
+    width: 130%;
+    gap: 26px;
+  }
 }
 @media (max-width: 600px) {
   .care__list__el {
@@ -424,6 +455,60 @@
   .care__list__el__img__border__end__el {
     border-radius: 0;
   }
+  .help__text__buttons {
+    margin-left: 38%;
+  }
+  .help__text__p {
+    bottom: -140px;
+    right: 20px;
+    left: 20px;
+  }
+  .help__ahead {
+    flex-direction: column;
+    box-shadow: none;
+    background: none;
+    border-radius: 0;
+    width: 100%;
+    gap: 16px;
+    padding: 0 20px;
+    &__left,
+    &__right {
+      background: #ffffff;
+      box-shadow: 0px 142px 57px rgba(227, 117, 94, 0.01),
+        0px 80px 48px rgba(227, 117, 94, 0.05),
+        0px 35px 35px rgba(227, 117, 94, 0.09),
+        0px 9px 19px rgba(227, 117, 94, 0.1);
+      border-radius: 20px;
+      max-width: 550px;
+    }
+    &__left {
+      padding: 28px 8px 47px 28px;
+      &__p {
+        font-family: Arial;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0em;
+        color: #401818;
+      }
+      &__img {
+        right: -13px;
+        width: 143px;
+      }
+    }
+    &__right {
+      padding: 28px 20px 28px 28px;
+      font-family: Arial;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+      letter-spacing: 0em;
+      color: #401818;
+    }
+  }
+  .help__btn {
+    display: flex;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 480px) {
@@ -442,6 +527,7 @@
   .contacts__window__header {
     font-size: 20px;
   }
+
 }
 
 @media (max-width: 400px) {

@@ -29,6 +29,9 @@
     gap: 10px;
     max-width: 500px;
     flex-wrap: wrap;
+    &__mob{
+      display: none;
+    }
     &__btn {
       color: #ffffff;
       border: 1px solid #eeebeb;
