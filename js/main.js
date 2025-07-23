@@ -172,13 +172,13 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   if (animatedElements.length === 0) {
-    console.log("Элементы для анимации не найдены");
+    //console.log("Элементы для анимации не найдены");
     return;
   }
 
   const observer = new IntersectionObserver(
     (entries) => {
-          console.log('Observer triggered', entries);
+          //console.log('Observer triggered', entries);
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("animate");
@@ -296,7 +296,7 @@ $(".popup__form--consult").on("submit", function (e) {
       allValid = false;
     }
 
-    console.log(allValid);
+    //console.log(allValid);
   }
 
   checkInputs();
@@ -323,7 +323,7 @@ $(".popup__form--consult").on("submit", function (e) {
     $(".popup__message__text").text(
       "Валидация не пройдена. Необходимо заполнить все поля формы и дать согласие на обработку персональных данных"
     );
-    console.log("валидация пройдена");
+    //console.log("валидация пройдена");
 
     //код для отправки формы
   }
@@ -343,7 +343,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Пользователь ранее закрывал крестиком (значение 'closed')
   if (cookieConsent === null || cookieConsent === "closed") {
     setTimeout(showCookiePopup, 5000);
-    console.log("false");
+    //console.log("false");
   }
 
   // Функция показа попапа
@@ -373,8 +373,8 @@ document.addEventListener("DOMContentLoaded", function () {
       new Date().setFullYear(new Date().getFullYear() + 1)
     );
     localStorage.setItem("cookieExpire", oneYear);
-    console.log("trye");
-    console.log(oneYear);
+    //console.log("trye");
+    //console.log(oneYear);
   });
   if (cookieConsent === "true") {
     const expireDate = localStorage.getItem("cookieExpire");
