@@ -93,7 +93,7 @@ fieldset {
 
 h1 {
   font-family: "Cactus";
-  font-size: 128px;
+  font-size: clamp(3rem, 10vw, 8rem);
   font-weight: 400;
   line-height: 120%;
   color: #8d6c56;
@@ -662,8 +662,7 @@ br.mobile-only {
   display: flex;
   justify-content: center;
   gap: 20px;
-  top: -60px;
-  z-index: 0;
+  margin-top: -90px;
   transform: translateX(-100%);
   opacity: 0;
   transition: transform 2s linear, opacity 2s linear; }
@@ -1233,8 +1232,8 @@ br.mobile-only {
 
 @media (max-width: 1300px) {
   .container {
-    padding-left: 2%;
-    padding-right: 2%; }
+    padding-left: clamp(15px, 5%, 80px);
+    padding-right: clamp(15px, 5%, 80px); }
 
   .hero__eng {
     font-size: 120px; }
@@ -1259,6 +1258,9 @@ br.mobile-only {
       width: 50%;
       padding: 12px 24px; } }
 @media (max-width: 1200px) {
+  h2 {
+    font-size: 30px; }
+
   .mobile__tel {
     display: flex;
     align-items: center;
@@ -1278,13 +1280,6 @@ br.mobile-only {
 
   .start__dec {
     display: none; }
-
-  .start__container {
-    height: 680px; }
-
-  .start__h1 {
-    max-width: 800px;
-    font-size: 120px; }
 
   .start__girl {
     transform: translateX(25%); }
@@ -1384,6 +1379,12 @@ br.mobile-only {
     color: #ffe6df;
     position: relative; } }
 @media (max-width: 900px) {
+  .start__container {
+    padding-top: 68px; }
+
+  .start__h1 {
+    max-width: 600px; }
+
   .hero__eng {
     font-size: 72px; }
 
@@ -1424,11 +1425,17 @@ br.mobile-only {
     padding-top: 28px;
     padding-left: 26px; } }
 @media (max-width: 700px) {
+  h2 {
+    font-size: 25px; }
+
   .header__adress {
     display: none; }
 
   .hero__eng {
     font-size: 60px; }
+
+  .history__list__item__bigP {
+    font-size: 80px; }
 
   .price__div {
     display: flex;
