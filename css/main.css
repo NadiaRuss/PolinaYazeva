@@ -192,6 +192,8 @@ h4 {
       .title__right__text span {
         color: #e08269;
         font-weight: 700; }
+      .title__right__text p {
+        text-align: center; }
 
 .ellipseYellow {
   width: 225px;
@@ -1150,13 +1152,16 @@ br.mobile-only {
   .contacts__window span {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 140%;
     color: #7d7b7b; }
   .contacts__window__work-hours {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 8px; }
+    .contacts__window__work-hours__text {
+      display: flex;
+      flex-direction: column; }
 
 .footer {
   background-color: #e08269;
@@ -1367,7 +1372,21 @@ br.mobile-only {
     display: inline; }
 
   .title__left__care {
-    width: 70%; } }
+    width: 70%; }
+
+  .title {
+    flex-direction: column;
+    border-bottom: 0;
+    padding-bottom: 0; }
+
+  .contacts iframe {
+    height: 686px; }
+
+  .contacts__window {
+    top: unset;
+    bottom: 46px;
+    left: 10px;
+    padding: 24px; } }
 @media (max-width: 994px) {
   .noBG {
     display: none; }
@@ -1425,6 +1444,9 @@ br.mobile-only {
     padding-top: 28px;
     padding-left: 26px; } }
 @media (max-width: 700px) {
+  .start__h1 {
+    max-width: 50%; }
+
   h2 {
     font-size: 25px; }
 
@@ -1575,6 +1597,19 @@ br.mobile-only {
   .care__list__el__img__border__end__mob,
   .care__list__el__img__border__end__el {
     border-radius: 0; } }
+@media (max-width: 480px) {
+  .contacts__container {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .contacts__window {
+    left: 8px;
+    right: 8px;
+    padding: 39px 24px 54px 24px;
+    gap: 20px; }
+
+  .contacts__window__header {
+    font-size: 20px; } }
 @media (max-width: 400px) {
   .floatImg {
     display: flex;
@@ -1645,7 +1680,11 @@ br.mobile-only {
 
   .care__list__el__text__h {
     font-size: 20px;
-    letter-spacing: 0em; } }
+    letter-spacing: 0em; }
+
+  .contacts__container {
+    padding-left: 0;
+    padding-right: 0; } }
 .overlay {
   display: none;
   position: fixed;

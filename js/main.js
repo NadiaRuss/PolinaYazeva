@@ -172,13 +172,13 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   if (animatedElements.length === 0) {
-    console.log("Элементы для анимации не найдены");
+    //console.log("Элементы для анимации не найдены");
     return;
   }
 
   const observer = new IntersectionObserver(
     (entries) => {
-          console.log('Observer triggered', entries);
+          //console.log('Observer triggered', entries);
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("animate");
@@ -296,7 +296,7 @@ $(".popup__form--consult").on("submit", function (e) {
       allValid = false;
     }
 
-    console.log(allValid);
+    //console.log(allValid);
   }
 
   checkInputs();
@@ -323,7 +323,7 @@ $(".popup__form--consult").on("submit", function (e) {
     $(".popup__message__text").text(
       "Валидация не пройдена. Необходимо заполнить все поля формы и дать согласие на обработку персональных данных"
     );
-    console.log("валидация пройдена");
+    //console.log("валидация пройдена");
 
     //код для отправки формы
   }
@@ -343,7 +343,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Пользователь ранее закрывал крестиком (значение 'closed')
   if (cookieConsent === null || cookieConsent === "closed") {
     setTimeout(showCookiePopup, 5000);
-    console.log("false");
+    //console.log("false");
   }
 
   // Функция показа попапа
@@ -373,8 +373,8 @@ document.addEventListener("DOMContentLoaded", function () {
       new Date().setFullYear(new Date().getFullYear() + 1)
     );
     localStorage.setItem("cookieExpire", oneYear);
-    console.log("trye");
-    console.log(oneYear);
+    //console.log("trye");
+    //console.log(oneYear);
   });
   if (cookieConsent === "true") {
     const expireDate = localStorage.getItem("cookieExpire");
@@ -429,3 +429,48 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 // меню для хэдера
+
+//ymaps
+var placemarkCoords = [56.106836, 92.905662];
+
+ymaps.ready(function () {
+  var map = new ymaps.Map("yandex-map", {
+    center: placemarkCoords, // По умолчанию — метка по центру
+    zoom: 16,
+    controls: [] // Опционально: убрать лишние элементы управления
+  });
+
+  var placemark = new ymaps.Placemark(
+    placemarkCoords,
+    { hintContent: "проспект 60 лет Образования СССР, 60" },
+    { preset: "islands#redDotIcon" }
+  );
+  map.geoObjects.add(placemark);
+
+  function adjustMapCenter() {
+    var newLongitude;
+    var newLatitude = placemarkCoords[0]; // Исходная широта
+
+    if (window.innerWidth > 900) {
+      // Смещение по долготе на 10% ширины карты
+      newLongitude = placemarkCoords[1] - (map.getBounds()[1][1] - map.getBounds()[0][1]) * 0.1;
+      map.setCenter([newLatitude, newLongitude]);
+    } else if (window.innerWidth > 500) {
+      // Смещение по долготе на 30% ширины карты
+      newLongitude = placemarkCoords[1] - (map.getBounds()[1][1] - map.getBounds()[0][1]) * 0.3;
+      map.setCenter([newLatitude, newLongitude]);
+    } else {
+      // Для экранов <500px: смещение по долготе на 30% и по широте вверх на 10%
+      newLongitude = placemarkCoords[1] - (map.getBounds()[1][1] - map.getBounds()[0][1]) * 0.1;
+      var bounds = map.getBounds();
+      var mapHeight = bounds[1][0] - bounds[0][0]; // Высота карты в градусах
+      newLatitude = placemarkCoords[0] + mapHeight * (-0.3); // Смещаем вверх на 10% высоты
+      map.setCenter([newLatitude, newLongitude]);
+    }
+  }
+
+  adjustMapCenter();
+  window.addEventListener('resize', adjustMapCenter);
+  map.behaviors.disable('scrollZoom');
+});
+//ymaps
