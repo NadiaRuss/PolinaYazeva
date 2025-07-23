@@ -434,7 +434,6 @@ document.addEventListener("DOMContentLoaded", function () {
 var placemarkCoords = [56.106836, 92.905662];
 
 ymaps.ready(function () {
-  //var placemarkCoords = [55.76, 37.64]; // Ваши координаты метки
   var map = new ymaps.Map("yandex-map", {
     center: placemarkCoords, // По умолчанию — метка по центру
     zoom: 16,
@@ -472,5 +471,6 @@ ymaps.ready(function () {
 
   adjustMapCenter();
   window.addEventListener('resize', adjustMapCenter);
+  map.behaviors.disable('scrollZoom');
 });
 //ymaps
