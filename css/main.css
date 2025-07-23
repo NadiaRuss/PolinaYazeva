@@ -1685,10 +1685,6 @@ br.mobile-only {
   .contacts__container {
     padding-left: 0;
     padding-right: 0; } }
-.header, .start, .history, .runningLine, .hero, .help, .care,
-.result, .review, .qual {
-  display: none; }
-
 .overlay {
   display: none;
   position: fixed;
