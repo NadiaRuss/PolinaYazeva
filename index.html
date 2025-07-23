@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Полина Язева</title>
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="libs/normalize.css" />
     <link
       rel="stylesheet"
@@ -362,7 +362,10 @@
                 процедурам. <br /><br />
               </p>
               <div class="floatImg">
-                <img src="./img/heroTravel.webp" alt="женщина путешествует" />
+                <img
+                  src="./img/Hero.png"
+                  alt="Полина на конференции Аравиа в Египте"
+                />
               </div>
               <p class="hero__info__text__greeting">
                 <br />
@@ -373,14 +376,14 @@
               </p>
             </div>
             <div class="hero__info__img">
-              <img src="./img/hero.webp" alt="hero foto" />
+              <img src="./img/conferention.png" alt="hero foto" />
             </div>
-            <p class="hero__info__eng">
-              <span class="hero__info__eng__name">POLINA </span>
-              <br>
-              <br>
-              <span class="hero__info__eng__family"> YAZEVA</span>
-            </p>
+          </div>
+          <div class="hero__eng">
+            <span class="hero__info__eng__name">POLINA </span>
+            <br />
+            <br />
+            <span class="hero__info__eng__family"> YAZEVA</span>
           </div>
         </div>
       </section>
@@ -443,7 +446,7 @@
       <section class="care">
         <div class="container care__container">
           <div class="title care__title">
-            <div class="title__left">
+            <div class="title__left title__left__care">
               <h2>ЗАБОТА О КРАСОТЕ И ЗДОРОВЬЕ</h2>
             </div>
 
@@ -455,34 +458,36 @@
               </div>
             </div>
           </div>
-          <div class="care__btns">
-            <button
-              type="button"
-              class="care__btns__btn light__btn light__btn_active"
-              data-target="face_care"
-            >
-              Лицо
-            </button>
-            <button
-              type="button"
-              class="care__btns__btn light__btn"
-              data-target="shape_care"
-            >
-              Коррекция фигуры
-            </button>
-            <button
-              type="button"
-              class="care__btns__btn light__btn"
-              data-target="depilation_care"
-            >
-              Депиляция
-            </button>
+          <div class="care__btns-wrapper">
+            <div class="care__btns">
+              <button
+                type="button"
+                class="care__btns__btn light__btn light__btn_active"
+                data-target="face_care"
+              >
+                Лицо
+              </button>
+              <button
+                type="button"
+                class="care__btns__btn light__btn"
+                data-target="shape_care"
+              >
+                Коррекция фигуры
+              </button>
+              <button
+                type="button"
+                class="care__btns__btn light__btn"
+                data-target="depilation_care"
+              >
+                Депиляция
+              </button>
+            </div>
           </div>
 
           <ul class="care__list" id="face_care">
             <li class="care__list__el">
               <img
-                class="care__list__el__img"
+                class="care__list__el__img care__list__el__img__border"
                 src="./img/care/care1.webp"
                 alt="лицо"
               />
@@ -539,11 +544,15 @@
                   процессов старения кожи. Индивидуальный подход.
                 </p>
               </div>
-              <img src="./img/care/care4.webp" alt="лицо" />
+              <img
+                src="./img/care/care4.webp"
+                alt="лицо"
+                class="care__list__el__img"
+              />
             </li>
             <li class="care__list__el">
               <img
-                class="care__list__el__img"
+                class="care__list__el__img care__list__el__img__border__end"
                 src="./img/care/care5.webp"
                 alt="лицо"
               />
@@ -559,7 +568,7 @@
             </li>
             <li class="care__list__el">
               <img
-                class="care__list__el__img"
+                class="care__list__el__img care__list__el__img__border__end__mob"
                 src="./img/care/care6.webp"
                 alt="лицо"
               />
@@ -575,7 +584,7 @@
           <ul class="care__list" id="shape_care" style="display: none">
             <li class="care__list__el">
               <img
-                class="care__list__el__img"
+                class="care__list__el__img care__list__el__img__border"
                 src="./img/care/massage.webp"
                 alt="лицо"
               />
@@ -637,7 +646,7 @@
                 </p>
               </div>
               <img
-                class="care__list__el__img"
+                class="care__list__el__img care__list__el__img__border__end__el"
                 src="./img/care/complex.webp"
                 alt="лицо"
               />
@@ -646,7 +655,7 @@
           <ul class="care__list" id="depilation_care" style="display: none">
             <li class="care__list__el">
               <img
-                class="care__list__el__img"
+                class="care__list__el__img care__list__el__img__border"
                 src="./img/care/dep1.webp"
                 alt="лицо"
               />
@@ -705,7 +714,7 @@
                 </p>
               </div>
               <img
-                class="care__list__el__img"
+                class="care__list__el__img care__list__el__img__border__end__el"
                 src="./img/care/dep4.webp"
                 alt="лицо"
               />
@@ -1651,7 +1660,7 @@
       </div>
 
       <div class="footer__img">
-        <img src="./img/footer.webp" alt="ноги" class="footer__img__el" />
+        <img src="./img/footer.png" alt="ноги" class="footer__img__el" />
       </div>
       <div class="container footer__container">
         <nav class="footer__nav nav">

@@ -168,7 +168,7 @@ if (!("scrollBehavior" in document.documentElement.style)) {
 //всплыте ФИ в футере
 document.addEventListener("DOMContentLoaded", function () {
   const animatedElements = document.querySelectorAll(
-    ".hero__info__eng, .footer__eng"
+    ".hero__eng, .footer__eng"
   );
 
   if (animatedElements.length === 0) {
@@ -178,6 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const observer = new IntersectionObserver(
     (entries) => {
+          console.log('Observer triggered', entries);
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("animate");
