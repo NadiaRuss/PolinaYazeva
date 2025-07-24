@@ -1265,6 +1265,9 @@ br.mobile-only {
       width: 50%;
       padding: 12px 24px; } }
 @media (max-width: 1200px) {
+  .header__adress {
+    margin-right: 0; }
+
   h2 {
     font-size: 30px; }
 
@@ -1607,6 +1610,12 @@ br.mobile-only {
     width: 130%;
     gap: 26px; } }
 @media (max-width: 600px) {
+  .history__list__item__bigP {
+    font-size: 75px; }
+
+  .history__list__item__bigP__span {
+    display: none; }
+
   .care__list__el {
     flex-direction: column; }
     .care__list__el__img {
@@ -1706,6 +1715,15 @@ br.mobile-only {
   .help__img__girl {
     right: -109px; } }
 @media (max-width: 400px) {
+  .start__container {
+    min-height: 524px;
+    overflow: hidden; }
+
+  .start__girl {
+    max-width: 100%;
+    height: 683px;
+    transform: translate(0%, -17%); }
+
   .floatImg {
     display: flex;
     float: unset;
