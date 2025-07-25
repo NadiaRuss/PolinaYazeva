@@ -214,6 +214,11 @@ const swiper = new Swiper(".result__swiper", {
   navigation: {
     nextEl: ".result__slider__btn",
   },
+
+  pagination: {
+      el: '.result__dots',
+      clickable: true,
+  }
 });
 //слайдер для секции result
 
