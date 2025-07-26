@@ -1434,7 +1434,10 @@ br.mobile-only {
     display: none; }
 
   .result__dots {
-    display: flex; } }
+    display: flex; }
+
+  .help__behind {
+    margin-top: 100px; } }
 @media (max-width: 994px) {
   .noBG {
     display: none; }
@@ -1896,6 +1899,12 @@ br.mobile-only {
     font-size: 20px;
     letter-spacing: 0em; }
 
+  .care__title {
+    margin-top: 10px; }
+
+  .price__title {
+    margin-top: 100px; }
+
   .contacts__container {
     padding-left: 0;
     padding-right: 0; }
@@ -1919,13 +1928,30 @@ br.mobile-only {
     bottom: -159px; }
 
   .help__img__girl {
-    right: -76px; } }
+    right: -22px; }
+
+  .help__text__buttons {
+    gap: 16px; }
+
+  .help__text__buttons__btn {
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0em;
+    padding: 9px 16px; }
+
+  .help__text {
+    padding: 53px 455px 121px 0px; } }
 @media (max-width: 320px) {
   .result__slider__list__item__info__name {
     font-size: 16px; }
 
   .result__slider__list__item__pic__text span {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .help__text {
+    padding-right: 437px; }
+    .help__text__p {
+      bottom: -175px; } }
 .overlay {
   display: none;
   position: fixed;
