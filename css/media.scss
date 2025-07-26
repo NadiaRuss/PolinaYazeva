@@ -689,7 +689,7 @@
 }
 
 @media (max-width: 400px) {
-    .start__container {
+  .start__container {
     min-height: 524px;
     overflow: hidden;
   }
@@ -778,6 +778,10 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .contacts__title {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .help__ahead {
     margin-top: 260px;
   }
@@ -795,6 +799,8 @@
   .help__img__girl {
     right: -76px;
   }
+
+
 }
 
 @media (max-width: 320px) {

@@ -1900,6 +1900,10 @@ br.mobile-only {
     padding-left: 0;
     padding-right: 0; }
 
+  .contacts__title {
+    padding-left: 20px;
+    padding-right: 20px; }
+
   .help__ahead {
     margin-top: 260px; }
 
