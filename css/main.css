@@ -1642,6 +1642,9 @@ br.mobile-only {
     margin-left: 25%;
     width: 130%;
     gap: 26px; } }
+@media (max-width: 640px) {
+  .qual__slider {
+    gap: 16px; } }
 @media (max-width: 600px) {
   .history__list__item__bigP {
     font-size: 75px; }
@@ -1765,7 +1768,23 @@ br.mobile-only {
     aspect-ratio: 4 / 3; }
 
   .result__dots {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+
+  .qual__container {
+    gap: 40px; }
+
+  .qual__slider__btn.left {
+    position: absolute;
+    top: 102%;
+    left: 34%; }
+
+  .qual__slider__btn.right {
+    position: absolute;
+    top: 102%;
+    right: 34%; }
+
+  .qual__slider__list__item {
+    height: unset; } }
 @media (max-width: 400px) {
   .start__container {
     min-height: 524px;
