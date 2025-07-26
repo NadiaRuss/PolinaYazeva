@@ -1,5 +1,4 @@
 @media (max-width: 1315px) {
-
   .review__container {
     padding-left: 2%;
     padding-right: 2%;
@@ -40,7 +39,7 @@
 }
 
 @media (max-width: 1200px) {
-    .header__adress {
+  .header__adress {
     margin-right: 0;
   }
   h2 {
@@ -224,7 +223,7 @@
 
   .result__slider__list__item__info {
     align-items: center;
-    text-align: left; 
+    text-align: left;
   }
 
   .result__slider__list__item__info__desc {
@@ -242,6 +241,9 @@
   .result__dots {
     display: flex;
   }
+  .help__behind {
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 994px) {
@@ -258,7 +260,6 @@
 }
 
 @media (max-width: 970px) {
-  
   .review__slider__list__item {
     padding: 26px;
   }
@@ -327,7 +328,7 @@
   .start__h1 {
     max-width: 50%;
   }
-  
+
   .header__adress {
     display: none;
   }
@@ -480,9 +481,8 @@
   }
 }
 
-
 @media (max-width: 600px) {
-  .history__list__item__bigP{
+  .history__list__item__bigP {
     font-size: 75px;
   }
   .history__list__item__bigP__span {
@@ -623,7 +623,7 @@
   .result__slider__list__item__info__name {
     font-size: 18px;
   }
-  
+
   .result__slider__list__item__pic__img {
     aspect-ratio: 4 / 3;
   }
@@ -647,14 +647,13 @@
     top: 102%;
     right: 34%;
   }
-  
+
   .qual__slider__list__item {
     height: unset;
   }
 }
 
 @media (max-width: 500px) {
-
   h2 {
     font-size: 20px;
   }
@@ -684,8 +683,6 @@
   .review__slider__list__item__user {
     margin-top: 30px;
   }
-
-
 }
 
 @media (max-width: 400px) {
@@ -773,6 +770,12 @@
     font-size: 20px;
     letter-spacing: 0em;
   }
+  .care__title {
+    margin-top: 10px;
+  }
+  .price__title {
+    margin-top: 100px;
+}
 
   .contacts__container {
     padding-left: 0;
@@ -797,14 +800,23 @@
     bottom: -159px;
   }
   .help__img__girl {
-    right: -76px;
+    right: -22px;
   }
-
-
+  .help__text__buttons {
+    gap: 16px;
+  }
+  .help__text__buttons__btn {
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0em;
+    padding: 9px 16px;
+  }
+  .help__text {
+    padding: 53px 455px 121px 0px;
+  }
 }
 
 @media (max-width: 320px) {
-
   .result__slider__list__item__info__name {
     font-size: 16px;
   }
@@ -812,6 +824,10 @@
   .result__slider__list__item__pic__text span {
     font-size: 14px;
   }
-
-
+  .help__text {
+    padding-right: 437px;
+    &__p {
+      bottom: -175px;
+    }
+  }
 }
