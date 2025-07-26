@@ -1795,9 +1795,6 @@ br.mobile-only {
   h2 {
     font-size: 20px; }
 
-  section:not(.review), header, footer {
-    display: none !important; }
-
   .review__slider__wrap {
     max-width: 100%;
     width: 100%; }

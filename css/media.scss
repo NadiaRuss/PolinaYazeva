@@ -659,10 +659,6 @@
     font-size: 20px;
   }
 
-  section:not(.review), header, footer {
-    display: none !important;
-  }
-
   .review__slider__wrap {
     max-width: 100%;
     width: 100%;
@@ -688,6 +684,8 @@
   .review__slider__list__item__user {
     margin-top: 30px;
   }
+
+
 }
 
 @media (max-width: 400px) {

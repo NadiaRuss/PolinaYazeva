@@ -234,49 +234,25 @@ const swiper2 = new Swiper(".review__swiper", {
     clickable: true,
   },
 
-  // Responsive breakpoints
   breakpoints: {
-    // when window width is >= 320px
-    /* 320: {
-      slidesPerView: 2,
-      spaceBetween: 20
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 30
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 4,
-      spaceBetween: 40
-    }, */
     320: {
-      slidesPerView: 1,
-      loop: false,
+      slidesPerView: "auto",
+      loop: true,
       initialSlide: 0,
       centeredSlides: false,
-      //spaceBetween: 0,
     },
     500: {
-      slidesPerView: 'auto',
-      //slidesPerView: 3,
-      //loop: false,
+      slidesPerView: "auto",
+      loop: true,
       initialSlide: 0,
       centeredSlides: false,
     },
     970: {
-      slidesPerView: 3,
+      slidesPerView: "auto",
       loop: false,
       initialSlide: 1,
       centeredSlides: true,
     },
-    /* 1440: {
-      slidesPerView: 3,
-      loop: false,
-      initialSlide: 1,
-      centeredSlides: true,
-    } */
   }
 });
 //слайдер для секции review
