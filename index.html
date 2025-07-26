@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная</title>
+    <title>Полина Язева</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="libs/normalize.css" />
     <link
       rel="stylesheet"
@@ -18,25 +19,10 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <!-- <div class="header__logo logo">
-                    <img class="logo__pic" src="" alt="логотип">
-                </div> -->
-        <nav class="header__nav nav">
-          <ul class="nav__list">
-            <li class="nav__list__item">
-              <a href="#about" class="nav__list__item__link">Обо мне</a>
-            </li>
-            <li class="nav__list__item">
-              <a href="#price" class="nav__list__item__link">Услуги и цены</a>
-            </li>
-            <li class="nav__list__item">
-              <a href="#reviews" class="nav__list__item__link">Отзывы</a>
-            </li>
-            <li class="nav__list__item">
-              <a href="#contacts" class="nav__list__item__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header__logo logo">
+          <img class="logo__pic" src="./img/svg/logo.svg" alt="логотип" />
+          <p class="logo__text">POLINA<br />YAZEVA</p>
+        </div>
         <div class="header__adress">
           <img
             class="header__adress__icon"
@@ -52,32 +38,97 @@
             >
           </div>
         </div>
-        <div class="header__social">
-          <a class="header__social__link" href="#"
-            ><img
-              class="header__social__link__img"
-              src="./img/svg/telegram.svg"
-              alt="telegram icon"
-          /></a>
-          <a class="header__social__link" href="#"
-            ><img
-              class="header__social__link__img"
-              src="./img/svg/whatsapp.svg"
-              alt="whatsapp icon"
-          /></a>
-          <a class="header__social__link" href="#"
-            ><img
-              class="header__social__link__img"
-              src="./img/svg/vk.svg"
-              alt="vk icon"
-          /></a>
+        <div class="header__tel">
+          <img
+            class="header__tel__icon"
+            src="./img/svg/telBrown.svg"
+            alt="иконка телефона"
+          />
+          <a href="tel:+7-902-990-06-45" class="header__tel__tel"
+            >+7-902-990-06-45</a
+          >
+        </div>
+        <div class="header__menu">
+          <div class="header__menu__icon" id="menuToggle">
+            <img
+              src="./img/svg/burger.svg"
+              alt="иконка меню"
+              class="icon burger-icon"
+            />
+            <img
+              src="./img/svg/close.svg"
+              alt="закрыть"
+              class="icon close-icon"
+            />
+          </div>
+
+          <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile__tel">
+              <img
+                class="mobile__tel__icon"
+                src="./img/svg/telBrown.svg"
+                alt="иконка телефона"
+              />
+              <a href="tel:+7-902-990-06-45" class="mobile__tel__tel"
+                >+7-902-990-06-45</a
+              >
+            </div>
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__list__item">
+                  <a href="#about" class="nav__list__item__link">Обо мне</a>
+                </li>
+                <li class="nav__list__item">
+                  <a href="#price" class="nav__list__item__link"
+                    >Услуги и цены</a
+                  >
+                </li>
+                <li class="nav__list__item">
+                  <a href="#reviews" class="nav__list__item__link">Отзывы</a>
+                </li>
+                <li class="nav__list__item">
+                  <a href="#contacts" class="nav__list__item__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <p class="header__p">
+              Подписывайтесь на меня в соц. <br />
+              сетях. Буду рада знакомству!
+            </p>
+            <div class="ellipseYe"></div>
+            <div class="header__social">
+              <a class="header__social__link" href="#">
+                <img
+                  class="header__social__link__img"
+                  src="./img/svg/telegram.svg"
+                  alt="telegram icon"
+                />
+              </a>
+              <a class="header__social__link" href="#">
+                <img
+                  class="header__social__link__img"
+                  src="./img/svg/whatsapp.svg"
+                  alt="whatsapp icon"
+                />
+              </a>
+              <a class="header__social__link" href="#">
+                <img
+                  class="header__social__link__img"
+                  src="./img/svg/vk.svg"
+                  alt="vk icon"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <main class="wrapper">
-      <section class="start">
+      <section class="start" id="start">
         <div class="container start__container">
-          <h2 class="start__h2">Косметолог- эстетист</h2>
+          <h2 class="start__h2">
+            Косметолог-<br class="mobile-only" />эстетист
+          </h2>
           <h1 class="start__h1">Полина Язева</h1>
           <p class="start__description">
             Индивидуальные программы по уходу за лицом и телом с учетом ваших
@@ -97,15 +148,31 @@
               alt="arrow"
             />
           </div>
-          <img
-            class="start__girl"
-            src="./img/startGirl.webp"
-            alt="Красивая ухоженная девушка"
-          />
+          <div class="start__girl">
+            <picture>
+              <source
+                srcset="./img/startGirlMob.png"
+                media="(max-width: 400px)"
+              />
+              <source
+                srcset="./img/startGirl.webp"
+                media="(min-width: 401px)"
+              />
+              <img
+                src="./img/startGirl.webp"
+                alt="Красивая ухоженная девушка"
+              />
+            </picture>
+          </div>
         </div>
       </section>
       <section class="history">
         <div class="container history__container">
+          <div class="history__list__item history__mobile">
+            <p class="history__list__item__bigP">
+              2022 - 2025<span class="history__list__item__bigP__span">г.</span>
+            </p>
+          </div>
           <ul class="history__list">
             <li class="history__list__item">
               <img
@@ -118,7 +185,7 @@
               </p>
             </li>
             <li class="history__list__item noBG">
-              <img class="ellipsePink" src="./img/svg/ellipsePink.svg" alt="" />
+              <div class="ellipsePink"></div>
               <p class="history__list__item__bigP">
                 2022<span class="history__list__item__bigP__span">г.</span>
               </p>
@@ -162,11 +229,7 @@
               </p>
             </li>
             <li class="history__list__item noBG">
-              <img
-                class="ellipseYellow"
-                src="./img/svg/ellipseYellow.svg"
-                alt=""
-              />
+              <div class="ellipseYellow"></div>
               <p class="history__list__item__bigP">
                 2025<span class="history__list__item__bigP__span">г.</span>
               </p>
@@ -244,6 +307,24 @@
             <div class="marquee-item">
               <img src="./img/runningLine6.webp" alt="Логотип 6" />
             </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine1.webp" alt="Логотип 1" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine2.webp" alt="Логотип 2" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine3.webp" alt="Логотип 3" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine4.webp" alt="Логотип 4" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine5.webp" alt="Логотип 5" />
+            </div>
+            <div class="marquee-item">
+              <img src="./img/runningLine6.webp" alt="Логотип 6" />
+            </div>
           </div>
         </div>
       </section>
@@ -280,13 +361,12 @@
                 предпочтение только безопасным и наиболее эффективным
                 процедурам. <br /><br />
               </p>
-              <float>
+              <div class="floatImg">
                 <img
-                  class="floatImg"
-                  src="./img/heroTravel.webp"
-                  alt="женщина путешествует"
+                  src="./img/Hero.png"
+                  alt="Полина на конференции Аравиа в Египте"
                 />
-              </float>
+              </div>
               <p class="hero__info__text__greeting">
                 <br />
                 Активно посещаю форумы, конференции, в том числе и
@@ -296,9 +376,14 @@
               </p>
             </div>
             <div class="hero__info__img">
-              <img src="./img/hero.webp" alt="hero foto" />
+              <img src="./img/conferention.png" alt="hero foto" />
             </div>
-            <p class="hero__info__eng">POLINA YAZEVA</p>
+          </div>
+          <div class="hero__eng">
+            <span class="hero__info__eng__name">POLINA </span>
+            <br />
+            <br />
+            <span class="hero__info__eng__family"> YAZEVA</span>
           </div>
         </div>
       </section>
@@ -314,6 +399,12 @@
                 <p class="help__text__buttons__btn">Индивидуальный подход</p>
                 <p class="help__text__buttons__btn">Качество</p>
                 <p class="help__text__buttons__btn">Доступные цены</p>
+                <p class="help__text__buttons__btn">Профессионализм</p>
+              </div>
+              <div class="help__text__buttons__mob help__text__buttons">
+                <p class="help__text__buttons__btn">Качество</p>
+                <p class="help__text__buttons__btn">Доступные цены</p>
+                <p class="help__text__buttons__btn">Индивидуальный подход</p>
                 <p class="help__text__buttons__btn">Профессионализм</p>
               </div>
             </div>
@@ -350,7 +441,7 @@
               <a
                 href="https://aravia.ru/beautymap/?srsltid=AfmBOoplxOgu2CBIo9D3JQvUaakIgDmbzrkEbUAupLiDHKm_kYa5I8MH"
               >
-                <button type="button" class="broun__btn pulse__btn">
+                <button type="button" class="broun__btn pulse__btn help__btn">
                   Получить скидку
                 </button>
               </a>
@@ -361,7 +452,7 @@
       <section class="care">
         <div class="container care__container">
           <div class="title care__title">
-            <div class="title__left">
+            <div class="title__left title__left__care">
               <h2>ЗАБОТА О КРАСОТЕ И ЗДОРОВЬЕ</h2>
             </div>
 
@@ -373,34 +464,36 @@
               </div>
             </div>
           </div>
-          <div class="care__btns">
-            <button
-              type="button"
-              class="care__btns__btn light__btn light__btn_active"
-              data-target="face_care"
-            >
-              Лицо
-            </button>
-            <button
-              type="button"
-              class="care__btns__btn light__btn"
-              data-target="shape_care"
-            >
-              Коррекция фигуры
-            </button>
-            <button
-              type="button"
-              class="care__btns__btn light__btn"
-              data-target="depilation_care"
-            >
-              Депиляция
-            </button>
+          <div class="care__btns-wrapper">
+            <div class="care__btns">
+              <button
+                type="button"
+                class="care__btns__btn light__btn light__btn_active"
+                data-target="face_care"
+              >
+                Лицо
+              </button>
+              <button
+                type="button"
+                class="care__btns__btn light__btn"
+                data-target="shape_care"
+              >
+                Коррекция фигуры
+              </button>
+              <button
+                type="button"
+                class="care__btns__btn light__btn"
+                data-target="depilation_care"
+              >
+                Депиляция
+              </button>
+            </div>
           </div>
 
           <ul class="care__list" id="face_care">
             <li class="care__list__el">
               <img
-                class="care__list__el__img"
+                class="care__list__el__img care__list__el__img__border"
                 src="./img/care/care1.webp"
                 alt="лицо"
               />
@@ -457,11 +550,15 @@
                   процессов старения кожи. Индивидуальный подход.
                 </p>
               </div>
-              <img src="./img/care/care4.webp" alt="лицо" />
+              <img
+                src="./img/care/care4.webp"
+                alt="лицо"
+                class="care__list__el__img"
+              />
             </li>
             <li class="care__list__el">
               <img
-                class="care__list__el__img"
+                class="care__list__el__img care__list__el__img__border__end"
                 src="./img/care/care5.webp"
                 alt="лицо"
               />
@@ -477,7 +574,7 @@
             </li>
             <li class="care__list__el">
               <img
-                class="care__list__el__img"
+                class="care__list__el__img care__list__el__img__border__end__mob"
                 src="./img/care/care6.webp"
                 alt="лицо"
               />
@@ -493,7 +590,7 @@
           <ul class="care__list" id="shape_care" style="display: none">
             <li class="care__list__el">
               <img
-                class="care__list__el__img"
+                class="care__list__el__img care__list__el__img__border"
                 src="./img/care/massage.webp"
                 alt="лицо"
               />
@@ -555,7 +652,7 @@
                 </p>
               </div>
               <img
-                class="care__list__el__img"
+                class="care__list__el__img care__list__el__img__border__end__el"
                 src="./img/care/complex.webp"
                 alt="лицо"
               />
@@ -564,7 +661,7 @@
           <ul class="care__list" id="depilation_care" style="display: none">
             <li class="care__list__el">
               <img
-                class="care__list__el__img"
+                class="care__list__el__img care__list__el__img__border"
                 src="./img/care/dep1.webp"
                 alt="лицо"
               />
@@ -623,7 +720,7 @@
                 </p>
               </div>
               <img
-                class="care__list__el__img"
+                class="care__list__el__img care__list__el__img__border__end__el"
                 src="./img/care/dep4.webp"
                 alt="лицо"
               />
@@ -634,7 +731,7 @@
       <section class="price" id="price">
         <div class="container price__container">
           <div class="title price__title">
-            <div class="title__left">
+            <div class="title__left title__left__price">
               <!-- <img
                 class="ellipseYellow"
                 src="./img/svg/ellipseYellow.svg"
@@ -653,28 +750,30 @@
             </div>
           </div>
           <div class="price__info">
-            <div class="price__info__btn">
-              <button
-                type="button"
-                class="price__info__btn__el light__btn light__btn_active"
-                data-target="face-price"
-              >
-                Лицо
-              </button>
-              <button
-                type="button"
-                class="price__info__btn__el light__btn"
-                data-target="shape-price"
-              >
-                Коррекция фигуры
-              </button>
-              <button
-                type="button"
-                class="price__info__btn__el light__btn"
-                data-target="depilation-price"
-              >
-                Депиляция
-              </button>
+            <div class="price__info__btn-wrapper">
+              <div class="price__info__btn">
+                <button
+                  type="button"
+                  class="price__info__btn__el light__btn light__btn_active"
+                  data-target="face-price"
+                >
+                  Лицо
+                </button>
+                <button
+                  type="button"
+                  class="price__info__btn__el light__btn"
+                  data-target="shape-price"
+                >
+                  Коррекция фигуры
+                </button>
+                <button
+                  type="button"
+                  class="price__info__btn__el light__btn"
+                  data-target="depilation-price"
+                >
+                  Депиляция
+                </button>
+              </div>
             </div>
             <div class="price__info__btn__arr" id="face-price">
               <div class="price__info__btn__arr__el">
@@ -1050,8 +1149,7 @@
           <div class="title result__title">
             <div class="title__left">
               <h2>
-                БОЛЕЕ 500 КЛИЕНТОВ<br />
-                УВИДЕЛИ РЕЗУЛЬТАТ
+                ВИДИМЫЕ РЕЗУЛЬТАТЫ
               </h2>
             </div>
             <div class="title__right">
@@ -1150,6 +1248,7 @@
               <img src="img/svg/icon-arrow-brown.svg" alt="стрелка вправо" />
             </button>
           </div>
+          <div class="result__dots"></div>
         </div>
       </section>
 
@@ -1379,14 +1478,7 @@
               </div>
             </div>
           </div>
-
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A22d03477d361b0526ece54002cf19f77819d6dc03174bedf9ca4d1f53b10e193&amp;scroll=false&amp;zoom=false&amp;source=constructor"
-            width="100%"
-            height="644"
-            style="border: none"
-          ></iframe>
-
+          <div id="yandex-map" style="width: 100%; height: 644px"></div>
           <div class="contacts__window">
             <h5 class="contacts__window__header">Жду встречи с Вами!</h5>
             <div class="contacts__window__phone">
@@ -1405,8 +1497,10 @@
             </div>
             <div class="contacts__window__work-hours">
               <img src="./img/svg/work-hours.svg" alt="clock icon" />
-              <p>Режим работы:</p>
-              <span> по предварительной записи</span>
+              <div class="contacts__window__work-hours__text">
+                <p>Режим работы:</p>
+                <span> по предварительной записи</span>
+              </div>
             </div>
           </div>
         </div>
@@ -1561,8 +1655,18 @@
       </div>
     </main>
     <footer class="footer">
+      <div class="footer__logo logo">
+        <a href="#start">
+          <img
+            class="footer__logo__pic"
+            src="./img/svg/footerLogo.svg"
+            alt="логотип"
+          />
+        </a>
+      </div>
+
       <div class="footer__img">
-        <img src="./img/footer.webp" alt="ноги" />
+        <img src="./img/footer.png" alt="ноги" class="footer__img__el" />
       </div>
       <div class="container footer__container">
         <nav class="footer__nav nav">
@@ -1589,20 +1693,25 @@
               </div>
               <a href="#" class="nav__list__item__link">
                 г.Красноярск , <br />Пр-т 60 лет образования <br />
-                СССР, д 60, вход со стороны <br />
-                дороги, левое крыльцо</a
-              >
+                СССР, д 60,
+                <span class="nav__list__item__link__span">
+                  вход со стороны <br />
+                  дороги, левое крыльцо
+                </span>
+              </a>
             </li>
             <li class="nav__list__item">
               <div>
                 <img src="./img/svg/tel.svg" alt="telphone" />
               </div>
-              <a href="tel:+79029900645" class="nav__list__item__link"
+              <a
+                href="tel:+79029900645"
+                class="nav__list__item__link nav__list__item__link__tel"
                 >8-902-990-06-45</a
               >
             </li>
           </ul>
-          <a href="#" class="nav__list__item__link"
+          <a href="#" class="nav__list__item__link nav__list__item__link__span"
             >Политика конфедециальности</a
           >
         </nav>
@@ -1613,11 +1722,15 @@
           Записаться
         </button>
       </div>
-      <p class="footer__eng">POLINA YAZEVA</p>
+      <p class="footer__eng">
+        <span class="footer__eng__name">POLINA</span>
+        <span class="footer__eng__surname">YAZEVA</span>
+      </p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=bbda5195-a929-4ff1-9ef3-d5e26c58d07f&lang=ru_RU"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

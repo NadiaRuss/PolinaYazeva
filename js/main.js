@@ -24,74 +24,80 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   let lastScrollPosition = window.scrollY;
   let isScrollingDown = false;
   let isRendered = false;
-  
+
   // Функция для анимации элементов прайса
   function animatePriceItems() {
-    const activeTab = document.querySelector('.price__info__btn__arr:not([style*="none"])');
+    const activeTab = document.querySelector(
+      '.price__info__btn__arr:not([style*="none"])'
+    );
     if (!activeTab) return;
-    
-    const items = activeTab.querySelectorAll('.price__info__btn__arr__el');
-    
-    items.forEach(item => {
-      item.style.opacity = '0';
-      item.style.transform = 'translateY(20px)';
-      item.style.transition = 'none';
+
+    const items = activeTab.querySelectorAll(".price__info__btn__arr__el");
+
+    items.forEach((item) => {
+      item.style.opacity = "0";
+      item.style.transform = "translateY(20px)";
+      item.style.transition = "none";
     });
-    
+
     setTimeout(() => {
       items.forEach((item, index) => {
-        item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-        
+        item.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+
         setTimeout(() => {
-          item.style.opacity = '1';
-          item.style.transform = 'translateY(0)';
+          item.style.opacity = "1";
+          item.style.transform = "translateY(0)";
         }, index * 100);
       });
     }, 50);
   }
-  
+
   // Обработчик скролла
   function handleScroll() {
-    
     const currentScrollPosition = window.scrollY;
     isScrollingDown = currentScrollPosition > lastScrollPosition;
     lastScrollPosition = currentScrollPosition;
-    
-    const priceSection = document.querySelector('.price');
+
+    const priceSection = document.querySelector(".price");
     if (!priceSection) return;
-    
+
     const sectionTop = priceSection.offsetTop;
     const sectionHeight = priceSection.offsetHeight;
     const windowHeight = window.innerHeight;
-    
+
     // Проверяем, видна ли секция и скроллим вниз
-    if (isScrollingDown && 
-        currentScrollPosition + windowHeight > sectionTop + 100 && 
-        currentScrollPosition < sectionTop + sectionHeight - 100 && !isRendered) {
+    if (
+      isScrollingDown &&
+      currentScrollPosition + windowHeight > sectionTop + 100 &&
+      currentScrollPosition < sectionTop + sectionHeight - 100 &&
+      !isRendered
+    ) {
       animatePriceItems();
       isRendered = true;
     } else if (!isScrollingDown) {
-      const listElements = document.querySelectorAll('.price__info__btn__arr__el');
-      listElements.forEach(el => {
-        el.style.opacity = '1';
+      const listElements = document.querySelectorAll(
+        ".price__info__btn__arr__el"
+      );
+      listElements.forEach((el) => {
+        el.style.opacity = "1";
       });
       isRendered = true;
     }
   }
-  
+
   // Наблюдатель за появлением секции при скролле вниз
   if (!isRendered) {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
   } else if (isRendered) {
     return;
   }
-  
+
   // Инициализация анимации при загрузке, если секция уже видна
-  const priceSection = document.querySelector('.price');
+  const priceSection = document.querySelector(".price");
   if (priceSection) {
     const rect = priceSection.getBoundingClientRect();
     if (rect.top < window.innerHeight && rect.bottom > 0) {
@@ -100,18 +106,18 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Обработчик для кнопок переключения вкладок
-  const buttons = document.querySelectorAll('.price__info__btn__el');
-  buttons.forEach(button => {
-    button.addEventListener('click', function() {
-      buttons.forEach(btn => btn.classList.remove('active'));
-      this.classList.add('active');
-      
+  const buttons = document.querySelectorAll(".price__info__btn__el");
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+
       const targetId = this.dataset.target;
-      document.querySelectorAll('.price__info__btn__arr').forEach(content => {
-        content.style.display = 'none';
+      document.querySelectorAll(".price__info__btn__arr").forEach((content) => {
+        content.style.display = "none";
       });
-      document.getElementById(targetId).style.display = 'block';
-      
+      document.getElementById(targetId).style.display = "block";
+
       setTimeout(animatePriceItems, 50);
     });
   });
@@ -162,16 +168,17 @@ if (!("scrollBehavior" in document.documentElement.style)) {
 //всплыте ФИ в футере
 document.addEventListener("DOMContentLoaded", function () {
   const animatedElements = document.querySelectorAll(
-    ".hero__info__eng, .footer__eng"
+    ".hero__eng, .footer__eng"
   );
 
   if (animatedElements.length === 0) {
-    console.log("Элементы для анимации не найдены");
+    //console.log("Элементы для анимации не найдены");
     return;
   }
 
   const observer = new IntersectionObserver(
     (entries) => {
+          //console.log('Observer triggered', entries);
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("animate");
@@ -181,8 +188,8 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     {
-      threshold: 0.1,
-      rootMargin: "0px 0px -50px 0px",
+      threshold: 0.05,
+      rootMargin: "0px 0px 40% 0px",
     }
   );
 
@@ -198,7 +205,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
 //слайдер для секции result
 const swiper = new Swiper(".result__swiper", {
   slidesPerView: 1,
@@ -208,6 +214,11 @@ const swiper = new Swiper(".result__swiper", {
   navigation: {
     nextEl: ".result__slider__btn",
   },
+
+  pagination: {
+      el: '.result__dots',
+      clickable: true,
+  }
 });
 //слайдер для секции result
 
@@ -282,7 +293,6 @@ const swiper3 = new Swiper(".qual__slider__swiper", {
 });
 //слайдер для секции qual
 
-
 //popup
 $(".open__popup").on("click", function (e) {
   e.preventDefault();
@@ -336,7 +346,7 @@ $(".popup__form--consult").on("submit", function (e) {
       allValid = false;
     }
 
-    console.log(allValid);
+    //console.log(allValid);
   }
 
   checkInputs();
@@ -363,62 +373,154 @@ $(".popup__form--consult").on("submit", function (e) {
     $(".popup__message__text").text(
       "Валидация не пройдена. Необходимо заполнить все поля формы и дать согласие на обработку персональных данных"
     );
-    console.log("валидация пройдена");
+    //console.log("валидация пройдена");
 
     //код для отправки формы
   }
 });
 
 //куки
-document.addEventListener('DOMContentLoaded', function() {
-  const cookiePopup = document.querySelector('.popup--cookie');
-  const overlay = document.querySelector('.overlay');
-  const cookieCloseBtn = cookiePopup.querySelector('.popup__close__cook');
-  const cookieAcceptBtn = cookiePopup.querySelector('.cookie-btn');
-// debugger
+document.addEventListener("DOMContentLoaded", function () {
+  const cookiePopup = document.querySelector(".popup--cookie");
+  const overlay = document.querySelector(".overlay");
+  const cookieCloseBtn = cookiePopup.querySelector(".popup__close__cook");
+  const cookieAcceptBtn = cookiePopup.querySelector(".cookie-btn");
+  // debugger
   // Проверяем, есть ли запись в localStorage
-  const cookieConsent = localStorage.getItem('cookieConsent');
+  const cookieConsent = localStorage.getItem("cookieConsent");
 
   // Если записи нет или значение false - показываем попап через 5 сек
   // Пользователь ранее закрывал крестиком (значение 'closed')
-  if (cookieConsent === null || cookieConsent === 'closed') {
+  if (cookieConsent === null || cookieConsent === "closed") {
     setTimeout(showCookiePopup, 5000);
-    console.log('false')
+    //console.log("false");
   }
 
   // Функция показа попапа
   function showCookiePopup() {
-    cookiePopup.style.display = 'block';
-    overlay.style.display = 'block';
+    cookiePopup.style.display = "block";
+    overlay.style.display = "block";
   }
 
   // Функция скрытия попапа
   function hideCookiePopup() {
-    cookiePopup.style.display = 'none';
-    overlay.style.display = 'none';
+    cookiePopup.style.display = "none";
+    overlay.style.display = "none";
   }
 
   // При клике на крестик
-  cookieCloseBtn.addEventListener('click', function() {
+  cookieCloseBtn.addEventListener("click", function () {
     hideCookiePopup();
-    localStorage.setItem('cookieConsent', 'closed');
+    localStorage.setItem("cookieConsent", "closed");
   });
 
   // При клике на кнопку "принимаю"
-  cookieAcceptBtn.addEventListener('click', function() {
+  cookieAcceptBtn.addEventListener("click", function () {
     hideCookiePopup();
-    localStorage.setItem('cookieConsent', 'true');
-    // Устанавливаем на год 
-    const oneYear = new Date(new Date().setFullYear(new Date().getFullYear() + 1));
-    localStorage.setItem('cookieExpire', oneYear);
-    console.log('trye')
-    console.log(oneYear)
+    localStorage.setItem("cookieConsent", "true");
+    // Устанавливаем на год
+    const oneYear = new Date(
+      new Date().setFullYear(new Date().getFullYear() + 1)
+    );
+    localStorage.setItem("cookieExpire", oneYear);
+    //console.log("trye");
+    //console.log(oneYear);
   });
-   if (cookieConsent === 'true') {
-    const expireDate = localStorage.getItem('cookieExpire');
+  if (cookieConsent === "true") {
+    const expireDate = localStorage.getItem("cookieExpire");
     if (expireDate && new Date(expireDate) < new Date()) {
       // Срок истек - удаляем записи
-      localStorage.removeItem('cookieConsent');
-      localStorage.removeItem('cookieExpire');
-    }}
-})
+      localStorage.removeItem("cookieConsent");
+      localStorage.removeItem("cookieExpire");
+    }
+  }
+});
+
+// меню для хэдера
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  let isMenuOpen = false;
+
+  if (menuToggle && mobileMenu) {
+    // Переключение меню
+    menuToggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      isMenuOpen = !isMenuOpen;
+
+      // Переключаем классы
+      menuToggle.classList.toggle("active", isMenuOpen);
+      mobileMenu.classList.toggle("active", isMenuOpen);
+    });
+
+    // Закрытие при клике вне меню
+    document.addEventListener("click", function (e) {
+      if (
+        isMenuOpen &&
+        !mobileMenu.contains(e.target) &&
+        !menuToggle.contains(e.target)
+      ) {
+        closeMenu();
+      }
+    });
+
+    // Закрытие при скролле
+    window.addEventListener("scroll", function () {
+      if (isMenuOpen) {
+        closeMenu();
+      }
+    });
+
+    function closeMenu() {
+      isMenuOpen = false;
+      menuToggle.classList.remove("active");
+      mobileMenu.classList.remove("active");
+    }
+  }
+});
+// меню для хэдера
+
+//ymaps
+var placemarkCoords = [56.106836, 92.905662];
+
+ymaps.ready(function () {
+  var map = new ymaps.Map("yandex-map", {
+    center: placemarkCoords, // По умолчанию — метка по центру
+    zoom: 16,
+    controls: [] // Опционально: убрать лишние элементы управления
+  });
+
+  var placemark = new ymaps.Placemark(
+    placemarkCoords,
+    { hintContent: "проспект 60 лет Образования СССР, 60" },
+    { preset: "islands#redDotIcon" }
+  );
+  map.geoObjects.add(placemark);
+
+  function adjustMapCenter() {
+    var newLongitude;
+    var newLatitude = placemarkCoords[0]; // Исходная широта
+
+    if (window.innerWidth > 900) {
+      // Смещение по долготе на 10% ширины карты
+      newLongitude = placemarkCoords[1] - (map.getBounds()[1][1] - map.getBounds()[0][1]) * 0.1;
+      map.setCenter([newLatitude, newLongitude]);
+    } else if (window.innerWidth > 500) {
+      // Смещение по долготе на 30% ширины карты
+      newLongitude = placemarkCoords[1] - (map.getBounds()[1][1] - map.getBounds()[0][1]) * 0.3;
+      map.setCenter([newLatitude, newLongitude]);
+    } else {
+      // Для экранов <500px: смещение по долготе на 30% и по широте вверх на 10%
+      newLongitude = placemarkCoords[1] - (map.getBounds()[1][1] - map.getBounds()[0][1]) * 0.1;
+      var bounds = map.getBounds();
+      var mapHeight = bounds[1][0] - bounds[0][0]; // Высота карты в градусах
+      newLatitude = placemarkCoords[0] + mapHeight * (-0.3); // Смещаем вверх на 10% высоты
+      map.setCenter([newLatitude, newLongitude]);
+    }
+  }
+
+  adjustMapCenter();
+  window.addEventListener('resize', adjustMapCenter);
+  map.behaviors.disable('scrollZoom');
+});
+//ymaps
