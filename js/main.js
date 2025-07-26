@@ -233,6 +233,27 @@ const swiper2 = new Swiper(".review__swiper", {
     el: ".review__slider__dots__swiper",
     clickable: true,
   },
+
+  breakpoints: {
+    320: {
+      slidesPerView: "auto",
+      loop: true,
+      initialSlide: 0,
+      centeredSlides: false,
+    },
+    500: {
+      slidesPerView: "auto",
+      loop: true,
+      initialSlide: 0,
+      centeredSlides: false,
+    },
+    970: {
+      slidesPerView: "auto",
+      loop: false,
+      initialSlide: 1,
+      centeredSlides: true,
+    },
+  }
 });
 //слайдер для секции review
 

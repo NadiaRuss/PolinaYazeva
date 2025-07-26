@@ -979,7 +979,6 @@ br.mobile-only {
     flex-direction: column;
     gap: 40px; }
     .review__slider__wrap {
-      width: 100%;
       overflow: unset; }
     .review__slider__list {
       display: flex;
@@ -1013,7 +1012,8 @@ br.mobile-only {
         .review__slider__list__item__user {
           display: flex;
           align-items: center;
-          gap: 11px; }
+          gap: 11px;
+          margin-top: 12px; }
           .review__slider__list__item__user__ava {
             width: 45px;
             height: 45px;
@@ -1024,8 +1024,7 @@ br.mobile-only {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: "Inter";
-            margin-top: 12px; }
+            font-family: "Inter"; }
           .review__slider__list__item__user__name {
             font-family: Inter;
             font-weight: 400;
@@ -1248,6 +1247,10 @@ br.mobile-only {
   padding-top: 65px;
   padding-left: 63px; }
 
+@media (max-width: 1315px) {
+  .review__container {
+    padding-left: 2%;
+    padding-right: 2%; } }
 @media (max-width: 1300px) {
   .container {
     padding-left: clamp(15px, 5%, 80px);
@@ -1442,6 +1445,9 @@ br.mobile-only {
     box-shadow: none;
     color: #ffe6df;
     position: relative; } }
+@media (max-width: 970px) {
+  .review__slider__list__item {
+    padding: 26px; } }
 @media (max-width: 900px) {
   .start__container {
     padding-top: 68px; }
@@ -1785,6 +1791,30 @@ br.mobile-only {
 
   .qual__slider__list__item {
     height: unset; } }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 20px; }
+
+  .review__slider__wrap {
+    max-width: 100%;
+    width: 100%; }
+
+  .review__slider__list__item {
+    height: unset;
+    padding: 20px;
+    max-width: unset;
+    width: 242px !important; }
+
+  .review__slider__list__item__desc {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -3%; }
+
+  .review__slider__list__item__user {
+    margin-top: 30px; } }
 @media (max-width: 400px) {
   .start__container {
     min-height: 524px;
@@ -1869,6 +1899,10 @@ br.mobile-only {
   .contacts__container {
     padding-left: 0;
     padding-right: 0; }
+
+  .contacts__title {
+    padding-left: 20px;
+    padding-right: 20px; }
 
   .help__ahead {
     margin-top: 260px; }
