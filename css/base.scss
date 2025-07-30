@@ -102,13 +102,14 @@ fieldset {
 
 h1 {
   font-family: "Cactus";
-  font-size: clamp(3rem, 10vw, 8rem); 
+  font-size: clamp(3rem, 9vw, 128px); 
   font-weight: 400;
   line-height: 120%;
   color: #8d6c56;
   letter-spacing: -0.03em;
   position: relative;
   z-index: 1;
+  min-height: 154px;
 }
 h2 {
   font-family: "Cactus";
