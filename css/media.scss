@@ -354,6 +354,9 @@
   .history__list__item__bigP {
     font-size: 80px;
   }
+  .history__list__item__bigP__span {
+    font-size: 54px;
+  }
   .price__div {
     display: flex;
     width: 100%;
@@ -667,6 +670,20 @@
     z-index: 2;
     pointer-events: none;
   }
+
+  .history__list__item__bigP {
+    font-size: 59px;
+  }
+  .history__list__item__p {
+    font-size: 13px;
+  }
+  .history__mob__noDisplay {
+    display: none;
+  }
+  .history__list {
+    grid-template-columns: repeat(auto-fill, 280px);
+    gap: 8px;
+  }
   .contacts__container {
     padding-left: 0;
     padding-right: 0;
@@ -746,6 +763,10 @@
 }
 
 @media (max-width: 400px) {
+    .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .start__container {
     max-height: 524px;
     overflow: hidden;
@@ -764,11 +785,12 @@
     margin: 84px 0 15px;
     max-width: 280px;
   }
-  // .start__girl {
-  //   max-width: 100%;
-  //   height: 683px;
-  //   transform: translate(0%, -15%);
-  // }
+  .history__container {
+    padding: 0px;
+  }
+  .history__list__item {
+    padding: 0;
+  }
   .floatImg {
     display: flex;
     float: unset;
@@ -829,10 +851,7 @@
   .start__h2 {
     font-size: 25px;
   }
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+
   .care__list__el__img {
     height: 88vw;
   }
