@@ -127,9 +127,9 @@
       <section class="start" id="start">
         <div class="container start__container">
           <h2 class="start__h2">
-            Косметолог-<br class="mobile-only" />эстетист
+            Косметолог-<br class="mobile__only__h2" />эстетист
           </h2>
-          <h1 class="start__h1">Полина Язева</h1>
+          <h1 class="start__h1">Полина <br class="mobile__only__h1" />Язева</h1>
           <p class="start__description">
             Индивидуальные программы по уходу за лицом и телом с учетом ваших
             потребностей
@@ -152,16 +152,17 @@
             <picture>
               <source
                 srcset="./img/startGirlMob.png"
-                media="(max-width: 400px)"
+                media="(max-width: 480px)"
+              />
+              <source
+                srcset="./img/startGirl.png"
+                media="(max-width: 1100px)"
               />
               <source
                 srcset="./img/startGirl.webp"
-                media="(min-width: 401px)"
+                media="(min-width: 1100px)"
               />
-              <img
-                src="./img/startGirl.webp"
-                alt="Красивая ухоженная девушка"
-              />
+              <img src="./img/startGirl.png" alt="Красивая ухоженная девушка" />
             </picture>
           </div>
         </div>
@@ -174,7 +175,7 @@
             </p>
           </div>
           <ul class="history__list">
-            <li class="history__list__item">
+            <li class="history__list__item history__mob__noDisplay">
               <img
                 class="history__list__item__img"
                 src="./img/svg/edit1.svg"
@@ -234,7 +235,7 @@
                 2025<span class="history__list__item__bigP__span">г.</span>
               </p>
             </li>
-            <li class="history__list__item">
+            <li class="history__list__item history__mob__noDisplay">
               <img
                 class="history__list__item__img"
                 src="./img/svg/thumbs-up4.svg"
@@ -1148,9 +1149,7 @@
         <div class="container result__container">
           <div class="title result__title">
             <div class="title__left">
-              <h2>
-                ВИДИМЫЕ РЕЗУЛЬТАТЫ
-              </h2>
+              <h2>ВИДИМЫЕ РЕЗУЛЬТАТЫ</h2>
             </div>
             <div class="title__right">
               <div class="title__right__text">

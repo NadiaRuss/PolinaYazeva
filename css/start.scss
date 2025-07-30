@@ -60,11 +60,6 @@
     z-index: 0;
     transform: translateX(20%);
     top: 0%;
-    &-wrapper {
-      position: relative;
-      height: 100%;
-      width: 100%;
-    }
     picture {
       position: relative;
       display: block;
@@ -72,7 +67,6 @@
       width: auto;
       z-index: 1;
     }
-
     img {
       display: block;
       height: 100%;
@@ -151,9 +145,6 @@
       slideUp 0.8s ease-out 0.9s forwards, pulse 2s infinite 1.7s forwards;
   }
 }
-br.mobile-only {
-  display: none;
-}
 
 /* Кейфреймы анимаций */
 @keyframes fadeIn {
@@ -202,4 +193,10 @@ br.mobile-only {
       height: 226px;
     }
   }
+}
+.mobile__only__h1 {
+  display: none;
+}
+.mobile__only__h2 {
+  display: none;
 }
