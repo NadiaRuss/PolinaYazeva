@@ -644,28 +644,30 @@ h4 {
   position: relative;
   overflow: hidden;
   margin-top: 89px;
-  gap: 20px;
-  z-index: 2; }
-  .hero__info__text__name {
-    color: #e08269;
-    font-weight: bold; }
-  .hero__info__text__des {
-    font-weight: 400;
-    color: #7d7b7b; }
-  .hero__info__text__greeting {
-    font-weight: 400;
-    font-size: 16px;
-    color: #7d7b7b;
-    margin-top: 36px;
-    hyphens: auto; }
+  gap: 20px; }
+  .hero__info__text {
+    z-index: 2; }
+    .hero__info__text__name {
+      color: #e08269;
+      font-weight: bold; }
+    .hero__info__text__des {
+      font-weight: 400;
+      color: #7d7b7b; }
+    .hero__info__text__greeting {
+      font-weight: 400;
+      font-size: 16px;
+      color: #7d7b7b;
+      margin-top: 36px;
+      hyphens: auto; }
+  .hero__info__img {
+    z-index: 2; }
   .hero__info__img img {
     border-radius: 10px;
     max-width: 523px; }
 
 .hero__eng {
   font-family: "Cactus";
-  font-size: 128px;
-  line-height: 120%;
+  font-size: clamp(2rem, 10vw, 128px);
   letter-spacing: -0.03em;
   color: rgba(114, 53, 37, 0.1);
   position: relative;
@@ -673,7 +675,7 @@ h4 {
   justify-content: center;
   gap: 20px;
   z-index: 1;
-  margin-top: -62px;
+  margin-top: -4%;
   transform: translateX(-100%);
   opacity: 0;
   transition: transform 2s linear, opacity 2s linear; }
@@ -683,7 +685,7 @@ h4 {
 
 .floatImg {
   float: left;
-  margin: 0 15px 15px 0; }
+  margin: 0 15px 0 0; }
 
 .floatImg img {
   max-height: 237px;
@@ -1260,9 +1262,6 @@ h4 {
   .start__h2 {
     font-size: 30px; }
 
-  .hero__eng {
-    font-size: 120px; }
-
   .hero__info {
     align-items: flex-end; }
 
@@ -1307,6 +1306,12 @@ h4 {
   .header__tel {
     display: none; }
 
+  .hero__info__img img {
+    max-width: 490px; }
+
+  .hero__info__text__greeting {
+    margin-top: 25px; }
+
   .footer__container {
     padding-left: 207px; }
 
@@ -1331,21 +1336,30 @@ h4 {
 
   .hero__info {
     flex-direction: column-reverse;
-    align-items: center; }
+    align-items: center;
+    margin: 42px auto 0;
+    max-width: 970px; }
 
   .floatImg {
-    float: right; }
+    float: right;
+    margin: 0 0 15px 15px;
+    height: auto; }
+
+  .floatImg img {
+    max-height: 300px; }
 
   .hero__eng {
-    font-size: 101px; }
+    margin-top: 9%; }
+
+  .hero__info__eng__name {
+    margin-top: -12%;
+    margin-right: -14%; }
 
   .hero__info__text__greeting {
     font-size: 18px; }
 
-  .floatImg {
-    margin: 0;
-    width: 300px;
-    height: auto; }
+  .hero__info__img img {
+    max-width: 540px; }
 
   .price__info__btn__arr__el__item {
     width: 160px; }
@@ -1459,9 +1473,6 @@ h4 {
   .start__container {
     padding-top: 68px; }
 
-  .hero__eng {
-    font-size: 72px; }
-
   .price__info__btn__arr__el__info {
     font-size: 26px; }
 
@@ -1522,8 +1533,32 @@ h4 {
   .header__adress {
     display: none; }
 
+  .hero__title {
+    padding-left: clamp(15px, 5%, 80px);
+    padding-right: clamp(15px, 5%, 80px); }
+
+  .hero__container {
+    padding: 0; }
+
+  .hero__info__text {
+    z-index: 1; }
+
+  .hero__info__img {
+    width: 100%;
+    z-index: 1; }
+
+  .hero__info__img img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 0; }
+
   .hero__eng {
-    font-size: 60px; }
+    transform: translateX(calc(-90% + 20px));
+    font-size: 70px; }
+
+  .hero__info__text {
+    padding-left: clamp(15px, 5%, 80px);
+    padding-right: clamp(15px, 5%, 80px); }
 
   .history__list__item__bigP {
     font-size: 80px; }
@@ -1668,7 +1703,20 @@ h4 {
     gap: 26px; } }
 @media (max-width: 640px) {
   .qual__slider {
-    gap: 16px; } }
+    gap: 16px; }
+
+  .floatImg {
+    display: flex;
+    float: unset;
+    width: 100%;
+    justify-content: flex-end; }
+
+  .hero__eng {
+    margin-top: 14%; }
+
+  .hero__info__eng__name {
+    margin-top: -12%;
+    margin-right: -30%; } }
 @media (max-width: 600px) {
   .start__h1 {
     font-size: 70px; }
@@ -1768,9 +1816,17 @@ h4 {
     font-size: 20px; }
 
   .mobile__only__h2 {
-    display: inline; } }
+    display: inline; }
+
+  .hero__eng {
+    font-size: 65px;
+    margin-top: 19%; }
+
+  .hero__info__eng__name {
+    margin-top: -13%;
+    margin-right: -40%; } }
 @media (max-width: 500px) {
-  .start__h2 {
+  h2 {
     font-size: 20px; }
 
   .review__slider__wrap {
@@ -1809,6 +1865,9 @@ h4 {
     background: linear-gradient(250.92deg, rgba(0, 0, 0, 0.05) 34.77%, rgba(255, 255, 255, 0.7) 50.89%);
     z-index: 2;
     pointer-events: none; }
+
+  .hero__info__eng__name {
+    margin-top: -14%; }
 
   .history__list__item__bigP {
     font-size: 59px; }
@@ -1850,7 +1909,7 @@ h4 {
   .help__img__girl {
     right: -109px; }
 
-  .start__h2 {
+  h2 {
     font-size: 25px; }
 
   .result__slider__list__item__info {
@@ -1890,6 +1949,8 @@ h4 {
     padding-right: 20px; }
 
   .start__container {
+    display: flex;
+    flex-direction: column;
     max-height: 524px;
     overflow: hidden;
     padding-top: 58px; }
@@ -1902,22 +1963,49 @@ h4 {
     font-size: 20px;
     margin-bottom: 9px; }
 
+  .start__btn {
+    margin: 0 auto; }
+
   .start__description {
     padding: 0;
     margin: 84px 0 15px;
     max-width: 280px; }
+
+  .hero__container {
+    padding: 0; }
+
+  .hero__info__text {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .hero__info__text__name {
+    font-size: 20px; }
+
+  .hero__info__text__greeting {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+  .hero__eng {
+    font-size: 60px;
+    margin-top: 30%; }
+
+  .hero__info__eng__name {
+    margin-top: -62px;
+    margin-right: -186px; }
+
+  .floatImg {
+    margin: 0; }
+
+  .floatImg img {
+    margin: 0;
+    max-height: 205px; }
 
   .history__container {
     padding: 0px; }
 
   .history__list__item {
     padding: 0; }
-
-  .floatImg {
-    display: flex;
-    float: unset;
-    width: 100%;
-    justify-content: flex-end; }
 
   .price__info__btn__arr__el__num {
     font-size: 25px;
@@ -1966,7 +2054,7 @@ h4 {
     .title__left__price {
       width: 139px; }
 
-  .start__h2 {
+  h2 {
     font-size: 25px; }
 
   .care__list__el__img {
