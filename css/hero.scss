@@ -5,7 +5,9 @@
   overflow: hidden;
   margin-top: 89px;
   gap: 20px;
+
   &__text {
+      z-index: 2;
     &__name {
       color: #e08269;
       font-weight: bold;
@@ -22,24 +24,28 @@
       hyphens: auto;
     }
   }
+  &__img {
+      z-index: 2;
+  }
   &__img img {
     border-radius: 10px;
     max-width: 523px;
+
   }
 }
 
 .hero__eng {
   font-family: "Cactus";
-  font-size: 128px;
-  line-height: 120%;
+  font-size: clamp(2rem, 10vw, 128px); 
+
   letter-spacing: -0.03em;
   color: rgba(114, 53, 37, 0.1);
   position: relative;
   display: flex;
   justify-content: center;
   gap: 20px;
-  // top: -60px;
-  margin-top: -90px;
+  z-index: 1;
+  margin-top: -4%;
   transform: translateX(-100%);
   opacity: 0;
   transition: transform 2s linear, opacity 2s linear;
@@ -52,7 +58,7 @@
 .floatImg {
   float: left;
   // width: 200px;
-  margin: 0 15px 15px 0;
+  margin: 0 15px 0 0;
 }
 .floatImg img {
   max-height: 237px;
