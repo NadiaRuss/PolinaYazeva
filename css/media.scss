@@ -206,7 +206,7 @@
     display: none;
   }
   .title__left__care {
-    width: 70%;
+    width: 72%;
   }
 
   .title {
@@ -776,6 +776,10 @@
   .help__img__girl {
     right: -109px;
   }
+  .price__info__btn,
+  .care__btns {
+    justify-content: start;
+  }
   h2 {
     font-size: 25px;
   }
@@ -919,10 +923,6 @@
   .footer__img__el {
     width: 118vw;
   }
-  .price__info__btn,
-  .care__btns {
-    justify-content: start;
-  }
 
   .price__title {
     margin-bottom: 40px;
@@ -942,7 +942,9 @@
   h2 {
     font-size: 25px;
   }
-  .qual, .review, .result {
+  .qual,
+  .review,
+  .result {
     margin: 0;
   }
   .contacts__title {
