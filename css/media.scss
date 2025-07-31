@@ -650,6 +650,9 @@
     display: flex;
     margin: 0 auto;
   }
+  .title {
+    margin-top: 65px;
+  }
 }
 @media (max-width: 510px) {
   .start__h1 {
@@ -873,7 +876,7 @@
   .floatImg {
     margin: 0;
   }
-  .floatImg img{
+  .floatImg img {
     margin: 0;
     max-height: 205px;
   }
@@ -928,6 +931,7 @@
     gap: 15px;
     border: none;
     flex-wrap: wrap;
+    margin-top: 100px;
     &__right {
       padding-top: 6px;
     }
@@ -937,6 +941,12 @@
   }
   h2 {
     font-size: 25px;
+  }
+  .qual, .review, .result {
+    margin: 0;
+  }
+  .contacts__title {
+    margin-top: 131px;
   }
 
   .care__list__el__img {
