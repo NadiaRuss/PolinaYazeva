@@ -34,7 +34,7 @@
     }
     &__text {
       width: 50%;
-      padding: 12px 24px;
+      padding: 12px 11px;
     }
   }
 }
@@ -46,6 +46,9 @@
   .start__dec {
     right: 40%;
     top: 376px;
+  }
+  .qual__slider__wrap {
+    width: 70%;
   }
 
   .mobile__tel {
@@ -221,6 +224,9 @@
   .contacts iframe {
     height: 686px;
   }
+  .qual__slider__wrap {
+    width: 70%;
+  }
 
   .contacts__window {
     top: unset;
@@ -314,6 +320,9 @@
   .start__container {
     padding-top: 68px;
     // height: 70vh;
+  }
+  .qual__container {
+    gap: 60px;
   }
   .price__info__btn__arr__el__info {
     font-size: 26px;
@@ -437,12 +446,18 @@
   .broun__btn {
     padding: 20px 62px;
   }
+  .nav__list__footer {
+    gap: 35px;
+  }
   .footer__eng {
-    font-size: 60px;
+    font-size: 70px;
     bottom: 17px;
     left: 0;
     width: 100%;
     flex-direction: column;
+    padding-left: 15%;
+    padding-right: 15%;
+    gap: 0;
     &__name {
       align-self: flex-start;
     }
@@ -453,7 +468,7 @@
   .footer__container {
     flex-direction: column;
     padding: 60px 35px;
-    padding-bottom: 411px;
+    padding-bottom: 362px;
     gap: 48px;
     margin: 0;
   }
@@ -1077,7 +1092,7 @@
     padding: 9px 16px;
   }
   .help__text {
-    padding: 53px 455px 121px 0px;
+    padding: 53px 482px 121px 0px;
   }
 }
 @media (max-width: 380px) {
@@ -1098,6 +1113,9 @@
 
   .mob__only {
     display: inline;
+  }
+  .help__text {
+    padding-right: 450px;
   }
 }
 
