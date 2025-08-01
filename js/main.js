@@ -266,6 +266,10 @@ const swiper3 = new Swiper(".qual__slider__swiper", {
     prevEl: ".qual__slider__btn.left",
     nextEl: ".qual__slider__btn.right",
   },
+    pagination: {
+    el: ".qual__slider__dots__swiper",
+    clickable: true,
+  },
 });
 //слайдер для секции qual
 

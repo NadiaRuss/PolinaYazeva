@@ -259,7 +259,26 @@
     display: flex;
   }
   .help__behind {
-    margin-top: 100px;
+    margin-top: 0;
+  }
+
+  .runningLine__container {
+    margin-bottom: 120px;
+  }
+  .result {
+    margin-top: 120px;
+  }
+  .review {
+    margin-top: 120px;
+  }
+  .qual {
+    margin-top: 120px;
+  }
+  .contacts__title {
+    margin-top: 120px;
+  }
+  .result__slider__list__item__info__desc {
+    min-height: 68px;
   }
 }
 
@@ -274,6 +293,9 @@
     color: #ffe6df;
     position: relative;
   }
+}
+.history__container {
+  margin-top: 100px;
 }
 
 @media (max-width: 970px) {
@@ -547,6 +569,9 @@
 }
 
 @media (max-width: 600px) {
+  h2 {
+    font-size: 34px;
+  }
   .start__h1 {
     font-size: 70px;
   }
@@ -653,6 +678,34 @@
   .title {
     margin-top: 65px;
   }
+  .qual__slider__dots {
+    display: block;
+  }
+  .qual__slider__btn {
+    display: none;
+  }
+  .result {
+    margin-top: 40px;
+  }
+  .review {
+    margin-top: 40px;
+  }
+  .qual {
+    margin-top: 40px;
+  }
+  .contacts__title {
+    .title__left h2 {
+      display: none;
+    }
+    &__mobOnly {
+      display: block;
+      font-family: "Cactus";
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 120%;
+      color: #401818;
+    }
+  }
 }
 @media (max-width: 510px) {
   .start__h1 {
@@ -674,9 +727,9 @@
   }
 }
 @media (max-width: 500px) {
-  h2 {
-    font-size: 20px;
-  }
+  // h2 {
+  //   font-size: 20px;
+  // }
 
   .review__slider__wrap {
     max-width: 100%;
@@ -748,7 +801,14 @@
     padding-left: 0;
     padding-right: 0;
   }
-
+  .contacts__title {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 40px;
+  }
+  .contacts__title__mobOnly {
+    font-size: 25px;
+  }
   .contacts__window {
     left: 8px;
     right: 8px;
@@ -824,6 +884,9 @@
   .qual__slider__list__item {
     height: unset;
   }
+  .qual__slider__dots {
+    margin-top: -20px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -871,7 +934,7 @@
   }
   .hero__eng {
     font-size: 60px;
-    margin-top: 30%;
+    margin-top: 72px;
   }
   .hero__info__eng__name {
     margin-top: -62px;
@@ -904,6 +967,9 @@
   }
   .price__info__btn__arr__el__item__price {
     font-size: 14px;
+  }
+  .price__info__btn__arr__el__item {
+    padding-bottom: 36px;
   }
 
   .footer__contacts {
@@ -1022,13 +1088,12 @@
     object-fit: contain;
     object-position: left center;
   }
-  // .hero__eng {
-  //   margin-top: 28%;
-  // }
-  // .hero__info__eng__name {
-  //   margin-top: -18%;
-  //   margin-right: -59%;
-  // }
+  .mob__deleted {
+    display: none;
+  }
+  .mob__only {
+    display: inline;
+  }
 }
 
 @media (max-width: 320px) {
