@@ -1229,7 +1229,7 @@ h4 {
     .nav__list__item__link__tel {
       color: #ffffff; }
     .nav__list__item__link__span {
-      color: #D8D8D8; }
+      color: #d8d8d8; }
 
 .btn__footer {
   background-color: #ffffff;
@@ -1260,7 +1260,150 @@ h4 {
 
 .footer__logo {
   padding-top: 65px;
-  padding-left: 63px; }
+  padding-left: 63px;
+  z-index: 11;
+  height: fit-content; }
+
+.overlay {
+  display: none;
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  width: 100%;
+  height: 100%; }
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.popup {
+  display: none;
+  position: absolute;
+  background: #fff6f6;
+  border-radius: 20px;
+  padding: 62px 54px 28px;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 100; }
+  .popup__title {
+    margin-bottom: 34px;
+    font-size: 24px;
+    font-family: "Inter";
+    color: #401818; }
+  .popup__consult {
+    max-width: 478px;
+    width: 100%; }
+  .popup__container {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+  .popup__close, .popup__close--msg {
+    position: absolute;
+    right: -24px;
+    top: -37px;
+    cursor: pointer; }
+  .popup__form__col {
+    margin: 20px 0; }
+  .popup__form__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; }
+    .popup__form__list__item {
+      width: 100%;
+      padding: 18px 22px;
+      background: #ffffff;
+      border-radius: 5px; }
+  .popup__form__check {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    margin-bottom: 10px; }
+    .popup__form__check__fake {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      width: 27px;
+      height: 27px;
+      background: #ffffff;
+      border-radius: 8px; }
+    .popup__form__check__text {
+      display: inline-block;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+      color: #401818; }
+  .popup__btn {
+    margin: 20px 25% 0; }
+  .popup__message__text {
+    font-family: "MainFont";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #252525; }
+  .popup__info {
+    padding-bottom: 34px;
+    font-family: 'Inter', sans-serif; }
+    .popup__info__link {
+      text-decoration: underline; }
+
+.request__form__list__item__check__link {
+  text-decoration: underline; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none; }
+
+.popup__form__check__input:checked + .popup__form__check__fake:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../img/svg/tick.svg);
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 26px; }
+
+.popup__form__list__item,
+.popup__form__check__text {
+  font-family: "Inter", sans-serif; }
+
+.popup--cookie {
+  top: auto;
+  top: initial;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-transform: initial;
+  -ms-transform: initial;
+  transform: initial;
+  left: 40px;
+  bottom: 40px;
+  max-width: 755px;
+  padding: 32px;
+  font-family: 'Cactus';
+  font-size: 14px; }
+
+.popup__close__cook {
+  right: 17px;
+  top: 12px;
+  position: absolute;
+  cursor: pointer; }
 
 @media (max-width: 1315px) {
   .review__container {
@@ -1567,7 +1710,13 @@ h4 {
   .start__description {
     font-size: 16px;
     max-width: 350px;
-    margin: 20px 0; } }
+    margin: 20px 0; }
+
+  .price__info__btn__arr__el__info {
+    font-size: 24px; }
+
+  .price__info__btn__arr__el__num {
+    margin-right: 15px; } }
 @media (max-width: 700px) {
   .start__girl {
     transform: translateX(40%); }
@@ -1746,12 +1895,22 @@ h4 {
     padding: 32px 57px 0; }
 
   .help__btn {
-    padding: 15px 25px; }
+    padding: 15px 25px;
+    font-size: 14px; }
 
   .help__text__buttons {
     margin-left: 25%;
     width: 130%;
-    gap: 26px; } }
+    gap: 26px; }
+
+  .popup__btn {
+    margin: 20px 20% 0; }
+
+  .price__info__btn__arr__el__info {
+    font-size: 26px; }
+
+  .price__info__btn__arr__el__num {
+    font-size: 26px; } }
 @media (max-width: 640px) {
   .qual__slider {
     gap: 16px; }
@@ -1767,7 +1926,13 @@ h4 {
 
   .hero__info__eng__name {
     margin-top: -12%;
-    margin-right: -30%; } }
+    margin-right: -30%; }
+
+  .help__btn {
+    font-size: 14px; }
+
+  .help__ahead__right__p {
+    margin-bottom: 15px; } }
 @media (max-width: 600px) {
   h2 {
     font-size: 34px; }
@@ -2038,6 +2203,9 @@ h4 {
 
   .qual__slider__dots {
     margin-top: -20px; } }
+@media (max-width: 430px) {
+  .popup__btn {
+    margin: 20px 14% 0; } }
 @media (max-width: 400px) {
   .container {
     padding-left: 20px;
@@ -2101,6 +2269,14 @@ h4 {
 
   .history__list__item {
     padding: 0; }
+
+  .popup__btn {
+    width: 100%;
+    margin: 0; }
+
+  .footer__eng {
+    padding-left: 0;
+    padding-right: 0; }
 
   .price__info__btn__arr__el__num {
     font-size: 25px;
@@ -2244,145 +2420,11 @@ h4 {
   .help__text {
     padding-right: 437px; }
     .help__text__p {
-      bottom: -175px; } }
-.overlay {
-  display: none;
-  position: fixed;
-  overflow-y: auto;
-  top: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 100;
-  width: 100%;
-  height: 100%; }
+      bottom: -175px; }
 
-.loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  .popup {
+    padding: 62px 20px 28px; }
 
-.popup {
-  display: none;
-  position: absolute;
-  background: #fff6f6;
-  border-radius: 20px;
-  padding: 62px 54px 28px;
-  width: fit-content;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-  z-index: 100; }
-  .popup__title {
-    margin-bottom: 34px;
-    font-size: 24px;
-    font-family: "Inter";
-    color: #401818; }
-  .popup__consult {
-    max-width: 478px;
-    width: 100%; }
-  .popup__container {
-    position: relative;
-    width: 100%;
-    height: 100%; }
-  .popup__close, .popup__close--msg {
-    position: absolute;
-    right: -24px;
-    top: -37px;
-    cursor: pointer; }
-  .popup__form__col {
-    margin: 20px 0; }
-  .popup__form__list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px; }
-    .popup__form__list__item {
-      width: 100%;
-      padding: 18px 22px;
-      background: #ffffff;
-      border-radius: 5px; }
-  .popup__form__check {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    gap: 10px;
-    margin-bottom: 10px; }
-    .popup__form__check__fake {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-shrink: 0;
-      width: 27px;
-      height: 27px;
-      background: #ffffff;
-      border-radius: 8px; }
-    .popup__form__check__text {
-      display: inline-block;
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 17px;
-      color: #401818; }
-  .popup__btn {
-    margin-left: 25%;
-    margin-top: 20px; }
-  .popup__message__text {
-    font-family: "MainFont";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #252525; }
-  .popup__info {
-    padding-bottom: 34px;
-    font-family: 'Inter', sans-serif; }
-    .popup__info__link {
-      text-decoration: underline; }
-
-.request__form__list__item__check__link {
-  text-decoration: underline; }
-
-input[type="checkbox"],
-input[type="radio"] {
-  display: none; }
-
-.popup__form__check__input:checked + .popup__form__check__fake:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background: url(../img/svg/tick.svg);
-  background-repeat: no-repeat;
-  width: 23px;
-  height: 26px; }
-
-.popup__form__list__item,
-.popup__form__check__text {
-  font-family: "Inter", sans-serif; }
-
-.popup--cookie {
-  top: auto;
-  top: initial;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-  -webkit-transform: initial;
-  -ms-transform: initial;
-  transform: initial;
-  left: 40px;
-  bottom: 40px;
-  max-width: 755px;
-  padding: 32px;
-  font-family: 'Cactus';
-  font-size: 14px; }
-
-.popup__close__cook {
-  right: 17px;
-  top: 12px;
-  position: absolute;
-  cursor: pointer; }
+  .popup__close,
+  .popup__close--msg {
+    right: -8px; } }

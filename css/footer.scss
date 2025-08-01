@@ -22,7 +22,7 @@
     // justify-content: space-between;
     gap: 54px;
   }
-  &__img__el{
+  &__img__el {
     width: 473px;
   }
 }
@@ -46,12 +46,11 @@
     font-size: 16px;
     font-weight: normal;
     line-height: 140%;
-    &__tel{
+    &__tel {
       color: #ffffff;
-
     }
-    &__span{
-      color: #D8D8D8;
+    &__span {
+      color: #d8d8d8;
     }
   }
 }
@@ -89,7 +88,9 @@
   bottom: -3px;
 }
 
-.footer__logo{
+.footer__logo {
   padding-top: 65px;
-    padding-left: 63px;
+  padding-left: 63px;
+  z-index: 11;
+  height: fit-content;
 }
