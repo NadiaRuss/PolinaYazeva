@@ -676,7 +676,7 @@ h4 {
   gap: 20px;
   z-index: 1;
   margin-top: -4%;
-  transform: translateX(-100%);
+  transform: translateX(-90%);
   opacity: 0;
   transition: transform 2s linear, opacity 2s linear;
   margin-bottom: -130px; }
@@ -1087,7 +1087,8 @@ h4 {
     .qual__slider__wrap {
       margin-left: 0;
       margin-right: 0;
-      border-radius: 20px; }
+      border-radius: 20px;
+      width: 60%; }
     .qual__slider__list {
       display: flex;
       align-items: flex-start;
@@ -1291,7 +1292,7 @@ h4 {
       object-fit: cover; }
     .care__list__el__text {
       width: 50%;
-      padding: 12px 24px; } }
+      padding: 12px 11px; } }
 @media (max-width: 1200px) {
   .header__adress {
     margin-right: 0; }
@@ -1299,6 +1300,9 @@ h4 {
   .start__dec {
     right: 40%;
     top: 376px; }
+
+  .qual__slider__wrap {
+    width: 70%; }
 
   .mobile__tel {
     display: flex;
@@ -1434,6 +1438,9 @@ h4 {
   .contacts iframe {
     height: 686px; }
 
+  .qual__slider__wrap {
+    width: 70%; }
+
   .contacts__window {
     top: unset;
     bottom: 46px;
@@ -1507,6 +1514,9 @@ h4 {
 
   .start__container {
     padding-top: 68px; }
+
+  .qual__container {
+    gap: 60px; }
 
   .price__info__btn__arr__el__info {
     font-size: 26px; }
@@ -1623,12 +1633,18 @@ h4 {
   .broun__btn {
     padding: 20px 62px; }
 
+  .nav__list__footer {
+    gap: 35px; }
+
   .footer__eng {
-    font-size: 60px;
+    font-size: 70px;
     bottom: 17px;
     left: 0;
     width: 100%;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-left: 15%;
+    padding-right: 15%;
+    gap: 0; }
     .footer__eng__name {
       align-self: flex-start; }
     .footer__eng__surname {
@@ -1637,7 +1653,7 @@ h4 {
   .footer__container {
     flex-direction: column;
     padding: 60px 35px;
-    padding-bottom: 411px;
+    padding-bottom: 362px;
     gap: 48px;
     margin: 0; }
 
@@ -2196,7 +2212,7 @@ h4 {
     padding: 9px 16px; }
 
   .help__text {
-    padding: 53px 455px 121px 0px; } }
+    padding: 53px 482px 121px 0px; } }
 @media (max-width: 380px) {
   .start__girl {
     transform: translate(-12%, -23%);
@@ -2214,7 +2230,10 @@ h4 {
     object-position: left center; }
 
   .mob__only {
-    display: inline; } }
+    display: inline; }
+
+  .help__text {
+    padding-right: 450px; } }
 @media (max-width: 320px) {
   .result__slider__list__item__info__name {
     font-size: 16px; }
