@@ -19,10 +19,10 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <div class="header__logo logo">
+        <a href="#start" class="header__logo logo">
           <img class="logo__pic" src="./img/svg/logo.svg" alt="логотип" />
           <p class="logo__text">POLINA<br />YAZEVA</p>
-        </div>
+        </a>
         <div class="header__adress">
           <img
             class="header__adress__icon"
@@ -354,8 +354,8 @@
                 косметологии. Моя работа - помогать людям заботиться о своей
                 коже правильно и максимально эффективно.
                 <br /><br /><br />
-                Внимание к мелочам при диагностике состояния кожи помогают мне
-                в каждом случае подобрать индивидуальный курс процедур.
+                Внимание к мелочам при диагностике состояния кожи помогают мне в
+                каждом случае подобрать индивидуальный курс процедур.
                 <br /><br /><br />
                 Обладаю уникальным опытом работы и сочетаю различные методики
                 эстетической медицины, традиционные и инновационные, отдавая
@@ -1256,7 +1256,7 @@
           <div class="title review__title">
             <div class="title__left">
               <h2>
-                ЧТО ГОВОРЯТ О МОЕЙ<br />
+                ЧТО ГОВОРЯТ <br class="mob__only"/> О МОЕЙ<br class="mob__deleted" />
                 РАБОТЕ
               </h2>
             </div>
@@ -1373,7 +1373,7 @@
           <div class="title qual__title">
             <div class="title__left">
               <h2>
-                ПОДТВЕРЖДЕНИЕ МОЕЙ<br />
+                ПОДТВЕРЖДЕНИЕ <span class="mob__deleted">МОЕЙ</span><br />
                 КВАЛИФИКАЦИИ
               </h2>
             </div>
@@ -1460,6 +1460,9 @@
               <img src="img/svg/icon-arrow-pink.svg" alt="стрелка вправо" />
             </button>
           </div>
+          <ul class="qual__slider__dots">
+            <div class="qual__slider__dots__swiper"></div>
+          </ul>
         </div>
       </section>
 
@@ -1468,6 +1471,7 @@
           <div class="title contacts__title">
             <div class="title__left">
               <h2>ГДЕ И КАК МОЖНО МЕНЯ<br />НАЙТИ</h2>
+              <div class="contacts__title__mobOnly">КАК МОЖНО МЕНЯ<br />НАЙТИ</div>
             </div>
             <div class="title__right">
               <div class="title__right__text">
