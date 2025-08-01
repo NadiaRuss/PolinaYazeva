@@ -1874,6 +1874,9 @@ h4 {
     font-size: 36px;
     line-height: 120%;
     color: #401818; } }
+@media (max-width: 520px) {
+  .mob__deleted {
+    display: none; } }
 @media (max-width: 510px) {
   .start__h1 {
     font-size: 65px; }
@@ -2209,9 +2212,6 @@ h4 {
     height: auto;
     object-fit: contain;
     object-position: left center; }
-
-  .mob__deleted {
-    display: none; }
 
   .mob__only {
     display: inline; } }
