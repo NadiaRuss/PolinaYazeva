@@ -1287,7 +1287,7 @@ h4 {
     width: 100%; }
     .care__list__el__img {
       width: 50%;
-      object-fit: fill; }
+      object-fit: cover; }
     .care__list__el__text {
       width: 50%;
       padding: 12px 24px; } }
