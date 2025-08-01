@@ -678,7 +678,8 @@ h4 {
   margin-top: -4%;
   transform: translateX(-100%);
   opacity: 0;
-  transition: transform 2s linear, opacity 2s linear; }
+  transition: transform 2s linear, opacity 2s linear;
+  margin-bottom: -130px; }
   .hero__eng.animate {
     transform: translateX(0);
     opacity: 1; }
@@ -1418,6 +1419,9 @@ h4 {
 
   .start__dec {
     display: none; }
+
+  .hero__eng {
+    margin-bottom: 0; }
 
   .title__left__care {
     width: 72%; }
