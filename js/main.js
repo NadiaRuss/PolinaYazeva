@@ -225,7 +225,7 @@ const swiper = new Swiper(".result__swiper", {
 //слайдер для секции review
 const swiper2 = new Swiper(".review__swiper", {
   slidesPerView: 3,
-  loop: true, // Включаем зацикливание
+  loop: false,
   initialSlide: 1,
   centeredSlides: true,
 
@@ -248,8 +248,8 @@ const swiper2 = new Swiper(".review__swiper", {
       centeredSlides: false,
     },
     970: {
-      slidesPerView: 3,
-      loop: true, // Оставляем зацикливание и для десктопа
+      slidesPerView: "auto",
+      loop: false,
       initialSlide: 1,
       centeredSlides: true,
     },
