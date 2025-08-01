@@ -710,6 +710,12 @@
     }
   }
 }
+@media (max-width: 520px) {
+  .mob__deleted {
+    display: none;
+  }
+}
+
 @media (max-width: 510px) {
   .start__h1 {
     font-size: 65px;
@@ -1089,9 +1095,7 @@
     object-fit: contain;
     object-position: left center;
   }
-  .mob__deleted {
-    display: none;
-  }
+
   .mob__only {
     display: inline;
   }
