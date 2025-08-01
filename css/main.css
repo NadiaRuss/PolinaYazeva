@@ -1007,7 +1007,7 @@ h4 {
           font-weight: 400;
           font-size: 16px;
           line-height: 140%;
-          letter-spacing: -3%;
+          letter-spacing: -0.03em;
           color: #b9b9b9;
           transition: color 0.3s; }
           .review__slider__list__item__desc__all {
@@ -1901,10 +1901,8 @@ h4 {
   .review__slider__list__item__desc {
     font-family: Arial;
     font-weight: 400;
-    font-style: Regular;
     font-size: 16px;
-    line-height: 140%;
-    letter-spacing: -3%; }
+    line-height: 140%; }
 
   .review__slider__list__item__user {
     margin-top: 30px; } }
