@@ -2004,14 +2004,16 @@ input[type="radio"] {
     border-radius: 0;
     width: 100%;
     gap: 16px;
-    padding: 0 20px; }
+    padding: 0 20px;
+    bottom: 0; }
     .help__ahead__left, .help__ahead__right {
       background: #ffffff;
       box-shadow: 0px 142px 57px rgba(227, 117, 94, 0.01), 0px 80px 48px rgba(227, 117, 94, 0.05), 0px 35px 35px rgba(227, 117, 94, 0.09), 0px 9px 19px rgba(227, 117, 94, 0.1);
       border-radius: 20px;
       max-width: 550px; }
     .help__ahead__left {
-      padding: 28px 8px 47px 28px; }
+      padding: 28px 8px 47px 28px;
+      margin-top: -110px; }
       .help__ahead__left__p {
         font-family: Arial;
         font-weight: 400;
