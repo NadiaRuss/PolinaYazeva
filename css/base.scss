@@ -102,7 +102,7 @@ fieldset {
 
 h1 {
   font-family: "Cactus";
-  font-size: clamp(3rem, 9vw, 128px); 
+  font-size: clamp(3rem, 9vw, 128px);
   font-weight: 400;
   line-height: 120%;
   color: #8d6c56;
@@ -249,7 +249,7 @@ h4 {
 }
 .ellipsePink {
   position: absolute;
-  background-color: #FFE6FB;
+  background-color: #ffe6fb;
   filter: blur(100px);
   width: 257px;
   height: 267px;
@@ -257,10 +257,10 @@ h4 {
 }
 
 .swiper-pagination-bullet {
-  background: #F4D8D0;
+  background: #f4d8d0;
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background: #DE8067;
+  background: #de8067;
 }
