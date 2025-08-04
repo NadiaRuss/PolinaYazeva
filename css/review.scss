@@ -6,6 +6,12 @@
     flex-direction: column;
     gap: 89px;
   }
+  &__ellipsePink {
+    top: -70px;
+  }
+  &__ellipseYellow {
+    top: -70px;
+  }
 
   &__slider {
     display: flex;
@@ -99,7 +105,7 @@
             transition: color 0.3s;
           }
           & .review__slider__list__item__user__ava {
-            background-color: #FFE9E9;
+            background-color: #ffe9e9;
             color: #747070;
           }
         }
@@ -124,6 +130,6 @@
     }
   }
 }
-.mob__only{
+.mob__only {
   display: none;
 }

@@ -169,7 +169,9 @@
       </section>
       <section class="history">
         <div class="container history__container">
-          <div class="history__list__item history__mobile history__list__item noBG">
+          <div
+            class="history__list__item history__mobile history__list__item noBG"
+          >
             <p class="history__list__item__bigP">
               2022 - 2025<span class="history__list__item__bigP__span">г.</span>
             </p>
@@ -333,6 +335,7 @@
         <div class="container hero__container">
           <div class="title hero__title" id="about">
             <div class="title__left">
+              <div class="ellipsePink hero__ellipse"></div>
               <h2>КТО Я И КАК МОГУ<br />ВАМ ПОМОЧЬ</h2>
             </div>
             <div class="title__right">
@@ -454,7 +457,11 @@
         <div class="container care__container">
           <div class="title care__title">
             <div class="title__left title__left__care">
-              <h2>ЗАБОТА О КРАСОТЕ И ЗДОРОВЬЕ</h2>
+              <div class="ellipsePink care__ellipse"></div>
+              <h2>
+                ЗАБОТА О КРАСОТЕ <br />
+                И ЗДОРОВЬЕ
+              </h2>
             </div>
 
             <div class="title__right">
@@ -733,17 +740,13 @@
         <div class="container price__container">
           <div class="title price__title">
             <div class="title__left title__left__price">
-              <!-- <img
-                class="ellipseYellow"
-                src="./img/svg/ellipseYellow.svg"
-                alt=""
-              /> -->
               <div class="ellipseYellow price__ellipseYellow"></div>
               <h2>УСЛУГИ И ПРАЙС</h2>
             </div>
 
             <div class="title__right">
               <div class="title__right__text">
+                <div class="ellipsePink price__ellipsePink"></div>
                 <span>[ </span>
                 <p>Стоимость</p>
                 <span> ]</span>
@@ -1149,10 +1152,12 @@
         <div class="container result__container">
           <div class="title result__title">
             <div class="title__left">
+              <div class="ellipsePink result__ellipsePink"></div>
               <h2>ВИДИМЫЕ РЕЗУЛЬТАТЫ</h2>
             </div>
             <div class="title__right">
               <div class="title__right__text">
+                <div class="ellipseYellow result__ellipseYellow"></div>
                 <span>[ </span>
                 <p>Эффективность</p>
                 <span> ]</span>
@@ -1255,13 +1260,16 @@
         <div class="container review__container">
           <div class="title review__title">
             <div class="title__left">
+              <div class="ellipsePink review__ellipsePink"></div>
               <h2>
-                ЧТО ГОВОРЯТ <br class="mob__only"/> О МОЕЙ<br class="mob__deleted" />
+                ЧТО ГОВОРЯТ <br class="mob__only" />
+                О МОЕЙ<br class="mob__deleted" />
                 РАБОТЕ
               </h2>
             </div>
             <div class="title__right">
               <div class="title__right__text">
+                <div class="ellipseYellow review__ellipseYellow"></div>
                 <span>[ </span>
                 <p>Отзывы</p>
                 <span> ]</span>
@@ -1372,6 +1380,7 @@
         <div class="container qual__container">
           <div class="title qual__title">
             <div class="title__left">
+              <div class="ellipsePink qual__ellipsePink"></div>
               <h2>
                 ПОДТВЕРЖДЕНИЕ <span class="mob__deleted">МОЕЙ</span><br />
                 КВАЛИФИКАЦИИ
@@ -1379,6 +1388,7 @@
             </div>
             <div class="title__right">
               <div class="title__right__text">
+                <div class="ellipseYellow qual__ellipseYellow"></div>
                 <span>[ </span>
                 <p>Сертификаты</p>
                 <span> ]</span>
@@ -1391,6 +1401,15 @@
             </button>
             <div class="qual__slider__wrap swiper qual__slider__swiper">
               <ul class="qual__slider__list swiper-wrapper">
+                <li class="qual__slider__list__item swiper-slide">
+                  <a
+                    data-fancybox="gallery1"
+                    href="img/qual/diplom.webp"
+                    class="qual__slider__list__item__link"
+                  >
+                    <img src="img/qual/diplom.webp" alt="фото сертификата" />
+                  </a>
+                </li>
                 <li class="qual__slider__list__item swiper-slide">
                   <a
                     data-fancybox="gallery1"
@@ -1471,8 +1490,11 @@
           <div class="title contacts__title">
             <div class="title__left">
               <h2>ГДЕ И КАК МОЖНО МЕНЯ<br />НАЙТИ</h2>
-              <div class="contacts__title__mobOnly">КАК МОЖНО МЕНЯ<br />НАЙТИ</div>
+              <div class="contacts__title__mobOnly">
+                КАК МОЖНО МЕНЯ<br />НАЙТИ
+              </div>
             </div>
+            <div class="ellipsePink contacts__ellipsePink"></div>
             <div class="title__right">
               <div class="title__right__text">
                 <span>[ </span>
