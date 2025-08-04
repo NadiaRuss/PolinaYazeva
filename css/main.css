@@ -211,7 +211,8 @@ h4 {
   position: absolute;
   background-color: #fcc645;
   filter: blur(170px);
-  opacity: 0.5; }
+  opacity: 0.5;
+  z-index: -5; }
 
 .ellipseLight {
   position: absolute;
