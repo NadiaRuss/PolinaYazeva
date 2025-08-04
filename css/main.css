@@ -205,6 +205,21 @@ h4 {
   filter: blur(100px);
   transform: translateZ(0); }
 
+.ellipseYe {
+  width: 349px;
+  height: 350px;
+  position: absolute;
+  background-color: #fcc645;
+  filter: blur(170px);
+  opacity: 0.5; }
+
+.ellipseLight {
+  position: absolute;
+  background-color: #ffefef;
+  filter: blur(100px);
+  width: 194px;
+  height: 201px; }
+
 .ellipsePink {
   position: absolute;
   background-color: #FFE6FB;
