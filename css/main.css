@@ -1239,6 +1239,14 @@ h4 {
     gap: 54px; }
   .footer__img__el {
     width: 473px; }
+  .footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; }
+    .footer__social__list {
+      display: flex;
+      gap: 15px; }
 
 .nav__list__footer {
   gap: 40px;
@@ -1838,9 +1846,11 @@ input[type="radio"] {
     gap: 48px;
     margin: 0; }
 
-  .btn__footer {
+  .footer__social {
     position: absolute;
-    right: 20px;
+    right: 20px; }
+
+  .btn__footer {
     padding: 20px 21px; }
 
   .footer__img__el {
@@ -2108,7 +2118,10 @@ input[type="radio"] {
 
   .hero__info__eng__name {
     margin-top: -13%;
-    margin-right: -40%; } }
+    margin-right: -40%; }
+
+  .footer__social {
+    gap: 30px; } }
 @media (max-width: 500px) {
   .review__slider__wrap {
     max-width: 100%;
@@ -2391,9 +2404,6 @@ input[type="radio"] {
     font-size: 20px;
     letter-spacing: 0em; }
 
-  .care__title {
-    margin-top: 10px; }
-
   .price__title {
     margin-top: 100px; }
 
@@ -2453,7 +2463,10 @@ input[type="radio"] {
     display: inline; }
 
   .help__text {
-    padding-right: 450px; } }
+    padding-right: 450px; }
+
+  .popup__form__list__item__input {
+    width: -webkit-fill-available; } }
 @media (max-width: 320px) {
   .result__slider__list__item__info__name {
     font-size: 16px; }

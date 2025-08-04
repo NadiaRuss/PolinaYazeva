@@ -25,6 +25,16 @@
   &__img__el {
     width: 473px;
   }
+    &__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    &__list{
+      display: flex;
+      gap: 15px;
+    }
+  }
 }
 .nav__list__footer {
   gap: 40px;
