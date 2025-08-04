@@ -223,18 +223,18 @@ h4 {
 
 .ellipsePink {
   position: absolute;
-  background-color: #FFE6FB;
+  background-color: #ffe6fb;
   filter: blur(100px);
   width: 257px;
   height: 267px;
   z-index: -1; }
 
 .swiper-pagination-bullet {
-  background: #F4D8D0;
+  background: #f4d8d0;
   opacity: 1; }
 
 .swiper-pagination-bullet-active {
-  background: #DE8067; }
+  background: #de8067; }
 
 .header {
   width: 100%;
@@ -551,19 +551,7 @@ h4 {
     border-radius: 20px;
     transition: all 0.3s ease-out;
     transform-style: flat;
-    will-change: transform, box-shadow;
-    will-change: transform, box-shadow;
-    /* только во время анимации */ }
-    .history__list__item:not(.noBG):hover {
-      transform: translateY(-10px) scale(1.05);
-      box-shadow: 0 20px 30px rgba(224, 130, 105, 0.2), 0 10px 10px rgba(224, 130, 105, 0.1);
-      z-index: 1;
-      will-change: auto;
-      /* сброс после анимации */
-      backface-visibility: visible; }
-      .history__list__item:not(.noBG):hover .history__list__item__img {
-        transform: scale(1.1);
-        transition: transform 0.3s ease-out; }
+    will-change: transform, box-shadow; }
     .history__list__item__img {
       transition: transform 0.3s ease-out; }
     .history__list__item__p {
@@ -592,6 +580,16 @@ h4 {
 .history__mobile {
   display: none; }
 
+@media (hover: hover) {
+  .history__list__item:not(.noBG):hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 30px rgba(224, 130, 105, 0.2), 0 10px 10px rgba(224, 130, 105, 0.1);
+    z-index: 1;
+    will-change: auto;
+    backface-visibility: visible; }
+    .history__list__item:not(.noBG):hover .history__list__item__img {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-out; } }
 .runningLine__container {
   overflow: hidden;
   white-space: nowrap;
@@ -600,9 +598,13 @@ h4 {
   margin: 40px 0 168px;
   background-color: #fff; }
 
-.runningLine__container:hover .marquee-track {
-  animation-play-state: paused; }
+@media (hover: hover) {
+  .runningLine__container:hover .marquee-track {
+    animation-play-state: paused; }
 
+  .marquee-item:hover img {
+    filter: grayscale(0);
+    transform: scale(1.1); } }
 .marquee-track {
   display: inline-flex;
   animation: marquee 30s linear infinite;
@@ -619,10 +621,6 @@ h4 {
   object-fit: contain;
   filter: grayscale(30%);
   transition: all 0.3s ease; }
-
-.marquee-item:hover img {
-  filter: grayscale(0);
-  transform: scale(1.1); }
 
 @keyframes marquee {
   0% {
@@ -1614,12 +1612,6 @@ input[type="radio"] {
 
   .contacts iframe {
     height: 686px; }
-
-  .history__list__item:not(.noBG):hover {
-    transform: none !important;
-    box-shadow: 0px 109px 44px rgba(224, 130, 105, 0.01), 0px 61px 37px rgba(224, 130, 105, 0.05), 0px 27px 27px rgba(224, 130, 105, 0.09), 0px 7px 15px rgba(224, 130, 105, 0.1) !important; }
-    .history__list__item:not(.noBG):hover .history__list__item__img {
-      transform: none !important; }
 
   .qual__slider__wrap {
     width: 70%; }
