@@ -201,14 +201,13 @@
   .start__h2 {
     font-size: 28px;
   }
-  // br.mobile__only__h2 {
-  //   display: inline;
-  // }
+
   .start__dec {
     display: none;
   }
   .hero__eng {
     margin-bottom: 0;
+    min-height: 240px;
   }
   .title__left__care {
     width: 72%;
@@ -320,6 +319,9 @@
   .start__container {
     padding-top: 68px;
     // height: 70vh;
+  }
+    .hero__eng {
+    min-height: 200px;
   }
   .qual__container {
     gap: 60px;
@@ -772,7 +774,9 @@
   .hero__eng {
     font-size: 65px;
     margin-top: 19%;
+    min-height: 150px;
   }
+
   .hero__info__eng__name {
     margin-top: -13%;
     margin-right: -40%;

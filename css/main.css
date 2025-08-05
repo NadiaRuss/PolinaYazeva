@@ -1608,7 +1608,8 @@ input[type="radio"] {
     display: none; }
 
   .hero__eng {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    min-height: 240px; }
 
   .title__left__care {
     width: 72%; }
@@ -1697,6 +1698,9 @@ input[type="radio"] {
 
   .start__container {
     padding-top: 68px; }
+
+  .hero__eng {
+    min-height: 200px; }
 
   .qual__container {
     gap: 60px; }
@@ -2114,7 +2118,8 @@ input[type="radio"] {
 
   .hero__eng {
     font-size: 65px;
-    margin-top: 19%; }
+    margin-top: 19%;
+    min-height: 150px; }
 
   .hero__info__eng__name {
     margin-top: -13%;
