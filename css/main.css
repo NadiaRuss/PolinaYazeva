@@ -775,10 +775,13 @@ h4 {
     position: relative; }
     .help__ahead__left__p {
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-      line-height: 140%; }
+      line-height: 140%;
+      z-index: 1;
+      position: relative; }
     .help__ahead__left__img {
       position: absolute;
-      bottom: 0; }
+      bottom: 0;
+      z-index: 0; }
   .help__ahead__right {
     max-width: 484px; }
     .help__ahead__right__p {
@@ -1938,7 +1941,7 @@ input[type="radio"] {
 
   .help__ahead {
     margin-top: 240px;
-    padding: 32px 57px 0; }
+    padding: 32px 43px 0; }
 
   .help__btn {
     padding: 15px 25px;
