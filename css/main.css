@@ -1934,7 +1934,7 @@ input[type="radio"] {
     font-size: 18px;
     letter-spacing: 0em;
     color: #7d7b7b;
-    left: 12%; }
+    left: 5vw; }
 
   .help__behind {
     overflow: visible; }
