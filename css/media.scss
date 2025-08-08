@@ -153,6 +153,7 @@
   // }
   .price__info__btn__arr__el__item {
     width: 160px;
+    margin-right: 0;
   }
   .footer__eng {
     font-size: 101px;
@@ -288,6 +289,9 @@
   .result__slider__list__item__info__desc {
     min-height: 68px;
   }
+  .price__info__btn__arr__el__num {
+    margin-right: 40px;
+  }
 }
 
 @media (max-width: 994px) {
@@ -320,7 +324,7 @@
     padding-top: 68px;
     // height: 70vh;
   }
-    .hero__eng {
+  .hero__eng {
     min-height: 200px;
   }
   .qual__container {
@@ -369,6 +373,14 @@
     right: -223px;
   }
 }
+@media (max-width: 850px) {
+  .price__info__btn__arr__el__info {
+    font-size: 24px;
+  }
+  .price__info__btn__arr__el__num {
+    font-size: 30px;
+  }
+}
 @media (max-width: 740px) {
   .start__h1 {
     font-size: 80px;
@@ -381,11 +393,17 @@
     max-width: 350px;
     margin: 20px 0;
   }
-  .price__info__btn__arr__el__info {
-    font-size: 24px;
-  }
   .price__info__btn__arr__el__num {
     margin-right: 15px;
+  }
+  .price__info__btn__arr__el__info {
+    font-size: 22px;
+    &__span {
+      font-size: 20px;
+    }
+  }
+  .popup--cookie {
+    left: 0;
   }
 }
 @media (max-width: 700px) {
@@ -560,7 +578,7 @@
     letter-spacing: 0em;
     color: #7d7b7b;
     left: 50%;
-    transform: translate(-48%);
+    transform: translate(-50%);
     text-align: center;
     width: max-content;
   }
@@ -758,6 +776,9 @@
       line-height: 120%;
       color: #401818;
     }
+  }
+  .popup__title {
+    margin-top: 0;
   }
 }
 @media (max-width: 520px) {
@@ -1153,6 +1174,9 @@
   }
   .help__text {
     padding: 53px 482px 121px 0px;
+  }
+  .popup__title {
+    margin-top: 0;
   }
 }
 @media (max-width: 380px) {
