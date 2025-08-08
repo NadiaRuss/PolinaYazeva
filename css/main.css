@@ -1934,7 +1934,10 @@ input[type="radio"] {
     font-size: 18px;
     letter-spacing: 0em;
     color: #7d7b7b;
-    left: 5vw; }
+    left: 50%;
+    transform: translate(-48%);
+    text-align: center;
+    width: max-content; }
 
   .help__behind {
     overflow: visible; }
@@ -2038,7 +2041,9 @@ input[type="radio"] {
   .help__text__p {
     bottom: -140px;
     right: 20px;
-    left: 20px; }
+    left: 20px;
+    transform: none;
+    width: auto; }
 
   .help__ahead {
     flex-direction: column;
@@ -2435,7 +2440,8 @@ input[type="radio"] {
     margin-left: 94%; }
 
   .help__text__p {
-    bottom: -159px; }
+    bottom: -159px;
+    text-align: left; }
 
   .help__img__girl {
     right: -22px; }
