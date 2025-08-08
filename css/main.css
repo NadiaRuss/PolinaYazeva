@@ -856,7 +856,8 @@ h4 {
       align-items: center;
       position: relative;
       border-bottom: 1px solid #f5ded8;
-      padding-bottom: 40px; }
+      padding-bottom: 40px;
+      gap: 30px; }
       .price__info__btn__arr__el__num {
         width: 40px;
         font-family: "Cactus";
@@ -1443,8 +1444,8 @@ input[type="radio"] {
   font-size: 14px; }
 
 .popup__close__cook {
-  right: 17px;
-  top: 12px;
+  right: 24px;
+  top: 19px;
   position: absolute;
   cursor: pointer; }
 
@@ -1563,7 +1564,8 @@ input[type="radio"] {
     max-width: 540px; }
 
   .price__info__btn__arr__el__item {
-    width: 160px; }
+    width: 160px;
+    margin-right: 0; }
 
   .footer__eng {
     font-size: 101px;
@@ -1678,7 +1680,10 @@ input[type="radio"] {
     margin-top: 120px; }
 
   .result__slider__list__item__info__desc {
-    min-height: 68px; } }
+    min-height: 68px; }
+
+  .price__info__btn__arr__el__num {
+    margin-right: 40px; } }
 @media (max-width: 994px) {
   .noBG {
     display: none; }
@@ -1747,6 +1752,12 @@ input[type="radio"] {
 
   .help__img__girl {
     right: -223px; } }
+@media (max-width: 850px) {
+  .price__info__btn__arr__el__info {
+    font-size: 24px; }
+
+  .price__info__btn__arr__el__num {
+    font-size: 30px; } }
 @media (max-width: 740px) {
   .start__h1 {
     font-size: 80px; }
@@ -1759,11 +1770,16 @@ input[type="radio"] {
     max-width: 350px;
     margin: 20px 0; }
 
-  .price__info__btn__arr__el__info {
-    font-size: 24px; }
-
   .price__info__btn__arr__el__num {
-    margin-right: 15px; } }
+    margin-right: 15px; }
+
+  .price__info__btn__arr__el__info {
+    font-size: 22px; }
+    .price__info__btn__arr__el__info__span {
+      font-size: 20px; }
+
+  .popup--cookie {
+    left: 0; } }
 @media (max-width: 700px) {
   .start__girl {
     transform: translateX(40%); }
@@ -1935,7 +1951,7 @@ input[type="radio"] {
     letter-spacing: 0em;
     color: #7d7b7b;
     left: 50%;
-    transform: translate(-48%);
+    transform: translate(-50%);
     text-align: center;
     width: max-content; }
 
@@ -2110,7 +2126,10 @@ input[type="radio"] {
     font-weight: 400;
     font-size: 36px;
     line-height: 120%;
-    color: #401818; } }
+    color: #401818; }
+
+  .popup__title {
+    margin-top: 0; } }
 @media (max-width: 520px) {
   .mob__deleted {
     display: none; } }
@@ -2456,7 +2475,10 @@ input[type="radio"] {
     padding: 9px 16px; }
 
   .help__text {
-    padding: 53px 482px 121px 0px; } }
+    padding: 53px 482px 121px 0px; }
+
+  .popup__title {
+    margin-top: 0; } }
 @media (max-width: 380px) {
   .start__girl {
     transform: translate(-12%, -23%);
