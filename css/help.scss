@@ -63,10 +63,11 @@
   }
 }
 .help__ahead {
+  position: relative;
   display: flex;
   max-width: 1205px;
   width: 90%;
-  min-height: 220px;
+  /* min-height: 220px; */
   background: #ffffff;
   box-shadow: 0px 142px 57px rgba(227, 117, 94, 0.01),
     0px 80px 48px rgba(227, 117, 94, 0.05),
@@ -77,10 +78,11 @@
   z-index: 3;
   bottom: 110px;
   padding: 40px 71px 0;
+  padding-bottom: 40px;
   gap: 62px;
   &__left {
     max-width: 484px;
-    position: relative;
+    /* position: relative; */
     &__p {
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       line-height: 140%;

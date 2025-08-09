@@ -588,6 +588,7 @@
   .help__ahead {
     margin-top: 240px;
     padding: 32px 43px 0;
+    padding-bottom: 32px;
   }
   .help__btn {
     padding: 15px 25px;
@@ -718,6 +719,7 @@
       max-width: 550px;
     }
     &__left {
+      position: relative;
       padding: 28px 8px 47px 28px;
       margin-top: -110px;
       &__p {
